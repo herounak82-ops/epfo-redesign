@@ -1,0 +1,6 @@
+synthetic_citizen_id,uan_masked,claim_id_masked,form_type,claim_reason,filed_on,amount_requested,amount_approved,status,rejection_code,rejection_reason
+CIT-002,1000XXXX5502,CLM-26-000002,Form 31,illness,2026-08-12,26500,,under_process,,
+CIT-009,1000XXXX5509,CLM-26-000009,Form 19,final_settlement_after_exit,2026-08-05,156700,,eligibility_check,,
+CIT-014,1000XXXX5514,CLM-26-000014,Form 31,education,2026-07-29,38000,0,rejected,BANK_ACCOUNT_MISMATCH,bank_account_name_or_number_mismatch_with_verified_KYC
+CIT-018,1000XXXX5518,SC-26-000018,Form 10C,short_service,2026-08-02,,,scheme_certificate_available,,
+CIT-022,1000XXXX5522,CLM-26-000022,Form 31,housing,2026-07-12,15000,15000,settled,,

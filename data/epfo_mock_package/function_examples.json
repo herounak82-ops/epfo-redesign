@@ -1,0 +1,92 @@
+[
+  {
+    "function": "getBalance",
+    "input": {
+      "citizen_id": "CIT-001"
+    },
+    "expected_key": "total_epf_balance"
+  },
+  {
+    "function": "trackClaim",
+    "input": {
+      "claim_id_masked": "CLM-26-000002"
+    },
+    "expected_key": "status"
+  },
+  {
+    "function": "checkEligibility",
+    "input": {
+      "citizen_id": "CIT-007",
+      "claim_type": "form_31_advance",
+      "reason": "housing",
+      "requested_amount": 50000
+    },
+    "expected_key": "decision"
+  },
+  {
+    "function": "findUAN",
+    "input": {
+      "full_name": "Sana Parveen",
+      "date_of_birth": "1996-05-30",
+      "mobile_last4": "6241"
+    },
+    "expected_key": "uan_masked"
+  },
+  {
+    "function": "getKYC",
+    "input": {
+      "citizen_id": "CIT-005"
+    },
+    "expected_key": "items"
+  },
+  {
+    "function": "getPassbook",
+    "input": {
+      "citizen_id": "CIT-001",
+      "member_index": 0
+    },
+    "expected_key": "entries"
+  },
+  {
+    "function": "listMemberAccounts",
+    "input": {
+      "citizen_id": "CIT-016"
+    },
+    "expected_key": "member_accounts"
+  },
+  {
+    "function": "getServiceHistory",
+    "input": {
+      "citizen_id": "CIT-013"
+    },
+    "expected_key": "service_history"
+  },
+  {
+    "function": "getNomination",
+    "input": {
+      "citizen_id": "CIT-008"
+    },
+    "expected_key": "nomination"
+  },
+  {
+    "function": "trackTransfer",
+    "input": {
+      "citizen_id": "CIT-006"
+    },
+    "expected_key": "transfer_status"
+  },
+  {
+    "function": "trackGrievance",
+    "input": {
+      "citizen_id": "CIT-012"
+    },
+    "expected_key": "grievances"
+  },
+  {
+    "function": "findEstablishment",
+    "input": {
+      "establishment_code": "0012780"
+    },
+    "expected_key": "matches"
+  }
+]

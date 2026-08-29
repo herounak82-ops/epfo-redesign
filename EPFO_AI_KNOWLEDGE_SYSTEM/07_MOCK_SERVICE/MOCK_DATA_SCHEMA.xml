@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mockSchema syntheticOnly="true" productionAccess="false">
+  <entity id="MOCK-CITIZEN" source="SRC-MOCK-001" />
+  <entity id="MOCK-EMPLOYMENT" source="SRC-MOCK-001" />
+  <entity id="MOCK-KYC" source="SRC-MOCK-001" />
+  <entity id="MOCK-CLAIM" source="SRC-MOCK-001" />
+  <entity id="MOCK-REQUEST" source="SRC-MOCK-001" />
+  <constraint>Identifiers are fictional/masked and must not be treated as EPFO credentials.</constraint>
+</mockSchema>

@@ -1,0 +1,115 @@
+{
+  "map_version": "1.0",
+  "records": {
+    "EPFO-DEC-001": [
+      "SRC-CONTEXT-001"
+    ],
+    "EPFO-DEC-002": [
+      "SRC-SKILL-001"
+    ],
+    "EPFO-DEC-003": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "EPFO-DEC-004": [
+      "SRC-DESIGN-001"
+    ],
+    "EPFO-DEC-005": [
+      "SRC-RESEARCH-001"
+    ],
+    "EPFO-DEC-006": [
+      "SRC-CONTEXT-001"
+    ],
+    "EPFO-DEC-007": [
+      "SRC-MOCK-001"
+    ],
+    "EPFO-DEC-008": [
+      "SRC-APP-001"
+    ],
+    "EPFO-DEC-009": [
+      "SRC-RESEARCH-001"
+    ],
+    "EPFO-DEC-010": [
+      "SRC-STATUS-001"
+    ],
+    "UX4G-FND-001": [
+      "SRC-UX4G-001"
+    ],
+    "UX4G-FND-002": [
+      "SRC-UX4G-001",
+      "SRC-DESIGN-001"
+    ],
+    "UX4G-FND-003": [
+      "SRC-UX4G-001",
+      "SRC-DESIGN-001"
+    ],
+    "UX4G-FND-004": [
+      "SRC-UX4G-001"
+    ],
+    "UX4G-FND-005": [
+      "SRC-UX4G-001"
+    ],
+    "GIGW-Q-001": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-Q-002": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-Q-003": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-Q-004": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-A-001": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-A-002": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-A-003": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-A-004": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-S-001": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-S-002": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-S-003": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-L-001": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-L-002": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "GIGW-L-003": [
+      "SRC-GIGW-RAW-001"
+    ],
+    "EPFO-JRN-CLAIM": [
+      "SRC-RESEARCH-001",
+      "SRC-CONTEXT-001",
+      "SRC-MOCK-001"
+    ],
+    "EPFO-JRN-KYC": [
+      "SRC-RESEARCH-001",
+      "SRC-MOCK-001"
+    ],
+    "EPFO-JRN-TRANSFER": [
+      "SRC-RESEARCH-001",
+      "SRC-MOCK-001"
+    ],
+    "EPFO-JRN-FAILURE_RECOVERY": [
+      "SRC-RESEARCH-001",
+      "SRC-MOCK-001"
+    ],
+    "EPFO-JRN-ACCESS": [
+      "SRC-RESEARCH-001",
+      "SRC-APP-001"
+    ]
+  }
+}

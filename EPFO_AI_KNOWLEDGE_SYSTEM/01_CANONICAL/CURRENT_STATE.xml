@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<currentState id="EPFO-STATE-2026-08-28">
+  <application exists="true" framework="React/Vite/TypeScript" location="src/" />
+  <routes>/, /account, /account/health, /services, /services/claim, /services/kyc, /services/transfer, /requests, /requests/:id, /recovery, /profile, /help</routes>
+  <implementationDepth>Batch 1 foundation/frontend with shallow but real mock-backed screens. Priority journeys are not production-complete.</implementationDepth>
+  <mockArchitecture>src/src/services/mockData.ts reads data/epfo_mock_package/epfo_mock_data.json and derives member, account-health, KYC, claim, request, and notification views.</mockArchitecture>
+  <designSystem>EPFO project tokens in docs/tokens.json, CSS variables and component conventions in src/src/styles and src/src/components.</designSystem>
+  <currentBatch>BATCH 1: foundation/frontend + shallow functionality</currentBatch>
+  <deploymentState>Not established by current project sources; no browser deployment validation is claimed.</deploymentState>
+  <validationState>Knowledge-system structural validation is run by 12_VALIDATION/validate_knowledge_system.py after generation. Application browser validation is not claimed.</validationState>
+  <knownLimitations>Backend calls, real authentication, real submissions, production accessibility certification, and policy-sensitive eligibility decisions are not implemented.</knownLimitations>
+</currentState>

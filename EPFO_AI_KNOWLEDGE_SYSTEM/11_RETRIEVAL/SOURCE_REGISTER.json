@@ -1,0 +1,178 @@
+{
+  "registry": "EPFO-SOURCES",
+  "version": "1.0",
+  "sources": [
+    {
+      "id": "SRC-DESIGN-001",
+      "title": "EPFO design system",
+      "path": "docs/EPFO_DESIGN_SYSTEM.md",
+      "type": "canonical project document",
+      "authority": "P1",
+      "freshness": "current",
+      "quality": "authoritative",
+      "domain": "design",
+      "tasks": [
+        "design",
+        "ui",
+        "typography",
+        "color"
+      ],
+      "classification": "canonical",
+      "notes": "Project token values remain in docs/tokens.json."
+    },
+    {
+      "id": "SRC-CONTEXT-001",
+      "title": "EPFO hackathon project context",
+      "path": "docs/EPFO_Hackathon_Project_Context.md",
+      "type": "canonical project document",
+      "authority": "P1",
+      "freshness": "current",
+      "quality": "authoritative",
+      "domain": "product",
+      "tasks": [
+        "ux",
+        "claim",
+        "kyc",
+        "transfer"
+      ],
+      "classification": "canonical",
+      "notes": ""
+    },
+    {
+      "id": "SRC-SKILL-001",
+      "title": "EPFO government service skill",
+      "path": ".agents/skills/epfo-government-service/SKILL.md",
+      "type": "project skill",
+      "authority": "P1",
+      "freshness": "current",
+      "quality": "authoritative",
+      "domain": "ux4g",
+      "tasks": [
+        "design",
+        "ux4g",
+        "accessibility"
+      ],
+      "classification": "canonical guidance",
+      "notes": "Skill is guidance, not itself a product requirement."
+    },
+    {
+      "id": "SRC-STATUS-001",
+      "title": "Implementation status",
+      "path": "docs/IMPLEMENTATION_STATUS.md",
+      "type": "status document",
+      "authority": "P1",
+      "freshness": "current",
+      "quality": "authoritative",
+      "domain": "implementation",
+      "tasks": [
+        "frontend",
+        "deployment"
+      ],
+      "classification": "canonical status",
+      "notes": ""
+    },
+    {
+      "id": "SRC-APP-001",
+      "title": "Existing React/Vite implementation",
+      "path": "src/",
+      "type": "application source",
+      "authority": "P1",
+      "freshness": "current",
+      "quality": "verified",
+      "domain": "implementation",
+      "tasks": [
+        "frontend",
+        "backend",
+        "testing"
+      ],
+      "classification": "current state",
+      "notes": "Inspected; not rewritten by this task."
+    },
+    {
+      "id": "SRC-UX4G-001",
+      "title": "UX4G complete research dossier",
+      "path": "reference/UX4G_Complete_Research_Dossier.txt",
+      "type": "supplied research",
+      "authority": "P1/P2",
+      "freshness": "review-needed",
+      "quality": "verified",
+      "domain": "ux4g",
+      "tasks": [
+        "ux4g",
+        "accessibility",
+        "design-system"
+      ],
+      "classification": "derived source input",
+      "notes": "Current/legacy distinctions preserved; exact package behavior requires verification."
+    },
+    {
+      "id": "SRC-GIGW-RAW-001",
+      "title": "Guidelines for Indian Government Websites and Apps 3.0 extracted text",
+      "path": "90_RAW_SOURCE/GIGW/2026072438.txt",
+      "type": "raw source",
+      "authority": "P9",
+      "freshness": "current-source-input",
+      "quality": "verified",
+      "domain": "gigw",
+      "tasks": [
+        "gigw",
+        "audit",
+        "accessibility"
+      ],
+      "classification": "raw",
+      "notes": "Derived rules are in 05_GIGW; page numbers are not fabricated."
+    },
+    {
+      "id": "SRC-RESEARCH-001",
+      "title": "EPFO bad user journeys report",
+      "path": "reference/EPFO_Bad_User_Journeys_Report.md",
+      "type": "research report",
+      "authority": "P2",
+      "freshness": "current-source-input",
+      "quality": "verified",
+      "domain": "research",
+      "tasks": [
+        "claim",
+        "kyc",
+        "transfer",
+        "failure-recovery"
+      ],
+      "classification": "reference input",
+      "notes": "Grievance volumes are not pure UX-defect prevalence."
+    },
+    {
+      "id": "SRC-MOCK-001",
+      "title": "Deterministic EPFO mock package",
+      "path": "data/epfo_mock_package/",
+      "type": "synthetic data package",
+      "authority": "P2",
+      "freshness": "current",
+      "quality": "verified",
+      "domain": "mock",
+      "tasks": [
+        "mock-data",
+        "claim",
+        "kyc",
+        "transfer"
+      ],
+      "classification": "reference infrastructure",
+      "notes": "Synthetic only; no production credentials or backend."
+    },
+    {
+      "id": "SRC-REF-ARCH-001",
+      "title": "AI Knowledge System v4 reference archive",
+      "path": "90_RAW_SOURCE/SOURCE_ARCHIVES/AI_Knowledge_System_v4_FINAL_reference.zip",
+      "type": "architectural reference archive",
+      "authority": "P9",
+      "freshness": "reference",
+      "quality": "useful_reference",
+      "domain": "knowledge architecture",
+      "tasks": [
+        "provenance",
+        "audit"
+      ],
+      "classification": "raw reference",
+      "notes": "Portfolio and personal-information content intentionally excluded."
+    }
+  ]
+}

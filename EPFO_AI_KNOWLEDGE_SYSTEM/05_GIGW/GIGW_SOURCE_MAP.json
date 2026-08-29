@@ -1,0 +1,22 @@
+{
+  "source_id": "SRC-GIGW-RAW-001",
+  "document": "GIGW 3.0",
+  "raw_path": "90_RAW_SOURCE/GIGW/2026072438.txt",
+  "derived_rules": [
+    "GIGW-Q-001",
+    "GIGW-Q-002",
+    "GIGW-Q-003",
+    "GIGW-Q-004",
+    "GIGW-A-001",
+    "GIGW-A-002",
+    "GIGW-A-003",
+    "GIGW-A-004",
+    "GIGW-S-001",
+    "GIGW-S-002",
+    "GIGW-S-003",
+    "GIGW-L-001",
+    "GIGW-L-002",
+    "GIGW-L-003"
+  ],
+  "note": "Extracted text is provenance; section labels are preserved where available, page numbers are not fabricated."
+}

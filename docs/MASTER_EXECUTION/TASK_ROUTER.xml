@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskRouter id="EPFO-MASTER-ROUTER" version="1.0">
+  <rule>Load the smallest sufficient context package for the task. Never preload the whole repository.</rule>
+  <task id="foundation" aliases="batch1,foundation,home,shell,account-health">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/DESIGN_LOCK.json</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>docs/tokens.json</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/QUALITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md</mandatory>
+    <optional>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/FOUNDATIONS/FOUNDATIONS.md</optional>
+    <optional>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/COMPONENTS/COMPONENTS.md</optional>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+    <blocked>unrelated journey records</blocked>
+  </task>
+  <task id="claim" aliases="pf-claim,withdrawal">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/PATTERNS/PATTERNS.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/QUALITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/07_MOCK_SERVICE/JOURNEY_FIXTURES.xml</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/10_IMPLEMENTATION/ROUTE_MAP.xml</mandatory>
+    <optional>EPFO_AI_KNOWLEDGE_SYSTEM/03_DESIGN_SYSTEM/STATE_SYSTEM.xml</optional>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+    <blocked>transfer-specific research unless dependency is demonstrated</blocked>
+  </task>
+  <task id="kyc" aliases="kyc,identity,profile-correction">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/06_EPFO_RESEARCH/BAD_JOURNEYS/KYC.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/PATTERNS/PATTERNS.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/QUALITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/07_MOCK_SERVICE/JOURNEY_FIXTURES.xml</mandatory>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+  </task>
+  <task id="transfer" aliases="pf-transfer,job-change">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/06_EPFO_RESEARCH/BAD_JOURNEYS/TRANSFER.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/PATTERNS/PATTERNS.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/QUALITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/07_MOCK_SERVICE/JOURNEY_FIXTURES.xml</mandatory>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+  </task>
+  <task id="recovery" aliases="failure-recovery,grievance">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/PATTERNS/PATTERNS.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/QUALITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/07_MOCK_SERVICE/JOURNEY_FIXTURES.xml</mandatory>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+  </task>
+  <task id="visual-refinement" aliases="design-audit,visual-polish">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/DESIGN_LOCK.json</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/PAGE_REGISTRY.xml</mandatory>
+    <mandatory>docs/EPFO_DESIGN_SYSTEM.md</mandatory>
+    <mandatory>docs/tokens.json</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/FOUNDATIONS/FOUNDATIONS.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/ASSET_REGISTRY.json</mandatory>
+    <blocked>deep backend/business logic unless visual defect depends on it</blocked>
+    <blocked>EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE</blocked>
+  </task>
+  <task id="accessibility" aliases="a11y,accessibility-audit">
+    <mandatory>docs/MASTER_EXECUTION/MASTER_EXECUTION_SPEC.md</mandatory>
+    <mandatory>docs/MASTER_EXECUTION/DESIGN_LOCK.json</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/05_GIGW/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md</mandatory>
+    <mandatory>EPFO_AI_KNOWLEDGE_SYSTEM/12_VALIDATION/ACCESSIBILITY_AUDIT.md</mandatory>
+    <blocked>unrelated design research</blocked>
+  </task>
+</taskRouter>

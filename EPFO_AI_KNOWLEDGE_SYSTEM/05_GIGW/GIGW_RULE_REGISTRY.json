@@ -1,0 +1,315 @@
+{
+  "registry": "EPFO-GIGW-RULES",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "GIGW-Q-001",
+      "category": "quality",
+      "topic": "user-centric service",
+      "requirement": "Present services around member goals and understandable tasks.",
+      "benefit": "Reduces cognitive load and improves completion.",
+      "developer_action": "Use goal labels and progressive disclosure before administrative terminology.",
+      "evaluator_action": "Attempt representative goal tasks and record comprehension/blockers.",
+      "application": [
+        "website",
+        "service",
+        "content"
+      ],
+      "priority": "critical",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Quality / user-centricity",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-Q-002",
+      "category": "quality",
+      "topic": "ownership and help",
+      "requirement": "Make service ownership, contact/help, and feedback routes discoverable.",
+      "benefit": "Prevents escalation mazes.",
+      "developer_action": "Expose who owns a blocker and a supported next channel.",
+      "evaluator_action": "Verify help and feedback are reachable from failure states.",
+      "application": [
+        "service",
+        "content",
+        "feedback"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Quality / governance and service information",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-Q-003",
+      "category": "quality",
+      "topic": "device compatibility",
+      "requirement": "Support usable layouts across mobile and desktop contexts.",
+      "benefit": "Improves reach and continuity.",
+      "developer_action": "Use responsive transformations rather than clipped desktop UI.",
+      "evaluator_action": "Test priority journeys at narrow and wide viewports.",
+      "application": [
+        "website",
+        "service"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Quality / device compatibility",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-Q-004",
+      "category": "quality",
+      "topic": "clear content and feedback",
+      "requirement": "Provide clear, current, plain-language status and next actions.",
+      "benefit": "Improves trust and recovery.",
+      "developer_action": "Use explicit loading, success, pending, error, and blocked states.",
+      "evaluator_action": "Check what/why/who/next/when coverage.",
+      "application": [
+        "service",
+        "content"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Quality / usability and content",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-A-001",
+      "category": "accessibility",
+      "topic": "keyboard and focus",
+      "requirement": "Interactive content must support keyboard operation with visible focus.",
+      "benefit": "Supports non-pointer users.",
+      "developer_action": "Use semantic controls, focus order, and visible focus styles.",
+      "evaluator_action": "Complete keyboard-only walkthroughs.",
+      "application": [
+        "website",
+        "service"
+      ],
+      "priority": "critical",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Accessibility / WCAG 2.1 AA",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-A-002",
+      "category": "accessibility",
+      "topic": "assistive technology",
+      "requirement": "Content and state changes must be exposed to assistive technologies.",
+      "benefit": "Supports screen-reader users.",
+      "developer_action": "Use labels, roles, live-region strategy, and semantic structure.",
+      "evaluator_action": "Test representative journeys with assistive technology where available.",
+      "application": [
+        "website",
+        "service"
+      ],
+      "priority": "critical",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Accessibility / WCAG 2.1 AA",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-A-003",
+      "category": "accessibility",
+      "topic": "zoom and language",
+      "requirement": "Information must remain usable at zoom and across supported languages.",
+      "benefit": "Supports low vision and multilingual users.",
+      "developer_action": "Avoid fixed/clipped layouts and plan Devanagari typography.",
+      "evaluator_action": "Check 200% zoom and language expansion.",
+      "application": [
+        "website",
+        "content"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Accessibility / diverse disabilities and language",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-A-004",
+      "category": "accessibility",
+      "topic": "non-color status",
+      "requirement": "Meaning must not depend on color alone.",
+      "benefit": "Supports color-vision differences and comprehension.",
+      "developer_action": "Pair color with label, icon, shape, or text.",
+      "evaluator_action": "Review all status and validation states without color.",
+      "application": [
+        "service",
+        "data"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Accessibility / perceivable information",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-S-001",
+      "category": "cybersecurity",
+      "topic": "trust and data boundary",
+      "requirement": "Clearly distinguish prototype/synthetic data from real government records or transactions.",
+      "benefit": "Prevents unsafe assumptions.",
+      "developer_action": "Add demo disclosure and never request real credentials in mock flows.",
+      "evaluator_action": "Search copy and UI for production claims or credential prompts.",
+      "application": [
+        "website",
+        "service"
+      ],
+      "priority": "critical",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Cybersecurity / trust and privacy",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-S-002",
+      "category": "cybersecurity",
+      "topic": "session and identifiers",
+      "requirement": "Handle session expiry and identifiers without leaking or losing task context.",
+      "benefit": "Reduces account and recovery risk.",
+      "developer_action": "Mask identifiers, preserve safe context, and explain next action on expiry.",
+      "evaluator_action": "Inspect expiry, error, and logging behavior.",
+      "application": [
+        "service"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Cybersecurity / access control",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-S-003",
+      "category": "cybersecurity",
+      "topic": "secure maintenance",
+      "requirement": "Security considerations must persist through implementation and maintenance.",
+      "benefit": "Prevents drift.",
+      "developer_action": "Track dependency/source freshness and security review items.",
+      "evaluator_action": "Check release gate and maintenance records.",
+      "application": [
+        "website",
+        "service"
+      ],
+      "priority": "medium",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Cybersecurity / lifecycle",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-L-001",
+      "category": "lifecycle",
+      "topic": "ownership and updates",
+      "requirement": "Show or maintain ownership, update status, and review responsibility for service information.",
+      "benefit": "Prevents stale guidance.",
+      "developer_action": "Add source dates/status and date-bound policy notes.",
+      "evaluator_action": "Verify stale records are flagged review-needed.",
+      "application": [
+        "content",
+        "service"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Lifecycle management / ownership",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-L-002",
+      "category": "lifecycle",
+      "topic": "testing and evaluation",
+      "requirement": "Evaluate quality, accessibility, and service states throughout the lifecycle.",
+      "benefit": "Finds failures before release.",
+      "developer_action": "Run structural and task-specific audits.",
+      "evaluator_action": "Require release-gate evidence.",
+      "application": [
+        "service",
+        "audit"
+      ],
+      "priority": "high",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Lifecycle management / testing",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    },
+    {
+      "id": "GIGW-L-003",
+      "category": "lifecycle",
+      "topic": "maintenance and versioning",
+      "requirement": "Keep dependencies, standards, and derived knowledge versioned and traceable.",
+      "benefit": "Makes change safe and explainable.",
+      "developer_action": "Maintain manifests, source register, provenance, and freshness fields.",
+      "evaluator_action": "Check source IDs, version dates, and unresolved conflicts.",
+      "application": [
+        "knowledge",
+        "implementation"
+      ],
+      "priority": "medium",
+      "source": {
+        "document": "GIGW 3.0",
+        "section": "Lifecycle management / maintenance",
+        "page": null
+      },
+      "source_id": "SRC-GIGW-RAW-001",
+      "status": "derived",
+      "limitations": "Paraphrased for EPFO; not an official verbatim quotation."
+    }
+  ]
+}

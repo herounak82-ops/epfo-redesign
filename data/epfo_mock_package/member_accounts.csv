@@ -1,0 +1,27 @@
+synthetic_citizen_id,uan_masked,member_id_masked,establishment_name,establishment_code,pf_office,date_of_joining,date_of_exit,employment_status,exit_reason,basic_plus_da_monthly,epf_wages_monthly,eps_wages_monthly,current_epf_balance,eps_service_months,transfer_status
+CIT-001,1000XXXX5501,DL/CPM/0012780/001/0100001,Asterline Digital Services Pvt. Ltd. (synthetic),0012780,Delhi Central,2019-02-02,,current,,9875,9875,9875,59350,79,not_applicable
+CIT-002,1000XXXX5502,KA/BLR/0026419/002/0100002,Kaveri Auto Components Pvt. Ltd. (synthetic),0026419,Bengaluru Central,2020-03-03,,current,,10750,10750,10750,76700,86,not_applicable
+CIT-003,1000XXXX5503,GA/PNA/0083054/000/0100003,Konkan Public Infrastructure Ltd. (synthetic),0083054,Pune,2021-04-04,2024-12-31,closed,superannuation,11625,11625,11625,94050,142,not_applicable
+CIT-004,1000XXXX5504,MP/IND/0041842/001/0100004,Narmada Retail Logistics Pvt. Ltd. (synthetic),0041842,Indore,2022-05-05,,current,,12500,12500,0,111400,100,not_applicable
+CIT-005,1000XXXX5505,WB/KRP/0057321/002/0100005,Eastern Harbor Financial Services Ltd. (synthetic),0057321,Kolkata Regional,2023-06-06,,current,,13375,13375,13375,128750,107,not_applicable
+CIT-006,1000XXXX5506,MP/IND/0041842/001/0200006,Narmada Retail Logistics Pvt. Ltd. (synthetic),0041842,Indore,2021-09-12,2024-07-06,closed,change_in_employment,12450,12450,12450,55800,42,transferred_to_current_member
+CIT-006,1000XXXX5506,MH/MUM/0035097/000/0100006,Sahyadri Health Network Ltd. (synthetic),0035097,Mumbai Central,2024-07-07,,current,,14250,14250,14250,146100,114,completed_annexure_k_pending
+CIT-007,1000XXXX5507,TN/CHE/0069135/001/0100007,Coromandel Renewable Energy Pvt. Ltd. (synthetic),0069135,Chennai Central,2018-08-08,,current,,15125,15000,15000,163450,121,not_started
+CIT-008,1000XXXX5508,UK/DDN/0074206/002/0100008,Himalayan Hospitality Services LLP (synthetic),0074206,Dehradun,2019-09-09,,current,,16000,15000,0,180800,128,not_started
+CIT-009,1000XXXX5509,DL/CPM/0012780/000/0100009,Asterline Digital Services Pvt. Ltd. (synthetic),0012780,Delhi Central,2020-01-10,2025-11-30,closed,resignation,16875,15000,15000,198150,135,not_started
+CIT-010,1000XXXX5510,KA/BLR/0026419/001/0100010,Kaveri Auto Components Pvt. Ltd. (synthetic),0026419,Bengaluru Central,2021-02-11,2024-12-31,closed,superannuation,17750,15000,15000,215500,142,not_started
+CIT-011,1000XXXX5511,MH/MUM/0035097/002/0100011,Sahyadri Health Network Ltd. (synthetic),0035097,Mumbai Central,2022-03-12,,current,,18625,15000,15000,232850,149,not_started
+CIT-012,1000XXXX5512,MP/IND/0041842/000/0100012,Narmada Retail Logistics Pvt. Ltd. (synthetic),0041842,Indore,2023-04-13,,current,,19500,15000,0,250200,156,not_started
+CIT-013,1000XXXX5513,WB/KRP/0057321/001/0100013,Eastern Harbor Financial Services Ltd. (synthetic),0057321,Kolkata Regional,2024-05-14,,current,,20375,15000,15000,267550,163,not_started
+CIT-014,1000XXXX5514,TN/CHE/0069135/002/0100014,Coromandel Renewable Energy Pvt. Ltd. (synthetic),0069135,Chennai Central,2018-06-15,,current,,21250,15000,15000,284900,170,not_started
+CIT-015,1000XXXX5515,UK/DDN/0074206/000/0100015,Himalayan Hospitality Services LLP (synthetic),0074206,Dehradun,2019-07-16,2024-12-31,closed,superannuation,22125,15000,15000,302250,177,not_started
+CIT-016,1000XXXX5516,DL/CPM/0012780/002/0200016,Asterline Digital Services Pvt. Ltd. (synthetic),0012780,Delhi Central,2017-01-22,2020-08-16,closed,change_in_employment,21200,15000,15000,118800,52,not_started
+CIT-016,1000XXXX5516,GA/PNA/0083054/001/0100016,Konkan Public Infrastructure Ltd. (synthetic),0083054,Pune,2020-08-17,,current,,23000,15000,0,319600,184,not_started
+CIT-017,1000XXXX5517,DL/CPM/0012780/002/0100017,Asterline Digital Services Pvt. Ltd. (synthetic),0012780,Delhi Central,2021-09-18,,current,,23875,15000,15000,336950,191,not_started
+CIT-018,1000XXXX5518,KA/BLR/0026419/000/0100018,Kaveri Auto Components Pvt. Ltd. (synthetic),0026419,Bengaluru Central,2022-01-19,2025-11-30,closed,,24750,15000,15000,354300,58,not_started
+CIT-019,1000XXXX5519,MH/MUM/0035097/001/0100019,Sahyadri Health Network Ltd. (synthetic),0035097,Mumbai Central,2023-02-20,,current,,25625,15000,15000,371650,205,not_started
+CIT-020,1000XXXX5520,MP/IND/0041842/002/0100020,Narmada Retail Logistics Pvt. Ltd. (synthetic),0041842,Indore,2024-03-21,,current,,26500,15000,0,389000,212,not_started
+CIT-021,1000XXXX5521,WB/KRP/0057321/000/0100021,Eastern Harbor Financial Services Ltd. (synthetic),0057321,Kolkata Regional,2018-04-22,,current,,27375,15000,15000,402150,219,not_started
+CIT-022,1000XXXX5522,TN/CHE/0069135/001/0100022,Coromandel Renewable Energy Pvt. Ltd. (synthetic),0069135,Chennai Central,2019-05-23,,current,,28250,15000,15000,18000,226,not_started
+CIT-023,1000XXXX5523,UK/DDN/0074206/002/0100023,Himalayan Hospitality Services LLP (synthetic),0074206,Dehradun,2020-06-24,,current,,29125,15000,15000,441050,233,not_started
+CIT-024,1000XXXX5524,GA/PNA/0083054/000/0100024,Konkan Public Infrastructure Ltd. (synthetic),0083054,Pune,2021-07-01,,current,,30000,15000,0,458400,240,not_started

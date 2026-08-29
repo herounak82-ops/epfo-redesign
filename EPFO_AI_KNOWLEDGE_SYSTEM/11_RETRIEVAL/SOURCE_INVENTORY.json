@@ -1,0 +1,411 @@
+{
+  "inventory": "EPFO-KNOWLEDGE-FILES",
+  "generated": "2026-08-28",
+  "files": [
+    {
+      "path": "00_START_HERE/AI_CONTEXT.md",
+      "bytes": 1892,
+      "sha256": "6adf5269a4e6cc7434215cfc2ac55be53e0faff1a130065b691eda57d740bd30"
+    },
+    {
+      "path": "00_START_HERE/AI_INSTRUCTIONS.txt",
+      "bytes": 1025,
+      "sha256": "138685e70b6e5774b6bb039db3e5c8ff36896521cb20c821e9857e587d8299ad"
+    },
+    {
+      "path": "00_START_HERE/CONTEXT_POLICY.xml",
+      "bytes": 1141,
+      "sha256": "7171a629e38d76c70f62f5dc30730f66e6ea0ddfe3fe1e8ed0538441cce60cc2"
+    },
+    {
+      "path": "00_START_HERE/README.md",
+      "bytes": 804,
+      "sha256": "026af93958aa2c187d1048dc0db81ccd0babe1309948dbbd78e77a0939b58733"
+    },
+    {
+      "path": "01_CANONICAL/ACTIVE_DECISIONS.xml",
+      "bytes": 4739,
+      "sha256": "e0ed4b626f495211881bbd5b051808147f9d5d2a2cc1119c3b0013c6467014bd"
+    },
+    {
+      "path": "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+      "bytes": 3812,
+      "sha256": "e6c8822e89c7170f27a09b314d520b8b378f50567aa70d71f5a7a2b0ae755736"
+    },
+    {
+      "path": "01_CANONICAL/AUTHORITY_MODEL.md",
+      "bytes": 1200,
+      "sha256": "eb23fcda70dd434aa904170d83d108f8e1a6e79de603a9cd17ea587dd1bc0b4d"
+    },
+    {
+      "path": "01_CANONICAL/CURRENT_STATE.xml",
+      "bytes": 1460,
+      "sha256": "4ef6baecd121bcb1f602ea7feeab422defa58cb4343a655ac9146d03f0f2cf69"
+    },
+    {
+      "path": "01_CANONICAL/PERSONAL_INFORMATION_FIREWALL.md",
+      "bytes": 473,
+      "sha256": "41a93d764a88788228e95aba4e81c1b40127147f35a72d4b5825f3201090a244"
+    },
+    {
+      "path": "01_CANONICAL/SOURCE_HIERARCHY.xml",
+      "bytes": 648,
+      "sha256": "54b2622a1ed5a64b025067993cd476abf35498fa058ac370fc5f012c8569e4be"
+    },
+    {
+      "path": "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+      "bytes": 4321,
+      "sha256": "db206727d984c5d74626c80f411bcfcdef79a150af946c983ebfc57eebfa1d98"
+    },
+    {
+      "path": "02_EPFO_PRODUCT/PRODUCT_MODEL.md",
+      "bytes": 1039,
+      "sha256": "10037eb74f3f3ecc9e43c82fff9be5700ee0e7e1b66a0855f45edd7a8e6c4873"
+    },
+    {
+      "path": "02_EPFO_PRODUCT/PROTOTYPE_BOUNDARIES.md",
+      "bytes": 367,
+      "sha256": "acf391f528a42abe11464dee4ddcecee3f2f6e9d40b387bb5bc17100f80138e4"
+    },
+    {
+      "path": "02_EPFO_PRODUCT/SERVICE_MODEL.xml",
+      "bytes": 592,
+      "sha256": "28399041ecc4ca3c21ea48311ad3348b5e26ca4d6ff9ee0fa12b23e6b186b62a"
+    },
+    {
+      "path": "02_EPFO_PRODUCT/USER_GOALS.xml",
+      "bytes": 328,
+      "sha256": "c2078ea2c64068d30b7237f71d8c4147453c647758f2c46c113a78a82155d1c9"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/COLOR_SYSTEM.md",
+      "bytes": 341,
+      "sha256": "20979659a2ed54e0f8987a9bd5881e63f32052b14dd0695f3fc04c1571cc24ed"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml",
+      "bytes": 1140,
+      "sha256": "ac0e67c1dacf9e807ca2155c591a661cc0390c646e2774119b0f7bf0ee2b76a2"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/CONTENT_SYSTEM.md",
+      "bytes": 389,
+      "sha256": "91144d6db49d75948b6fa794262da6ff3ce93568a6948b366014aa62fb794a46"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+      "bytes": 1032,
+      "sha256": "5a55bccfaef6372bfeb4158085785c7f9e3efde585159fdd6a7bbac2dde0e9f4"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/DESIGN_WORKFLOW.md",
+      "bytes": 362,
+      "sha256": "c0d47c828887ae937f998967c70234653bb08856ce23e2fd2ec02a1ffbd19491"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+      "bytes": 317,
+      "sha256": "1752547dc8de7ffb6904453807b97b09df9e32a070f345f9117a0a2a0349b736"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/STATE_SYSTEM.xml",
+      "bytes": 646,
+      "sha256": "913ab6f8a0a96a086550cc81cdea41b48643f9d425291f602fe2f8043f36c5df"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md",
+      "bytes": 390,
+      "sha256": "7f42d493f0a52d6e8dbf0b75f22e82f6d9f68fefac7c4c696af2da238be68359"
+    },
+    {
+      "path": "03_DESIGN_SYSTEM/VISUAL_PRINCIPLES.md",
+      "bytes": 270,
+      "sha256": "212091ccd21d60f8d8de7be6f0706c18e6aef64e41f403727c6154e26a048281"
+    },
+    {
+      "path": "04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md",
+      "bytes": 416,
+      "sha256": "b43b1fae5e75c06a511ead8f842141235dd9817e7da740bc66222cc580b797e4"
+    },
+    {
+      "path": "04_UX4G/COMPONENTS/COMPONENTS.md",
+      "bytes": 631,
+      "sha256": "9a92e218470db354067185f6b8c8077600e263c5fe49fbc10a1c1a93db0c46e8"
+    },
+    {
+      "path": "04_UX4G/FOUNDATIONS/FOUNDATIONS.md",
+      "bytes": 593,
+      "sha256": "9f5e802aa4ce9a8f6bf463f71ee04065e4b44e64178eb02b952ce76858e4ae9b"
+    },
+    {
+      "path": "04_UX4G/IMPLEMENTATION/IMPLEMENTATION.md",
+      "bytes": 418,
+      "sha256": "f256fe850da3bc74cc5242f69d34b6bea89bd753b97232c46c36bdf95128a3e5"
+    },
+    {
+      "path": "04_UX4G/PATTERNS/PATTERNS.md",
+      "bytes": 382,
+      "sha256": "8f326cc9fbbc7e2219553c7a8681df146a2cfec319de899b144c63877f679e95"
+    },
+    {
+      "path": "04_UX4G/PROVENANCE.md",
+      "bytes": 420,
+      "sha256": "f066f8de1c0b49224d8737237b53ff00bf0496af78616e39e881eeb1843aebd6"
+    },
+    {
+      "path": "04_UX4G/UX4G_MASTER.md",
+      "bytes": 960,
+      "sha256": "f8fd5e719e647c5fd28c571365d62c9b7445945578cf372029bf3cda3c0eba27"
+    },
+    {
+      "path": "05_GIGW/ACCESSIBILITY.md",
+      "bytes": 452,
+      "sha256": "cb668339c71dab73e0574f4b8cb421cc041e7f32dfb11047d14c22e0f72b2a0b"
+    },
+    {
+      "path": "05_GIGW/CYBERSECURITY.md",
+      "bytes": 462,
+      "sha256": "b74348143d169f5e16799f006fb15cedd737e02d3cd15e5c49629a5a221938b7"
+    },
+    {
+      "path": "05_GIGW/GIGW_MASTER.md",
+      "bytes": 1051,
+      "sha256": "2b1aec66c4520007ecafc20556b00d7ee3f5cabdc545dc8c1ceea304b2d6b3d9"
+    },
+    {
+      "path": "05_GIGW/GIGW_RULE_REGISTRY.json",
+      "bytes": 11435,
+      "sha256": "f35f6983a861986989f7e668502fe85abc9197471f837eb6016d379f6b13c7a7"
+    },
+    {
+      "path": "05_GIGW/GIGW_SOURCE_MAP.json",
+      "bytes": 514,
+      "sha256": "fbff8b633d1275a8457a6324333670027f82c22cdd684ca2dfe5850b0542745e"
+    },
+    {
+      "path": "05_GIGW/LIFECYCLE.md",
+      "bytes": 462,
+      "sha256": "1648ee5dc98f21f0d0b126fd09ec8b1e4b9b95198278e145b0737f8320dc38db"
+    },
+    {
+      "path": "05_GIGW/QUALITY.md",
+      "bytes": 553,
+      "sha256": "82517c36bc525dad23d795014c33aaef2a460ef743dda879d04539ccc260fafe"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/BAD_JOURNEYS/ACCESS.md",
+      "bytes": 292,
+      "sha256": "3bacc94eece8c072960fe9e2a43ba3bac2cd54088afc470d7f1a35331b1821a9"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md",
+      "bytes": 247,
+      "sha256": "5ef8b26328654dc5de714a55ca1a02440769165db2552e238627240e9173d0df"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md",
+      "bytes": 260,
+      "sha256": "dc9b78c59414dc618cf9efb6dbabb0f770094e32b8b0bc8d920b98bf9a661d7b"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/BAD_JOURNEYS/KYC.md",
+      "bytes": 269,
+      "sha256": "29d5da439ef8b2e2ec058c7e9dd65407c09513010facd626563135e032a6031a"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/BAD_JOURNEYS/TRANSFER.md",
+      "bytes": 245,
+      "sha256": "8bd2e26059a8cef66a7c7140dc581b1168642183a3bfc0838db4f035138ef448"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/PROBLEM_MODEL.md",
+      "bytes": 1115,
+      "sha256": "51833136f3c801a69d80c0da7ea81320058c6d29ce9221a1a4c287fb62506b45"
+    },
+    {
+      "path": "06_EPFO_RESEARCH/RESEARCH_LIMITATIONS.md",
+      "bytes": 430,
+      "sha256": "50bae28d00f8dc77c781b87fb8e9544d2099757071a35d51bd4a91d4acace2a7"
+    },
+    {
+      "path": "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+      "bytes": 699,
+      "sha256": "245361380e87a97731ece0e078176bdddc817fcef7e32e4b97c0003ea80ed2f2"
+    },
+    {
+      "path": "07_MOCK_SERVICE/MOCK_DATA_SCHEMA.xml",
+      "bytes": 479,
+      "sha256": "9e4462b9fa10cc6c87124983ce39a1f7412f15961a6740f3c6de37e9a8880432"
+    },
+    {
+      "path": "07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md",
+      "bytes": 365,
+      "sha256": "e13cd04edcf1e6b85219bf455d36ff3082c8d1b5171ac13c683a8186d49d35d9"
+    },
+    {
+      "path": "07_MOCK_SERVICE/SOURCE_MAP.json",
+      "bytes": 298,
+      "sha256": "f814723088f1ff38ccb8aa3408dcad21630f47e5eb2003a7daa24d2683263264"
+    },
+    {
+      "path": "08_REFERENCE_WEB/REFERENCE_SELECTION_RULES.md",
+      "bytes": 343,
+      "sha256": "d99e6e74a7020809d40a41ff85d755f52689edfe9946166a5e405f75e5cf9706"
+    },
+    {
+      "path": "08_REFERENCE_WEB/reference_registry.json",
+      "bytes": 1427,
+      "sha256": "7b3a1439728ffd1f47c4406f70ed812102dcf7260390c67d5f780f56061c8c5b"
+    },
+    {
+      "path": "09_INTERACTION/FEEDBACK_MODEL.md",
+      "bytes": 291,
+      "sha256": "bbc447b1ea9e9b773390c415737eb160533c0da0cd5371669dfb713fe067eb34"
+    },
+    {
+      "path": "09_INTERACTION/MICROINTERACTIONS.md",
+      "bytes": 299,
+      "sha256": "00a3500189c010778b9a61754bf5d36d8bfcd887f022be0a2e799e403c370611"
+    },
+    {
+      "path": "09_INTERACTION/MOTION.md",
+      "bytes": 317,
+      "sha256": "7c1c4203357b21256debd95ca054675e86fa357db3c33aca64f38a114b2138b6"
+    },
+    {
+      "path": "09_INTERACTION/RESPONSIVE.md",
+      "bytes": 291,
+      "sha256": "dea23636e3a43cbb8e69259394ccc789f73c57fea227b9082955986e4db801d9"
+    },
+    {
+      "path": "10_IMPLEMENTATION/ARCHITECTURE.md",
+      "bytes": 605,
+      "sha256": "770f093889fa341be08442964c7848f43613a1e8ffe302daa25dcf4c3496e4eb"
+    },
+    {
+      "path": "10_IMPLEMENTATION/BATCH_STRATEGY.md",
+      "bytes": 337,
+      "sha256": "2c4979ae6979c7177228ef5311aaccd0aad1f8f6204147dbe36b25520ed9f67e"
+    },
+    {
+      "path": "10_IMPLEMENTATION/COMPONENT_MAPPING.xml",
+      "bytes": 1289,
+      "sha256": "ba58b8920a9cba0b6808fac13733bb87834ed409fe64fea8ad3ad29397dc20fb"
+    },
+    {
+      "path": "10_IMPLEMENTATION/DATA_FLOW.xml",
+      "bytes": 521,
+      "sha256": "2fe4bccab508d3405ba5ff1abc37168d6d9c34eb6fcded5c5a8fc2f1faa84745"
+    },
+    {
+      "path": "10_IMPLEMENTATION/ROUTE_MAP.xml",
+      "bytes": 1492,
+      "sha256": "1a970a5ab182f9cad4ce196c3c4240d40533665067ff1fea393c7c3514e9152e"
+    },
+    {
+      "path": "10_IMPLEMENTATION/TESTING_MODEL.md",
+      "bytes": 337,
+      "sha256": "5488441c8464a4abb50e1481257d7e7a6d08819257991864934cece0b7792595"
+    },
+    {
+      "path": "11_RETRIEVAL/CONFLICT_RESOLUTION.md",
+      "bytes": 527,
+      "sha256": "b6991675fc076a6560af45bf742aa11bedf67a6f5ec03b530c16dcecfdd8045e"
+    },
+    {
+      "path": "11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md",
+      "bytes": 408,
+      "sha256": "c5bdc518dc7b64e4b65df9e1ab1e9b637d237576ded7069e383c7be68ef94000"
+    },
+    {
+      "path": "11_RETRIEVAL/MASTER_INDEX.md",
+      "bytes": 539,
+      "sha256": "d9ebec1a4b1eca3a556c133d2e7ca811804a6f3b0e3e2f5f8b2b2baa0bbb1ffc"
+    },
+    {
+      "path": "11_RETRIEVAL/NEGATIVE_RETRIEVAL_RULES.md",
+      "bytes": 597,
+      "sha256": "965eb0291145a14ac5a9b95f93f439cc1060d9e1b245c73a79759193b5c4322c"
+    },
+    {
+      "path": "11_RETRIEVAL/PACKAGE_MANIFEST.json",
+      "bytes": 30924,
+      "sha256": "64b4ce4cc20e0a5612c4816bc12da8c3f5548762871e1062f2c57ed73598efb8"
+    },
+    {
+      "path": "11_RETRIEVAL/PROVENANCE_MAP.json",
+      "bytes": 2021,
+      "sha256": "92d4d1a124281302cb621a1550d6c15e34d283e91672c2da0100a7d628669fbf"
+    },
+    {
+      "path": "11_RETRIEVAL/RETRIEVAL_ROUTER.xml",
+      "bytes": 24752,
+      "sha256": "d2b26a9a1cd574456b0e674d6960a2d6ba166804822634fbb51bc913340fb337"
+    },
+    {
+      "path": "11_RETRIEVAL/ROUTE_REGISTRY.json",
+      "bytes": 27803,
+      "sha256": "c59458ea2d65b0602b54462bf51096e97417a4a59cc828a215452322be4f2002"
+    },
+    {
+      "path": "11_RETRIEVAL/SOURCE_INVENTORY.json",
+      "bytes": 11475,
+      "sha256": "7b92ec047e2901a806a32e676032631759d29902b8f41313a74bc93dddbd652a"
+    },
+    {
+      "path": "11_RETRIEVAL/SOURCE_REGISTER.json",
+      "bytes": 5042,
+      "sha256": "69c8e6309984ba987fd628b2ca89f9aa2cd6fb72558494f6f64380ebf1e6107b"
+    },
+    {
+      "path": "12_VALIDATION/ACCESSIBILITY_AUDIT.md",
+      "bytes": 280,
+      "sha256": "60d0978da19b6af35bb7c395e822865ba7a0b3b7dc3dd01d643ed29f6d8999d8"
+    },
+    {
+      "path": "12_VALIDATION/DESIGN_AUDIT.md",
+      "bytes": 283,
+      "sha256": "7eaffafe85f538b11bfbd352fe384d9a41d462a444bbf05a13bc9205f768ccac"
+    },
+    {
+      "path": "12_VALIDATION/GIGW_AUDIT.md",
+      "bytes": 248,
+      "sha256": "6f54046f14ea95eb4a298b8dc4a2c710ab30b01b01b8fd841e4817d4d6adb986"
+    },
+    {
+      "path": "12_VALIDATION/RELEASE_GATE.md",
+      "bytes": 345,
+      "sha256": "c665485a8dfef3a31c95b7d44e151f58976c92e7e288b3c0bc751bf11157871f"
+    },
+    {
+      "path": "12_VALIDATION/UX4G_AUDIT.md",
+      "bytes": 262,
+      "sha256": "68457c585c58b9587d17b2e6ee5bc2601b3531b5ef2342bc82f4c5de7b08154a"
+    },
+    {
+      "path": "12_VALIDATION/VALIDATION_RESULTS.json",
+      "bytes": 3263,
+      "sha256": "dc16712c0c610a76059279f70d3aeef477066831dbb45355ee1a79c6a556c404"
+    },
+    {
+      "path": "12_VALIDATION/VALIDATION_RULES.md",
+      "bytes": 360,
+      "sha256": "6aebec7251b05bd8ec138f967ec2a62052d2586a2f3ec3d0ab5503227661b2da"
+    },
+    {
+      "path": "12_VALIDATION/__pycache__/validate_knowledge_system.cpython-312.pyc",
+      "bytes": 6630,
+      "sha256": "6fce9f9bf61e2463c3793930b352f528d07f89b2be335452377c6ae4ffb8442e"
+    },
+    {
+      "path": "12_VALIDATION/retrieval_simulations.json",
+      "bytes": 2206,
+      "sha256": "19a9fe07dbffe66f1a07393f8d7b4c14aceeb87fca1198395cf17c2478af9123"
+    },
+    {
+      "path": "12_VALIDATION/validate_knowledge_system.py",
+      "bytes": 3643,
+      "sha256": "551672884e7e804681653a8e2404ee23938200a4ca04069bfc61fd1efdcfc32d"
+    }
+  ]
+}

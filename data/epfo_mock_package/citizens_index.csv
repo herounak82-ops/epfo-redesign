@@ -1,0 +1,25 @@
+synthetic_citizen_id,full_name,date_of_birth,gender,city,state,mobile_masked,uan_masked,uan_status,nomination_status,pension_status,intent,demo_outcome
+CIT-001,Aarav Mehta,1992-02-14,M,Delhi,Delhi,+91-98XX-XX4412,1000XXXX5501,active,filed,not_yet_eligible,get_balance,synthetic_record_available
+CIT-002,Isha Nair,1988-07-09,F,Bengaluru,Karnataka,+91-98XX-XX1738,1000XXXX5502,active,filed,not_yet_eligible,track_claim,under_process_at_regional_office
+CIT-003,Rohan Kulkarni,1971-11-23,M,Pune,Maharashtra,+91-98XX-XX9056,1000XXXX5503,active,filed,potentially_eligible,check_pension_eligibility,eligible_subject_to_service_and_age_verification
+CIT-004,Sana Parveen,1996-05-30,F,Lucknow,Uttar Pradesh,+91-98XX-XX6241,1000XXXX5504,not_activated,filed,not_yet_eligible,find_uan,synthetic_record_available
+CIT-005,Vikram Singh,1985-01-18,M,Jaipur,Rajasthan,+91-98XX-XX3397,1000XXXX5505,active,not_filed,not_yet_eligible,get_kyc,blocked_until_bank_kyc_approval
+CIT-006,Priya Iyer,1990-09-02,F,Chennai,Tamil Nadu,+91-98XX-XX7810,1000XXXX5506,active,filed,not_yet_eligible,track_transfer,completed_transfer_with_annexure_k_pending
+CIT-007,Mohammed Faizan,1998-03-11,M,Hyderabad,Telangana,+91-98XX-XX2904,1000XXXX5507,active,filed,potentially_eligible,check_eligibility,needs_document_and_reason_validation
+CIT-008,Kavya Rao,1994-12-25,F,Mysuru,Karnataka,+91-98XX-XX1183,1000XXXX5508,active,filed,potentially_eligible,get_nomination,synthetic_record_available
+CIT-009,Ankit Shah,1982-06-16,M,Ahmedabad,Gujarat,+91-98XX-XX5528,1000XXXX5509,active,filed,potentially_eligible,check_eligibility,eligible_after_configured_unemployment_gate
+CIT-010,Nandini Bose,1968-10-08,F,Kolkata,West Bengal,+91-98XX-XX4670,1000XXXX5510,active,not_filed,active_payment,get_pension_status,synthetic_record_available
+CIT-011,Arjun Deshpande,1993-04-27,M,Mumbai,Maharashtra,+91-98XX-XX2301,1000XXXX5511,active,filed,potentially_eligible,get_profile_correction_status,synthetic_record_available
+CIT-012,Meera Thomas,1987-08-19,F,Kochi,Kerala,+91-98XX-XX8462,1000XXXX5512,active,filed,potentially_eligible,track_grievance,synthetic_record_available
+CIT-013,Devendra Yadav,1978-02-03,M,Bhopal,Madhya Pradesh,+91-98XX-XX5174,1000XXXX5513,active,filed,potentially_eligible,get_service_history,synthetic_record_available
+CIT-014,Ananya Ghosh,2001-06-21,F,Kolkata,West Bengal,+91-98XX-XX6027,1000XXXX5514,active,filed,potentially_eligible,track_claim,rejected_bank_account_mismatch
+CIT-015,Harish Menon,1959-09-14,M,Thiruvananthapuram,Kerala,+91-98XX-XX7308,1000XXXX5515,active,not_filed,active_payment,get_life_certificate_status,synthetic_record_available
+CIT-016,Lata Kumari,1991-01-12,F,Patna,Bihar,+91-98XX-XX1649,1000XXXX5516,active,filed,potentially_eligible,list_member_accounts,synthetic_record_available
+CIT-017,Yash Patel,1999-11-05,M,Surat,Gujarat,+91-98XX-XX3781,1000XXXX5517,active,filed,potentially_eligible,get_kyc,rejected_name_mismatch
+CIT-018,Shreya Sethi,1989-03-28,F,Gurugram,Haryana,+91-98XX-XX9155,1000XXXX5518,active,filed,not_yet_eligible,check_scheme_certificate,scheme_certificate_path_available
+CIT-019,Gopal Krishnan,1965-05-17,M,Coimbatore,Tamil Nadu,+91-98XX-XX2486,1000XXXX5519,active,filed,potentially_eligible,estimate_pension,synthetic_record_available
+CIT-020,Farah Khan,1995-07-07,F,Bengaluru,Karnataka,+91-98XX-XX6913,1000XXXX5520,active,not_filed,potentially_eligible,get_profile_change_status,synthetic_record_available
+CIT-021,Siddharth Jain,1980-12-01,M,Noida,Uttar Pradesh,+91-98XX-XX4035,1000XXXX5521,active,filed,potentially_eligible,get_contribution_gaps,one_month_remittance_gap_detected
+CIT-022,Pooja Bansal,1997-10-31,F,Chandigarh,Chandigarh,+91-98XX-XX5572,1000XXXX5522,active,filed,potentially_eligible,get_claim_payment,synthetic_record_available
+CIT-023,Nikhil Joseph,1986-04-06,M,Kochi,Kerala,+91-98XX-XX8124,1000XXXX5523,active,filed,potentially_eligible,check_death_claim_requirements,checklist_only_no_entitlement_decision
+CIT-024,Tanvi Bhat,1992-08-26,F,Bengaluru,Karnataka,+91-98XX-XX3369,1000XXXX5524,active,filed,potentially_eligible,find_establishment,synthetic_record_available

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decisions registry="EPFO-DECISIONS" version="1.0">
+  <decision id="EPFO-DEC-001" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Goal-driven member service</title>
+    <statement>EPFO is redesigned around member goals rather than administrative form names.</statement>
+    <rationale>Reduces mental-model and terminology burden.</rationale>
+    <source>SRC-CONTEXT-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-002" status="active" authority="canonical_project_decision" priority="critical">
+    <title>UX4G-first</title>
+    <statement>UX4G is the primary design-system and service-pattern reference.</statement>
+    <rationale>The project skill identifies current UX4G as the design authority.</rationale>
+    <source>SRC-SKILL-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-003" status="active" authority="canonical_project_decision" priority="critical">
+    <title>GIGW reference</title>
+    <statement>GIGW 3.0 is the government website/app quality, accessibility, cybersecurity, and lifecycle reference.</statement>
+    <rationale>Provides conformity and evaluation expectations.</rationale>
+    <source>SRC-GIGW-RAW-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-004" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Government credibility</title>
+    <statement>The interface should feel like a government service that has been properly designed, not a startup pretending to be one.</statement>
+    <rationale>Trust and authenticity are product objectives.</rationale>
+    <source>SRC-DESIGN-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-005" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Account Health</title>
+    <statement>Account Health is a core differentiator and a cross-journey recovery layer.</statement>
+    <rationale>Members need causes, owners, next actions, and timing.</rationale>
+    <source>SRC-RESEARCH-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-006" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Assistant boundary</title>
+    <statement>Any future Codex assistant is additive; the standard UI must remain independently useful.</statement>
+    <rationale>Prevents assistant architecture from replacing service access.</rationale>
+    <source>SRC-CONTEXT-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-007" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Synthetic data</title>
+    <statement>All demo data is synthetic and non-production.</statement>
+    <rationale>Prevents false claims about member records or transactions.</rationale>
+    <source>SRC-MOCK-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-008" status="active" authority="canonical_project_decision" priority="critical">
+    <title>No production backend</title>
+    <statement>No real EPFO backend access or official transaction outcome is implied.</statement>
+    <rationale>The current app is a prototype.</rationale>
+    <source>SRC-APP-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-009" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Priority journeys</title>
+    <statement>The priority journeys are Access, KYC, Claim, Transfer, and Failure Recovery.</statement>
+    <rationale>Matches supplied problem research and implementation scope.</rationale>
+    <source>SRC-RESEARCH-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+  <decision id="EPFO-DEC-010" status="active" authority="canonical_project_decision" priority="critical">
+    <title>Batched implementation</title>
+    <statement>Early work prioritizes frontend quality with shallow-but-real functionality and later bounded batches.</statement>
+    <rationale>Preserves scope and prevents silent product rewrites.</rationale>
+    <source>SRC-STATUS-001</source>
+    <effective>2026-08-28</effective>
+    <conflicts>none recorded</conflicts>
+  </decision>
+</decisions>

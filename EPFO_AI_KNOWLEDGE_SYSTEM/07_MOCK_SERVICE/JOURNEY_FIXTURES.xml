@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<journeyFixtures syntheticOnly="true">
+  <fixture id="MOCK-FIXTURE-CLAIM" journey="claim" data="claims.csv,epfo_mock_data.json" states="ready,blocked,pending,rejected,settled" />
+  <fixture id="MOCK-FIXTURE-KYC" journey="kyc" data="kyc_status.csv,epfo_mock_data.json" states="verified,pending_employer_approval,rejected" />
+  <fixture id="MOCK-FIXTURE-TRANSFER" journey="transfer" data="member_accounts.csv,epfo_mock_data.json" states="not_started,pending,blocked,completed" />
+  <fixture id="MOCK-FIXTURE-RECOVERY" journey="failure_recovery" data="function_examples.json,intent_journeys.csv" states="failed,retryable,escalated,resolved" />
+</journeyFixtures>

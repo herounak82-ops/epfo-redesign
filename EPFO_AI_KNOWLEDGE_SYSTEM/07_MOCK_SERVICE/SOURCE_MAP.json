@@ -1,0 +1,14 @@
+{
+  "source_id": "SRC-MOCK-001",
+  "source_path": "data/epfo_mock_package/",
+  "files": [
+    "epfo_mock_data.json",
+    "citizens_index.csv",
+    "member_accounts.csv",
+    "kyc_status.csv",
+    "claims.csv",
+    "intent_journeys.csv",
+    "function_examples.json"
+  ],
+  "synthetic_only": true
+}

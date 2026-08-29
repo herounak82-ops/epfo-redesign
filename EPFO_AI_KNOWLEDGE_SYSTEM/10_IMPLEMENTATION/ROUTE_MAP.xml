@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routeMap>
+  <route path="/" page="HomePage.tsx" goal="view_account" journey="access" depth="shallow" />
+  <route path="/account" page="AccountPage.tsx" goal="view_account" journey="access" depth="shallow" />
+  <route path="/account/health" page="AccountHealthPage.tsx" goal="view_account" journey="access" depth="shallow" />
+  <route path="/services" page="ServicesPage.tsx" goal="view_account" journey="access" depth="shallow" />
+  <route path="/services/claim" page="ClaimPage.tsx" goal="get_pf_money" journey="claim" depth="shallow" futureBatch="2" />
+  <route path="/services/kyc" page="KYCPage.tsx" goal="fix_personal_details" journey="kyc" depth="shallow" futureBatch="3" />
+  <route path="/services/transfer" page="TransferPage.tsx" goal="move_pf_after_job_change" journey="transfer" depth="shallow" futureBatch="4" />
+  <route path="/requests" page="RequestsPage.tsx" goal="fix_failed_request" journey="failure_recovery" depth="shallow" />
+  <route path="/requests/:id" page="RequestDetailPage.tsx" goal="fix_failed_request" journey="failure_recovery" depth="shallow" />
+  <route path="/recovery" page="RecoveryPage.tsx" goal="fix_failed_request" journey="failure_recovery" depth="shallow" futureBatch="5" />
+  <route path="/profile" page="ProfilePage.tsx" goal="fix_personal_details" journey="kyc" depth="shallow" />
+  <route path="/help" page="HelpPage.tsx" goal="fix_failed_request" journey="failure_recovery" depth="shallow" />
+</routeMap>

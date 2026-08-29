@@ -1,0 +1,2310 @@
+UX4G — COMPLETE RESEARCH DOSSIER
+====================================
+
+Research date: 27 August 2026
+Scope: UX4G official public website, current Design System 3.0 site, developer documentation, legacy documentation, audit/compliance resources, accessibility tooling, case studies/community resources, official linked PDFs, public GitHub/NPM references surfaced by official documentation, and the user-supplied Figma URL.
+
+IMPORTANT SCOPE / COPYRIGHT NOTE
+--------------------------------
+This file is a comprehensive research dossier and navigation archive, not a verbatim reproduction of the complete text of every UX4G page. The official pages are copyrighted material; therefore this file paraphrases and indexes their contents, preserves important implementation facts and links, and points to the original pages/PDFs for the complete source material.
+
+“Complete” here means broad source coverage and an actionable map of the ecosystem, including current v3, legacy resources, redirected/external destinations that were discoverable, and known broken/moved routes. Dynamic/JS-generated pages, private Figma project contents, and external sites whose pages cannot be inspected from this environment are identified explicitly.
+
+======================================================================
+1. EXECUTIVE SUMMARY
+======================================================================
+
+UX4G = User Experience for Government.
+
+It is a Government of India / Digital India initiative focused on improving the UX/UI, accessibility, consistency, usability, and delivery quality of government websites, mobile applications, and e-services.
+
+The current UX4G Design System 3.0 positions itself as a unified design ecosystem with:
+- Foundations
+- Reusable components
+- Government-specific interaction patterns
+- Accessibility guidance
+- Design tokens
+- Content guidance
+- Developer implementation for web/mobile
+- Figma resources
+- Storybook/reference documentation
+- UX Audit tooling
+- Accessibility Widget
+- UX Handbook
+- Compliance Matrix
+- Capacity-building/training
+- Case studies
+- Community/governance
+- Government brand/logo assets
+
+The key distinction from a normal UI library is that UX4G attempts to encode recurring government-service journeys, not just visual controls. Examples include identity/Aadhaar authentication, OTP verification, consent, eligibility, applications, document upload, save/resume, status tracking, SLA monitoring, payment, receipts, search, dashboards, notifications, grievances, support, language switching, and assisted-service flows.
+
+Current v3 positioning states:
+- 50+ components and patterns
+- WCAG 2.1 AA accessibility as a core target
+- GIGW / government compliance alignment
+- DPDP Act 2023 consent-flow guidance
+- Right to Service / SLA accountability patterns
+- DARPG grievance guidance
+- Web implementations for Web Components/HTML, React, Angular
+- Flutter/mobile support is documented in the broader system/developer ecosystem
+- Figma design resources
+- npm-based delivery
+- live Storybook/reference documentation
+
+======================================================================
+2. PRIMARY OFFICIAL URLS
+======================================================================
+
+Current UX4G Design System 3.0
+https://www.ux4g.gov.in/
+
+Current English homepage
+https://www.ux4g.gov.in/?lang=en
+
+Get Started
+https://www.ux4g.gov.in/get-started
+
+Foundations
+https://www.ux4g.gov.in/foundations
+
+Components
+https://www.ux4g.gov.in/components
+
+Patterns
+https://www.ux4g.gov.in/patterns
+
+Resources
+https://www.ux4g.gov.in/resources
+
+Community
+https://www.ux4g.gov.in/community
+
+Installation & Usage
+https://www.ux4g.gov.in/get-started/installation
+
+Developer-oriented page
+https://www.ux4g.gov.in/get-started/for-developers
+
+About UX4G
+https://www.ux4g.gov.in/get-started/about-ux4g
+
+UX Handbook landing page
+https://www.ux4g.gov.in/resources/ux-handbook
+
+Accessibility Widget landing page
+https://www.ux4g.gov.in/resources/accessibility-widget
+
+Government Logos
+https://www.ux4g.gov.in/logos
+
+Case Studies (current v3/community)
+https://www.ux4g.gov.in/community/case-studies
+
+Community Events
+https://www.ux4g.gov.in/community/events
+
+Workshops archive
+https://www.ux4g.gov.in/community/events/workshops
+
+Legacy/older About UX4G
+https://www.ux4g.gov.in/aboutus/
+
+Legacy About UX4G details
+https://www.ux4g.gov.in/aboutus/about-us.php
+
+Legacy FAQ
+https://www.ux4g.gov.in/aboutus/faq.php
+
+Legacy Case Studies
+https://www.ux4g.gov.in/aboutus/case-studies/case-studies.php
+
+Legacy Capacity Building
+https://www.ux4g.gov.in/aboutus/capacity-building.php
+
+Legacy Accessibility Tool page
+https://www.ux4g.gov.in/aboutus/accessibility/tools.php
+
+Legacy Compliance Matrix form
+https://www.ux4g.gov.in/aboutus/compliance-matrix.php
+
+Legacy/official privacy policy
+https://www.ux4g.gov.in/aboutus/privacy-policy.php
+
+Current disclaimer
+https://www.ux4g.gov.in/disclaimer
+
+Current terms-of-use route (currently reports an application error)
+https://www.ux4g.gov.in/terms-of-use
+
+Current v3 broken/moved legacy-style routes discovered:
+https://www.ux4g.gov.in/designsystem/privacy-policy
+https://www.ux4g.gov.in/designsystem/terms-of-use
+
+======================================================================
+3. OFFICIAL DEVELOPER DOCUMENTATION
+======================================================================
+
+Main developer docs
+https://doc.ux4g.gov.in/
+
+Legacy/expanded developer documentation sections:
+https://doc.ux4g.gov.in/category/getting-started.php
+https://doc.ux4g.gov.in/category/components.php
+https://doc.ux4g.gov.in/category/forms.php
+https://doc.ux4g.gov.in/category/content.php
+https://doc.ux4g.gov.in/category/layout.php
+
+The current developer documentation describes UX4G 3.0 as providing:
+- component APIs
+- live Storybooks
+- design tokens
+- implementation guides
+- copy-ready examples
+- HTML/vanilla support
+- React support
+- Angular support
+- Flutter/mobile support
+- WCAG 2.1 AA orientation
+- GIGW / government compliance guidance
+
+Storybook quick-start route linked by the official site:
+https://doc.ux4g.gov.in/web/?path=/story/getting-started-quick-start-guide--quick-start
+
+Developer package named by official v3 docs:
+ux4g-web-components
+
+Official npm installation example:
+npm install ux4g-web-components
+
+Yarn example:
+yarn add ux4g-web-components
+
+The current installation page recommends NPM for production and treats CDN as a prototyping option.
+
+======================================================================
+4. CURRENT V3 INFORMATION ARCHITECTURE
+======================================================================
+
+4.1 HOME
+URL:
+https://www.ux4g.gov.in/
+
+Home page themes:
+- UX4G Design System v3.0
+- design ecosystem for billions of citizens
+- accessible, scalable, user-centred digital experiences
+- government-service examples
+- 50+ components/patterns
+- compliance integration
+- system extensibility/community contribution
+- components
+- patterns
+- UX Audit
+- Accessibility Widget
+- Capacity Building
+- Case Studies
+- Government Logos
+- UX Handbook
+- FAQs
+
+The homepage visually demonstrates example experiences including:
+- citizen service dashboard
+- active government services
+- documents
+- payments
+- OTP
+- Aadhaar-linked fields
+- form controls
+- gender selection
+- domain selection
+- range/sliders
+- calendar/date selection
+- identity verification
+- application pipeline
+- payment summary
+- UPI/net banking/card
+- success confirmation
+- dark mode
+- multilingual content
+
+4.2 GET STARTED
+https://www.ux4g.gov.in/get-started
+
+Role tracks:
+- Designer
+- Developer
+- New Build with AI
+
+Core pillars presented:
+- Foundations
+- Components
+- Patterns
+- Accessibility
+
+The page directs designers toward Figma, tokens, and design decisions; developers toward implementation constraints, tokens, components and APIs; and AI-enabled teams toward Figma AI, Make, code copilots, prompting, governance and evaluation.
+
+4.3 FOUNDATIONS
+https://www.ux4g.gov.in/foundations
+
+Eight currently indexed foundation topics:
+F-01 Color
+F-02 Typography
+F-03 Spacing & Layout
+F-04 Elevation
+F-05 Iconography
+F-06 Design Tokens
+F-07 Accessibility Guidelines
+F-08 Content Design System
+
+Color:
+- primary palette
+- semantic palette
+- neutral palette
+- contrast ratios
+- token naming
+
+Typography:
+- type scale
+- weights
+- line heights
+
+Spacing & Layout:
+- base-4 spacing scale
+- responsive grid
+
+Elevation:
+- shadow levels
+- hierarchy/depth/focus
+
+Iconography:
+- consistent SVG icon set
+- sizing
+- spacing
+- usage rules
+
+Design Tokens:
+- colors
+- spacing
+- typography
+- radii and other design values
+- copyable CSS custom properties
+
+Accessibility:
+- WCAG 2.1 AA criteria
+- keyboard maps
+- screen-reader guidance
+
+Content:
+- plain-language principles
+- multilingual content guidance
+
+Foundation-related accessibility page:
+https://www.ux4g.gov.in/foundations/accessibility
+
+Known accessibility limitation examples documented there:
+- Date Picker: calendar grid can be difficult for some screen-reader navigation; provide manual text input as alternative (status shown as in progress).
+- Rich Text Editor: complex toolbar keyboard navigation; native textarea recommended for accessibility-critical forms.
+- Data Visualization: charts may not convey full information to screen readers; provide data-table and textual alternatives; status shown as resolved.
+
+Accessibility issue reporting:
+support.ux4g@digitalindia.gov.in
+
+Issue tracker referenced by this page:
+https://github.com/dbn1972/DesignSystem2016/issues
+
+4.4 COMPONENTS
+https://www.ux4g.gov.in/components
+
+Current v3 component category counts shown by the current site:
+- Form Elements: 18
+- Feedback: 13
+- Data Display: 17
+- Navigation: 9
+- Others: 2
+Total category count: 59 indexed entries/cards/pages in the current component library structure.
+
+Current component groups are described as production-ready building blocks with shared states, patterns, and accessibility guidance across implementations.
+
+The current site emphasizes:
+- WCAG 2.1 AA
+- keyboard navigation
+- screen-reader compatibility
+- focus management
+- 4.5:1 minimum contrast claim shown in the component overview
+
+4.5 PATTERNS
+https://www.ux4g.gov.in/patterns
+
+Pattern IDs and counts:
+P-01 Identity and Access — 8 patterns
+P-02 Consent and Declaration — 5 patterns
+P-03 Application and Submission — 7 patterns
+P-04 Status and Tracking — 6 patterns
+P-05 Payment and Transactions — 2 patterns
+P-06 Search and Discovery — 5 patterns
+P-07 Dashboard and My Applications — 3 patterns
+P-08 Notifications — 7 patterns
+P-09 Feedback and Communication — 6 patterns
+
+Aggregate shown in the current library: 49 pattern entries across these nine groups.
+
+Pattern content themes include:
+P-01:
+- secure onboarding
+- sign-in
+- OTP verification
+- session management
+- Aadhaar authentication
+
+P-02:
+- user consent
+- data sharing
+- declarations
+- privacy terms
+
+P-03:
+- eligibility
+- form validation
+- document upload
+- save & resume
+- submission acknowledgement
+
+P-04:
+- application tracking
+- grievance escalation
+- timelines
+- progress steps
+- SLA monitoring
+
+P-05:
+- secure payment
+- transaction confirmation
+- payment failure/recovery
+- receipts
+
+P-06:
+- finding services
+- browse/search results
+- consultation booking
+- no-results recovery
+
+P-07:
+- citizen dashboard
+- application list
+- pending tasks
+- personalization/preferences
+
+P-08:
+- notification centre
+- SMS/email templates
+- proactive updates
+- reminders
+- notification preferences
+- multi-channel delivery
+
+P-09:
+- service feedback
+- support channels
+- language switching
+- escalation management
+- assisted service flows
+
+Pattern best practices:
+- progressive disclosure
+- clear feedback
+- consistent navigation
+- mobile-first
+- accessibility by default
+- multilingual support
+
+The current pattern page says content/layout should support its stated two supported languages, although the older ecosystem has broader multilingual guidance.
+
+======================================================================
+5. CURRENT INSTALLATION & USAGE
+======================================================================
+
+URL:
+https://www.ux4g.gov.in/get-started/installation
+
+Current page scope:
+- before you start
+- getting started
+- who the guide is for
+- installation pathways
+- React usage
+- Angular usage
+- Web Components
+- design tokens
+- component patterns
+- starter templates
+- migration notes
+- release versions
+- implementation checklist
+- support & escalation
+
+Recommended production package:
+npm install ux4g-web-components
+
+Prerequisites surfaced:
+- Node.js 16+
+- npm 8+
+
+Yarn:
+yarn add ux4g-web-components
+
+Starter application command:
+npx create-ux4g-app my-government-service
+
+React + TypeScript starter:
+npx create-ux4g-app my-app --template react-ts
+
+Angular starter:
+npx create-ux4g-app my-app --template angular
+
+CDN example documented by the current page:
+https://cdn.ux4g.gov.in/UX4G@3.0.18/index.css
+https://cdn.ux4g.gov.in/UX4G@3.0.18/ux4g.js
+https://cdn.ux4g.gov.in/UX4G@3.0.18/ux4g-custom.js
+
+Current documentation explicitly frames CDN as prototype-oriented and NPM as the preferred production route.
+
+Framework notes surfaced:
+React:
+- React 17+
+- Next.js app router support
+- import styles and runtime once
+- use ux4g-* classes in JSX
+
+Angular:
+- Angular 15+
+- Angular 16+
+- Angular 17+ recommended
+- TypeScript 4.9+
+- Node.js 16+
+- RxJS 7+
+
+Web Components / plain HTML:
+- package install
+- load styles/runtime once
+- use UX4G classes on native HTML
+- suitable for framework-neutral/shared environments
+
+Accessibility implementation:
+Current installation page says UX4G components include:
+- semantic HTML
+- ARIA labels/roles
+- keyboard support
+- screen-reader considerations
+
+Starter template features described:
+React:
+- React 18
+- TypeScript
+- React Router v6
+- sample dashboard/forms
+- authentication example
+- Vite
+- ESLint
+- Prettier
+
+Angular:
+- Angular 17+
+- TypeScript
+- UX4G setup
+- sample routing/pages
+- reactive forms
+- Angular CLI
+- testing setup
+
+Production readiness checklist themes:
+- tree-shaking/bundle optimization
+- no dev dependencies in production
+- pinned package version
+- error handling
+- performance/Lighthouse testing
+- browser compatibility
+- final accessibility audit
+- security review
+
+Support escalation sequence:
+1. Self-service documentation
+2. Community forum search
+3. Community forum post
+4. GitHub issue for confirmed bugs
+5. Direct government-team support for critical production issues
+
+Support email:
+support.ux4g@digitalindia.gov.in
+
+The page states a response-time target of four hours during business hours for critical government-team support and provides indicative response windows for other escalation levels.
+
+======================================================================
+6. CURRENT DEVELOPER DOCUMENTATION / FRAMEWORK
+======================================================================
+
+Main:
+https://doc.ux4g.gov.in/
+
+The current developer landing page says:
+- 40+ components in the developer-oriented implementation surface
+- 4 frameworks/platforms
+- WCAG 2.1 AA
+- GIGW / DBIM government compliance
+- Web Components
+- React
+- Angular
+- mobile/Flutter
+- live examples
+- usage notes
+- copy-ready code
+
+Design token example surfaced:
+--ux4g-primary: #4A2BC2
+
+Example component naming surfaced:
+ux4g-btn-primary
+ux4g-btn-md
+ux4g-btn-text-primary
+
+The developer ecosystem is intended to keep design and code aligned through shared components/tokens rather than treating Figma and implementation as unrelated artifacts.
+
+======================================================================
+7. LEGACY DEVELOPER DOCUMENTATION
+======================================================================
+
+The legacy documentation remains publicly indexed and is materially useful for understanding earlier UX4G implementation.
+
+Start:
+https://doc.ux4g.gov.in/category/getting-started.php
+
+Legacy component index:
+https://doc.ux4g.gov.in/category/components.php
+
+Legacy form index:
+https://doc.ux4g.gov.in/category/forms.php
+
+Legacy content index:
+https://doc.ux4g.gov.in/category/content.php
+
+Legacy layout index:
+https://doc.ux4g.gov.in/category/layout.php
+
+Legacy getting-started content:
+https://doc.ux4g.gov.in/getting-started/content.php
+
+Legacy grid:
+https://doc.ux4g.gov.in/layout/grid.php
+
+Legacy CSS Grid:
+https://doc.ux4g.gov.in/layout/css-grid.php
+
+Legacy containers:
+https://doc.ux4g.gov.in/layout/containers.php
+
+Legacy stacks:
+https://doc.ux4g.gov.in/helpers/stacks.php
+
+Legacy typography:
+https://doc.ux4g.gov.in/content/typography.php
+
+Legacy text utilities:
+https://doc.ux4g.gov.in/utilities/text.php
+
+Legacy form overview:
+https://doc.ux4g.gov.in/forms/overview.php
+
+Legacy form layout:
+https://doc.ux4g.gov.in/forms/layout.php
+
+Legacy validation:
+https://doc.ux4g.gov.in/forms/validation.php
+
+Legacy search component:
+https://doc.ux4g.gov.in/components/search.php
+
+======================================================================
+8. LEGACY COMPONENT INVENTORY
+======================================================================
+
+The indexed legacy component category exposes the following major component docs:
+
+Accordion
+https://doc.ux4g.gov.in/components/accordion.php
+
+Alerts
+https://doc.ux4g.gov.in/components/alerts.php
+
+Badge
+https://doc.ux4g.gov.in/components/badge.php
+
+Breadcrumb
+https://doc.ux4g.gov.in/components/breadcrumb.php
+
+Button Group
+https://doc.ux4g.gov.in/components/button-group.php
+
+Buttons
+https://doc.ux4g.gov.in/components/buttons.php
+
+Card
+https://doc.ux4g.gov.in/components/card.php
+
+Carousel
+https://doc.ux4g.gov.in/components/carousel.php
+
+Close Button
+https://doc.ux4g.gov.in/components/close-button.php
+
+Collapse
+https://doc.ux4g.gov.in/components/collapse.php
+
+Dropdowns
+https://doc.ux4g.gov.in/components/dropdowns.php
+
+List Groups
+https://doc.ux4g.gov.in/components/list-group.php
+
+Modal
+https://doc.ux4g.gov.in/components/modal.php
+
+Navbar
+https://doc.ux4g.gov.in/components/navbar.php
+
+Navs and Tabs
+https://doc.ux4g.gov.in/components/navs-and-tabs.php
+
+Offcanvas
+https://doc.ux4g.gov.in/components/offcanvas.php
+
+Pagination
+https://doc.ux4g.gov.in/components/pagination.php
+
+Placeholders
+https://doc.ux4g.gov.in/components/placeholders.php
+
+Popovers
+https://doc.ux4g.gov.in/components/popovers.php
+
+Progress
+https://doc.ux4g.gov.in/components/progress.php
+
+Scrollspy
+https://doc.ux4g.gov.in/components/scrollspy.php
+
+Spinners
+https://doc.ux4g.gov.in/components/spinners.php
+
+Toasts
+https://doc.ux4g.gov.in/components/toasts.php
+
+Tooltips
+https://doc.ux4g.gov.in/components/tooltips.php
+
+Chips
+https://doc.ux4g.gov.in/components/chips.php
+
+Stepper
+https://doc.ux4g.gov.in/components/stepper.php
+
+Search
+https://doc.ux4g.gov.in/components/search.php
+
+Date and Time
+https://doc.ux4g.gov.in/components/date-time.php
+
+NOTE:
+Some exact filenames in the legacy site are not consistently surfaced by search indexing. The category page above is therefore the authoritative navigation point for component discovery.
+
+======================================================================
+9. LEGACY FORM SYSTEM
+======================================================================
+
+Form category:
+https://doc.ux4g.gov.in/category/forms.php
+
+Indexed topics:
+- Form Control
+- Floating Label
+- Checks & Radios
+- Input Group
+- Form Layout
+- Range
+- Select
+- Validation
+
+The form system emphasizes:
+- semantic input types
+- consistent browser/device rendering
+- validation messaging
+- labels and descriptive help text
+- use of aria-describedby for associated form text
+- responsive grid/form layouts
+
+======================================================================
+10. LEGACY LAYOUT SYSTEM
+======================================================================
+
+Layout:
+https://doc.ux4g.gov.in/category/layout.php
+
+Indexed topics:
+- Breakpoints
+- Columns
+- Containers
+- CSS Grid
+- Grid
+- Gutters
+- Utilities
+- Z-Index
+
+Grid principles:
+- mobile-first
+- flexbox
+- twelve-column system
+- responsive tiers
+- Sass variables/mixins
+- utility classes
+
+Grid:
+https://doc.ux4g.gov.in/layout/grid.php
+
+Containers:
+https://doc.ux4g.gov.in/layout/containers.php
+
+CSS Grid:
+https://doc.ux4g.gov.in/layout/css-grid.php
+
+The older docs explicitly identify the CSS Grid system as experimental/opt-in.
+
+======================================================================
+11. LEGACY CONTENT SYSTEM
+======================================================================
+
+Content:
+https://doc.ux4g.gov.in/category/content.php
+
+Topics:
+- Figures
+- Images
+- Reboot
+- Tables
+- Typography
+
+Tables:
+https://doc.ux4g.gov.in/content/tables.php
+
+Typography:
+https://doc.ux4g.gov.in/content/typography.php
+
+The legacy framework includes compiled CSS, utility CSS, grid CSS, reboot CSS, JavaScript bundles and RTL variants.
+
+Legacy asset structure documented:
+CSS:
+- UX4G.css
+- UX4G.min.css
+- UX4G.rtl.css
+- UX4G.rtl.min.css
+- UX4G-grid.css
+- UX4G-grid.rtl.css
+- UX4G-utilities.css
+- UX4G-utilities.rtl.css
+- UX4G-reboot.css
+- UX4G-reboot.rtl.css
+
+JavaScript:
+- UX4G.bundle.js
+- UX4G.bundle.min.js
+- UX4G.js
+- UX4G.min.js
+
+Older source maps are also described in the legacy documentation.
+
+======================================================================
+12. UX HANDBOOK
+======================================================================
+
+Current page:
+https://www.ux4g.gov.in/resources/ux-handbook
+
+The current landing page states:
+- 5 core design chapters
+- 24+ topics
+- intended as a framework for designing, evaluating and governing digital experiences across web and mobile
+
+Five chapters:
+01. UX Design Process
+02. UX Handbook Parameters
+03. Design System
+04. UX Audit
+05. Compliance Matrix
+
+Chapter 01 — UX Design Process:
+- discovery
+- user research
+- design
+- testing
+- iteration
+- common methodology with project flexibility
+
+Chapter 02 — UX Handbook Parameters:
+- website/mobile layout
+- navigation
+- content structure
+- interaction
+- usability benchmarks
+
+Chapter 03 — Design System:
+- components
+- patterns
+- typography
+- colour
+- interaction standards
+- scalable product design
+
+Chapter 04 — UX Audit:
+- evaluates existing digital products
+- usability
+- accessibility
+- UX best practices
+- identifies gaps
+- prioritizes improvements
+
+Chapter 05 — Compliance Matrix:
+- maps UX requirements to applicable guidance/standards/regulations
+- accessibility
+- governance
+- policy requirements
+
+Older official handbook PDF:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Handbook.pdf
+
+The handbook covers practical public-sector design checks, including privacy/terms visibility, National Emblem treatment, authentication expectations, consent, About Us information, grievances, feedback, branding and related government-application requirements.
+
+Older design guidelines PDF:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Design-Guidelines-1.0.pdf
+
+======================================================================
+13. COMPLIANCE MATRIX / AUDIT
+======================================================================
+
+Current/legacy compliance matrix:
+https://www.ux4g.gov.in/aboutus/compliance-matrix.php
+
+The accessible/indexed checklist includes examples such as:
+- privacy policy and terms visibility before entering the homepage/service
+- availability through profile/side menu
+- National Emblem on government app homepage where applicable
+- login through MeriPehchaan where the app requires login
+- explicit user consent before storing data
+- About Us section
+- last updated date
+- build number
+- owner information
+- contact details
+- terms and conditions
+- privacy policy
+- FAQs
+
+The UX Handbook's Compliance Matrix is a broader framework mapping UX requirements against standards and governance expectations.
+
+The current v3 site claims that its design guidance incorporates:
+- DPDP Act 2023 consent flows
+- Right to Service Act SLA accountability
+- GIGW 3.0 accessibility standards
+- DARPG grievance guidelines
+
+CRITICAL INTERPRETATION:
+The current website sometimes uses strong language such as “automatically inherit” compliance. This should be understood as compliant defaults/guidance built into the design system, not as a blanket legal certification of an entire application. The current disclaimer explicitly says implementers must verify suitability, test thoroughly, and validate against their own requirements, regulations and standards.
+
+======================================================================
+14. UX AUDIT TOOLS
+======================================================================
+
+Legacy overview of UX tools:
+https://www.ux4g.gov.in/aboutus/accessibility/tools.php
+
+The page lists:
+- Design System
+- Accessibility Widget
+- UX Audit (Automated) — Audit 360
+- UX Audit (Manual) — UX Health Self-Check
+
+Audit 360:
+https://audit360.ux4g.gov.in/
+
+Audit 360 is described as an automated audit environment for:
+- UX
+- performance
+- accessibility
+- SEO
+- broader audit parameters
+
+Audit 360 terms:
+https://audit360.ux4g.gov.in/term-and-conditions
+
+Audit 360 privacy:
+https://audit360.ux4g.gov.in/privacy-policy
+
+The Audit 360 privacy policy says the service may collect:
+- name
+- email
+- phone
+- organization details
+- IP address
+- browser/OS
+- access times
+- pages visited
+- cookies/tracking data
+
+Audit 360 terms cover:
+- platform definition
+- users
+- content
+- services
+- acceptance
+- platform use
+- updates to terms
+
+The manual UX Health Self-Check is presented as a structured questionnaire/checklist for calculating a compliance/health rating based on answers supplied by the user.
+
+======================================================================
+15. ACCESSIBILITY WIDGET
+======================================================================
+
+Current landing page:
+https://www.ux4g.gov.in/resources/accessibility-widget
+
+Legacy technical documentation:
+https://doc.ux4g.gov.in/ux4g-accessibility/accessibility-widgets.php
+
+Legacy accessibility tools page:
+https://www.ux4g.gov.in/aboutus/accessibility/tools.php
+
+The accessibility widget is intended to improve inclusiveness and usability for different abilities.
+
+Indexed options include:
+- Bigger Text
+- Smaller Text
+- Text Spacing
+- Line Height
+- Dyslexia Friendly
+- ADHD Mode
+- saturation controls
+- light/dark
+- inverted colours
+- highlight links
+- text-to-speech
+- larger cursor
+- pause animation
+- hide images
+- reset all settings
+
+The current landing page additionally highlights:
+- readability
+- elderly friendliness
+- link highlighting
+- screen-reader/voice support
+- seizure-safe profile
+
+Legacy CDN:
+https://cdn.ux4g.gov.in/tools/accessibility-widget.js
+
+Legacy beta/versioned reference:
+https://cdn.ux4g.gov.in/accessibility-beta-v1.15/accessibility-widget.js
+
+The legacy technical page says a later v2.0 was planned and advises upgrading versions when directed by the project.
+
+Supported technologies listed:
+- HTML
+- PHP
+- JavaScript
+- TypeScript
+- Angular
+- React.js
+- Next.js
+- Ionic
+- Drupal
+- WordPress
+- AngularJS
+
+The current accessibility page says the widget is used across thousands of government-oriented sites and references 4000+ government websites as a current landing-page claim. This is a current website claim, not an independently verified adoption statistic.
+
+======================================================================
+16. ACCESSIBILITY DESIGN PRINCIPLES
+======================================================================
+
+Current v3:
+- WCAG 2.1 AA
+- keyboard navigation
+- visible focus
+- screen-reader compatibility
+- focus management
+- semantic headings
+- clear error messaging
+- contrast guidance
+- accessible interaction states
+
+Current pattern page:
+- accessibility by default
+- mobile-first
+- clear feedback
+- predictable navigation
+- multilingual support
+
+Foundation accessibility page:
+https://www.ux4g.gov.in/foundations/accessibility
+
+Important known limitation examples are documented there rather than hidden, including date picker and rich text editor considerations.
+
+======================================================================
+17. ABOUT UX4G / MISSION / VALUES
+======================================================================
+
+Current About:
+https://www.ux4g.gov.in/get-started/about-ux4g
+
+Legacy About:
+https://www.ux4g.gov.in/aboutus/about-us.php
+
+Legacy top-level:
+https://www.ux4g.gov.in/aboutus/
+
+Current About page claims:
+- 52+ UX case studies
+- 394+ impactful projects
+- 102+ workshops conducted across states
+
+Legacy About page historically displays different counters:
+- 7858+ members
+- 394+ projects
+- 102+ workshops
+
+These counters should not be mixed without noting that they represent different page versions/snapshots.
+
+Mission/theme:
+- enhance government digital applications
+- improve UX/UI
+- improve service delivery
+- citizen-centric design
+- accessibility
+- technical support
+- reusable components
+- continuous feedback/assessment
+- collaboration with government departments
+
+Values repeatedly stated:
+- User Centric Approach
+- Collaboration
+- Innovation
+- Accountability
+
+The legacy About material describes UX4G as an ecosystem/framework for improving government application experiences through research, design, reusable components and implementation support.
+
+======================================================================
+18. CAPACITY BUILDING
+======================================================================
+
+Current community events:
+https://www.ux4g.gov.in/community/events
+
+Workshop archive:
+https://www.ux4g.gov.in/community/events/workshops
+
+Legacy capacity-building page:
+https://www.ux4g.gov.in/aboutus/capacity-building.php
+
+Purpose:
+- improve understanding of UX practices in government
+- user experience
+- design systems
+- usability
+- accessibility
+- testing
+- audit
+- prototype/design thinking
+- implementation of design systems
+
+Two recurring training modes:
+1. Awareness / sensitization workshops
+2. Skill Upgradation / advanced certification training
+
+Targets include:
+- Central Government ministries/departments
+- State/UT departments
+- decision-makers
+- project/product managers
+- UX/UI resources
+- implementation teams
+
+The 2026 workshop listing includes state workshops and government-focused sessions across India.
+
+Workshop archive examples surfaced in current indexing:
+- Shillong — 7 July 2026
+- Leh — 7 July 2026
+- Bhopal — 26 May 2026
+- Bhubaneswar — 12–13 May 2026
+- Imphal — 16–17 March 2026
+- Shimla — 27 February 2026
+- Jaipur — 19–20 January 2026
+- Ranchi — 23 December 2025
+- Panaji — 7 November 2025
+- Bhopal — 9 September 2025
+- Bhubaneswar — 13 August 2025
+- Itanagar — 6 August 2025
+- Shimla — 22 July 2025
+- Jaipur — 26 June 2025
+- Shimla — 17–18 June 2025
+- Leh — 12–14 June 2025
+and many prior state events.
+
+Legacy workshop examples include:
+- Tamil Nadu state consultation
+- Uttar Pradesh state consultation
+- NIT Durgapur Digital India talk show
+- many awareness workshops in states/UTs
+
+Workshop example:
+https://www.ux4g.gov.in/aboutus/workshop/state-consultation-workshop/chennai-tamil-nadu-28-11-24.php
+
+Another example:
+https://www.ux4g.gov.in/aboutus/workshop/state-consultation-workshop/lucknow-25-11-24.php
+
+NIT Durgapur:
+https://www.ux4g.gov.in/aboutus/workshop/nit-durgapur-10th-jan-2025.php
+
+======================================================================
+19. CASE STUDIES
+======================================================================
+
+Current archive:
+https://www.ux4g.gov.in/community/case-studies
+
+Legacy archive:
+https://www.ux4g.gov.in/aboutus/case-studies/case-studies.php
+
+Current indexed examples include:
+- T App Folio for Telangana Citizens
+- Chalo India
+- National Scholarship Portal
+- 112 emergency access
+- ABHA
+- Bharat Mandapam
+- mAadhaar
+- National Atlas and Thematic Mapping Organization
+- Voter Helpline
+
+Legacy indexed examples also include:
+- Bharat Ke Veer
+- Poshan Tracker
+- OpenForge
+and a large historical portfolio.
+
+Case studies are described as documenting user-centred design processes and impacts. The newer current page explicitly cautions that the designs are illustrative/research-oriented and live implementations can vary by product team.
+
+======================================================================
+20. COMMUNITY / GOVERNANCE
+======================================================================
+
+Community:
+https://www.ux4g.gov.in/community
+
+Community sections:
+- OpenForge collaboration
+- Case studies
+- Upcoming events
+- Capacity building
+- Other design resources
+- Related links
+- Governance Guide
+
+The stated governance goals are:
+- explain how the system is run
+- how components mature
+- how teams contribute
+- what conformance means
+- lifecycle and contribution guidance
+
+OpenForge external destination:
+https://openforge.gov.in/
+
+GitHub organization surfaced for UX4G:
+https://github.com/ux4g
+
+Public legacy repository:
+https://github.com/ux4g/ux4g-design-system-v1
+
+The GitHub organization identifies itself as:
+“User Experience Design for Government Applications — A Design System for Government Projects.”
+
+The legacy v1 repo contains the older UX4G HTML/CSS/JS framework and its compiled assets.
+
+Legacy repository:
+https://github.com/ux4g/ux4g-design-system-v1
+
+======================================================================
+21. LEGACY UX4G V1 REPOSITORY
+======================================================================
+
+Repository:
+https://github.com/ux4g/ux4g-design-system-v1
+
+It is publicly indexed as a mobile-first/responsive HTML/CSS/JavaScript framework.
+
+Repo features described:
+- CSS
+- grid CSS
+- utilities
+- reboot
+- RTL variants
+- JavaScript bundles
+- source maps
+- compiled/minified files
+- getting-started material
+- versioning under semantic-versioning principles
+
+The repo page lists:
+UX4G v1.0.0
+Release date in repo metadata: 8 August 2023
+
+Legacy CDN references documented in that repository include:
+https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0/css/ux4g-min.css
+https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0/js/ux4g.min.js
+
+======================================================================
+22. NPM / PACKAGE ECOSYSTEM
+======================================================================
+
+Current official documentation names:
+ux4g-web-components
+
+NPM search indexing has surfaced a package named ux4g-web-components with a description resembling:
+UX4G Design System complete CSS bundle with 30+ components.
+
+Because package registry indexing and project ownership can change, production teams should use the package and registry target linked by current UX4G documentation rather than blindly relying on third-party package search pages.
+
+Current UX4G docs:
+https://doc.ux4g.gov.in/
+
+NPM:
+https://www.npmjs.com/
+
+Search query for the package:
+https://www.npmjs.com/search?q=keywords%3Aux4g
+
+======================================================================
+23. FIGMA / DESIGN KIT
+======================================================================
+
+USER-SUPPLIED FIGMA FILE:
+https://www.figma.com/design/PdnWVvhINlKRjbjDpXc5LX
+
+The provided Figma project is intended to be the design-side resource for UX4G work.
+
+The current UX4G site instructs designers to:
+- open Figma Community
+- search for UX4G Design System
+- choose the latest UX4G Design System version
+- duplicate it into their workspace
+- move it into the team project
+- publish it as a team library
+- use Assets/Libraries in Figma
+
+The official site currently identifies version 3.0 as the latest design-system generation.
+
+IMPORTANT ACCESS NOTE:
+The actual private/public project contents behind the user-supplied Figma URL were not directly inspectable from this environment because Figma blocks automated page retrieval. Therefore this dossier does NOT invent a frame-by-frame inventory of that file. The official UX4G website confirms the intended relationship between Figma, tokens, components, patterns and developer implementation.
+
+Theme customization:
+The current FAQ refers to an official “UX4G Theme Craft 2.0” Figma plugin for building/applying custom themes.
+
+Because the direct Figma plugin/project URL could not be independently verified here, open the plugin from inside Figma/Community using the exact current name.
+
+======================================================================
+24. DESIGN TOKEN / THEMING MODEL
+======================================================================
+
+Current v3 foundation:
+https://www.ux4g.gov.in/foundations
+
+Token philosophy:
+- name design decisions
+- reuse them rather than hard-code values
+- surface them as CSS custom properties
+- support consistent changes across products
+
+The current installation and homepage materials indicate that department branding can be adapted while preserving the underlying accessibility/layout structure.
+
+Customization is therefore intended to be:
+- brand-aware
+- token-driven
+- component-consistent
+- accessibility-preserving
+
+The site specifically describes theming around:
+- department colours
+- logos
+- visual style
+
+======================================================================
+25. GOVERNMENT LOGOS / BRAND ASSETS
+======================================================================
+
+Current:
+https://www.ux4g.gov.in/logos
+
+Purpose:
+- approved government logos/assets
+- consistent branding
+- credibility/trust
+- easier access to official assets
+- reduce duplicate asset hunting
+
+The current page is part of the broader “Solutions by UX4G” ecosystem.
+
+======================================================================
+26. PRIVACY / DATA / LEGAL
+======================================================================
+
+UX4G privacy policy:
+https://www.ux4g.gov.in/aboutus/privacy-policy.php
+
+The legacy policy describes the website’s handling of:
+- visitor-submitted profile/registration information
+- application/form information
+- email/contact data
+- attachments
+- surveys
+- uploaded material
+
+It says personal information may be retained for official records and states that email addresses are not sold for commercial purposes.
+
+The policy also discusses:
+- consent
+- legal disclosure
+- retention
+- authentication
+- monitoring
+- scanning
+- auditing
+- encryption
+- traffic monitoring for security
+
+Important limitation:
+The legacy privacy page states its applicability is to the official UX4G website and not necessarily all mobile/browser applications linked from it.
+
+Current disclaimer:
+https://www.ux4g.gov.in/disclaimer
+
+Current disclaimer emphasizes:
+- content/components/guidelines can change without notice
+- implementers must verify accuracy/completeness/suitability
+- thorough testing is required
+- external links are not endorsed by the Government of India merely because they are linked
+- UX4G does not control third-party site policies
+- external links can change/disappear
+- check HTTPS and security/privacy policies
+- governing law is India
+- jurisdiction stated as New Delhi
+
+Current disclaimer last-updated date surfaced:
+12 April 2026
+Previous version:
+1 January 2024
+
+Current terms route:
+https://www.ux4g.gov.in/terms-of-use
+Currently indexed page shows an unexpected-error state rather than the terms body.
+
+Broken/moved routes:
+https://www.ux4g.gov.in/designsystem/privacy-policy
+https://www.ux4g.gov.in/designsystem/terms-of-use
+
+======================================================================
+27. OLD DESIGN GUIDELINES PDF
+======================================================================
+
+Official PDF:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Design-Guidelines-1.0.pdf
+
+This legacy guideline covers practical website design expectations such as:
+- logical/task-based navigation
+- an About Us grouping
+- clear homepage start point
+- relatable website URL
+- professional homepage presentation
+- Contact Us visibility
+- Privacy Policy visibility when applicable
+
+For complete contents, open the official PDF itself.
+
+======================================================================
+28. OLD UX HANDBOOK PDF
+======================================================================
+
+Official PDF:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Handbook.pdf
+
+The handbook includes extensive website/mobile UX compliance material.
+
+Indexed examples:
+- privacy/terms availability
+- National Emblem
+- MeriPehchaan login expectations
+- consent before storing data
+- About Us data
+- owner/contact/build/update metadata
+- grievances
+- ratings/feedback
+- consistent branding
+- other accessibility/usability criteria
+
+For the complete criteria, use the PDF.
+
+======================================================================
+29. WORKSHOP COMPENDIUM
+======================================================================
+
+Official workshop compendium PDF surfaced:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Workshop-Compendium-May-28-24.pdf
+
+It contains workshop/learning ecosystem information and profiles relevant to Digital India/NeGD programmes.
+
+For complete contents, use the official PDF.
+
+======================================================================
+30. LEGACY ACCESSIBILITY TECHNICAL DOC
+======================================================================
+
+https://doc.ux4g.gov.in/ux4g-accessibility/accessibility-widgets.php
+
+The legacy technical page documents:
+- accessibility widget purpose
+- WCAG/GIGW/IS 17802 orientation
+- JavaScript/CDN installation
+- framework/platform compatibility
+- accessibility settings
+- dark-mode considerations
+- versioning
+- future upgrade note
+
+The legacy page references:
+https://cdn.ux4g.gov.in/tools/accessibility-widget.js
+
+and:
+https://cdn.ux4g.gov.in/accessibility-beta-v1.15/accessibility-widget.js
+
+======================================================================
+31. LEGACY UX DEVELOPER DETAILS
+======================================================================
+
+Buttons:
+https://doc.ux4g.gov.in/components/buttons.php
+Features described:
+- semantic variants
+- primary/secondary/success/danger
+- outline variants
+- sizes
+- toggle behavior
+- ripple effect option
+- accessible button semantics
+
+Accordion:
+https://doc.ux4g.gov.in/components/accordion.php
+Features:
+- collapse behavior
+- open state
+- reduced-motion consideration
+- ARIA relationships
+- CSS variables
+- accessibility section
+
+Alerts:
+https://doc.ux4g.gov.in/components/alerts.php
+Includes:
+- contextual alert variants
+- dismissible alerts
+- alert links
+- JavaScript dismissal
+
+Card:
+https://doc.ux4g.gov.in/components/card.php
+Includes:
+- headers/footers
+- body
+- imagery
+- links
+- list groups
+- overlays
+- groups
+- flexible content
+
+Button Group:
+https://doc.ux4g.gov.in/components/button-group.php
+Includes:
+- grouped buttons
+- horizontal/vertical orientation
+- role=group/toolbar guidance
+- explicit accessible labelling
+
+Pagination:
+https://doc.ux4g.gov.in/components/pagination.php
+Includes:
+- semantic nav
+- aria-label
+- disabled/active state
+- keyboard-accessibility warning for disabled anchor links
+
+Tables:
+https://doc.ux4g.gov.in/content/tables.php
+Includes:
+- opt-in table styling
+- semantic table markup
+- modifier classes
+- nested table behavior
+
+Search:
+https://doc.ux4g.gov.in/components/search.php
+Includes:
+- search field
+- icon
+- submit affordance
+- microphone/avatar-style visual examples in the legacy implementation
+
+Navs/Tabs:
+https://doc.ux4g.gov.in/components/navs-and-tabs.php
+Includes:
+- base nav
+- active/disabled states
+- flexbox
+- aria-current
+- link padding/hit areas
+
+Stacks:
+https://doc.ux4g.gov.in/helpers/stacks.php
+Includes:
+- vstack
+- hstack
+- flexbox helpers
+- gap utilities
+
+Text:
+https://doc.ux4g.gov.in/utilities/text.php
+Includes:
+- responsive alignment
+- wrapping
+- nowrap
+- word-break
+- RTL notes
+
+======================================================================
+32. CURRENT DESIGN SYSTEM VS LEGACY FRAMEWORK
+======================================================================
+
+CURRENT V3:
+- positions itself as a government design system/ecosystem
+- foundations and tokens first
+- components + patterns
+- government-specific flows
+- accessibility integrated
+- current React/Angular/Web Components implementation
+- mobile/Flutter path
+- Storybook
+- UX Handbook
+- compliance matrix
+- community/governance
+- AI-assisted build guidance
+- current accessibility widget
+- current audit ecosystem
+
+LEGACY:
+- Bootstrap-like CSS/JS framework structure
+- large collection of individual page/component docs
+- compiled CSS and JS
+- 12-column flexbox grid
+- Sass
+- component plugins
+- legacy accessibility widget docs
+- older handbook/design-guideline PDFs
+- older case-study/training infrastructure
+
+The legacy framework should not automatically be treated as the complete current v3 API. It is valuable historical/implementation material and may contain patterns that have since been reorganized or modernized.
+
+======================================================================
+33. “BUILD WITH AI” CURRENT DIRECTION
+======================================================================
+
+Current Get Started page:
+https://www.ux4g.gov.in/get-started
+
+Current v3 introduces a “New Build with AI” track.
+
+Its stated areas are:
+- Figma AI
+- Make
+- code copilots
+- prompting
+- governance
+- evaluation
+- safe defaults
+
+Interpretation:
+AI is framed as an acceleration layer on top of the design system, not as permission to bypass design-system governance. The intended model is:
+requirements -> UX4G constraints/tokens/patterns -> AI-assisted exploration/implementation -> evaluation/governance -> tested service.
+
+======================================================================
+34. CONTENT / LANGUAGE
+======================================================================
+
+UX4G repeatedly emphasizes:
+- plain language
+- multilingual content
+- clear labels
+- understandable errors
+- readable layouts
+- predictable navigation
+- citizen-friendly terminology
+
+Current pattern page explicitly describes multilingual support.
+
+Current demonstrations show language examples including:
+- English
+- Hindi
+- Tamil
+- Bengali
+
+The broader system is meant to support Indian government contexts where multilingual/citizen-facing service delivery is important.
+
+======================================================================
+35. SERVICE-JOURNEY MODEL
+======================================================================
+
+A useful mental model for UX4G is:
+
+DISCOVER
+-> find/search a service
+-> understand eligibility
+
+IDENTIFY
+-> sign in
+-> verify OTP/identity
+-> authenticate if needed
+
+CONSENT
+-> understand data use
+-> provide declaration/consent
+
+APPLY
+-> complete forms
+-> validate fields
+-> upload documents
+-> save and resume
+
+SUBMIT
+-> confirmation
+-> acknowledgement
+-> reference/application number
+
+PAY
+-> fee calculation
+-> payment mode
+-> payment confirmation
+-> receipt
+-> failure recovery
+
+TRACK
+-> status
+-> progress
+-> timeline
+-> SLA
+-> escalation
+
+COMMUNICATE
+-> notification centre
+-> SMS/email
+-> reminders
+-> support
+-> feedback
+-> language switching
+
+COMPLETE
+-> approval/rejection
+-> certificate/document
+-> future dashboard access
+
+This is the part of UX4G that makes it more than a collection of atoms/molecules.
+
+======================================================================
+36. GOVERNMENT-SPECIFIC DESIGN CONSTRAINTS
+======================================================================
+
+UX4G addresses public-service scenarios that frequently involve:
+- high-stakes decisions
+- identity
+- consent
+- personal data
+- government records
+- payments
+- legal/process deadlines
+- grievances
+- SLA commitments
+- certificates
+- multiple departments
+- mobile access
+- low bandwidth
+- varying digital literacy
+- accessibility needs
+- multilingual communication
+
+Therefore the design system emphasizes:
+- transparency
+- progress
+- confirmation
+- status
+- error recovery
+- predictable navigation
+- accessible controls
+- citizen trust
+
+======================================================================
+37. DESIGN TOKENS / IMPLEMENTATION PHILOSOPHY
+======================================================================
+
+Tokens represent decisions like:
+- primary colour
+- semantic colour
+- spacing
+- type scale
+- radius
+- shadows/elevation
+- other shared visual properties
+
+Developer-facing current example:
+--ux4g-primary: #4A2BC2
+
+Component class examples:
+ux4g-btn
+ux4g-btn-primary
+ux4g-btn-md
+
+The system seeks to prevent:
+- arbitrary one-off styling
+- design/code drift
+- inconsistent button/form states
+- duplicated accessibility solutions
+
+======================================================================
+38. ACCESSIBILITY / COMPLIANCE CAUTIONS
+======================================================================
+
+Use UX4G as a baseline, not as a substitute for application-level validation.
+
+A team still needs to verify:
+- actual implementation
+- content
+- data handling
+- security
+- integration
+- authentication
+- legal/policy applicability
+- WCAG conformance in the finished service
+- government requirements specific to the department/service
+- browser/device compatibility
+- performance
+- multilingual quality
+- real user needs
+
+This follows the spirit of the current disclaimer, which expressly places implementation verification responsibility on the user/team.
+
+======================================================================
+39. CURRENT EXTERNAL / REDIRECTED LINK MAP
+======================================================================
+
+Official/major external destinations referenced by the ecosystem:
+
+Government of India:
+https://india.gov.in/
+
+Figma:
+https://www.figma.com/design/PdnWVvhINlKRjbjDpXc5LX
+(User supplied)
+
+Figma Community:
+https://www.figma.com/community/
+
+OpenForge:
+https://openforge.gov.in/
+
+UX4G GitHub organization:
+https://github.com/ux4g
+
+Legacy UX4G GitHub repository:
+https://github.com/ux4g/ux4g-design-system-v1
+
+UX4G developer docs:
+https://doc.ux4g.gov.in/
+
+UX4G Storybook quick-start route:
+https://doc.ux4g.gov.in/web/?path=/story/getting-started-quick-start-guide--quick-start
+
+Audit 360:
+https://audit360.ux4g.gov.in/
+
+Audit 360 privacy:
+https://audit360.ux4g.gov.in/privacy-policy
+
+Audit 360 terms:
+https://audit360.ux4g.gov.in/term-and-conditions
+
+UX4G CDN:
+https://cdn.ux4g.gov.in/
+
+Current documented CDN example:
+https://cdn.ux4g.gov.in/UX4G@3.0.18/index.css
+https://cdn.ux4g.gov.in/UX4G@3.0.18/ux4g.js
+https://cdn.ux4g.gov.in/UX4G@3.0.18/ux4g-custom.js
+
+Legacy accessibility CDN:
+https://cdn.ux4g.gov.in/tools/accessibility-widget.js
+
+Legacy v1 Digital Locker-hosted assets:
+https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0/css/ux4g-min.css
+https://img1.digitallocker.gov.in/ux4g/UX4G@1.0.0/js/ux4g.min.js
+
+======================================================================
+40. KNOWN REDIRECTION / MOVED / BROKEN ITEMS
+======================================================================
+
+1. https://www.ux4g.gov.in/designsystem/privacy-policy
+   Current response: 404 / page not found; page says route no longer exists or moved.
+
+2. https://www.ux4g.gov.in/designsystem/terms-of-use
+   Current response: 404 / page not found; page says route no longer exists or moved.
+
+3. https://www.ux4g.gov.in/terms-of-use
+   Current indexed response: unexpected-error page rather than terms body.
+
+4. Figma user-supplied project:
+   Automated retrieval blocked by Figma. It should be opened directly in Figma.
+
+5. Sitemap and robots.txt:
+   Direct automated retrieval from this environment returned internal-error responses. Search indexing and direct page discovery were therefore used to reconstruct navigation.
+
+======================================================================
+41. WHAT “THE WHOLE DESIGN SYSTEM” CONSISTS OF
+======================================================================
+
+A practical decomposition is:
+
+A. FOUNDATIONS
+- colour
+- typography
+- spacing
+- layout
+- elevation
+- iconography
+- tokens
+- accessibility
+- content
+
+B. COMPONENTS
+- form controls
+- feedback
+- data display
+- navigation
+- utility/identity/accessibility items
+
+C. PATTERNS
+- identity
+- consent
+- application
+- submission
+- status
+- payment
+- search
+- dashboard
+- notifications
+- feedback/support
+
+D. DESIGN RESOURCES
+- Figma
+- tokens
+- design kit
+- theme tooling
+- icons
+- government logos
+
+E. DEVELOPER SYSTEM
+- Web Components
+- React
+- Angular
+- Flutter/mobile
+- npm
+- CSS/runtime
+- Storybook
+- starter templates
+
+F. UX PRACTICE
+- UX process
+- research
+- usability
+- testing
+- iteration
+- content
+- accessibility
+
+G. QUALITY/COMPLIANCE
+- UX Audit
+- Audit 360
+- UX Health Self-Check
+- Compliance Matrix
+- GIGW alignment
+- WCAG
+- consent/privacy
+- SLA/right-to-service concepts
+- grievance guidance
+
+H. ENABLEMENT
+- capacity building
+- workshops
+- advanced training
+- mentorship/support
+
+I. GOVERNANCE
+- community
+- contribution
+- OpenForge
+- GitHub
+- component lifecycle
+- conformance
+
+J. EVIDENCE
+- case studies
+- project portfolio
+- workshop archive
+
+======================================================================
+42. OFFICIAL PAGE INDEX — CURRENT / V3
+======================================================================
+
+Core:
+https://www.ux4g.gov.in/
+https://www.ux4g.gov.in/get-started
+https://www.ux4g.gov.in/foundations
+https://www.ux4g.gov.in/components
+https://www.ux4g.gov.in/patterns
+https://www.ux4g.gov.in/resources
+https://www.ux4g.gov.in/community
+
+Get Started:
+https://www.ux4g.gov.in/get-started/for-developers
+https://www.ux4g.gov.in/get-started/installation
+https://www.ux4g.gov.in/get-started/about-ux4g
+
+Foundations:
+https://www.ux4g.gov.in/foundations/accessibility
+
+Resources:
+https://www.ux4g.gov.in/resources/ux-handbook
+https://www.ux4g.gov.in/resources/accessibility-widget
+https://www.ux4g.gov.in/logos
+
+Community:
+https://www.ux4g.gov.in/community/case-studies
+https://www.ux4g.gov.in/community/events
+https://www.ux4g.gov.in/community/events/workshops
+
+Legal:
+https://www.ux4g.gov.in/disclaimer
+https://www.ux4g.gov.in/terms-of-use
+
+======================================================================
+43. OFFICIAL PAGE INDEX — LEGACY
+======================================================================
+
+https://www.ux4g.gov.in/aboutus/
+https://www.ux4g.gov.in/aboutus/about-us.php
+https://www.ux4g.gov.in/aboutus/faq.php
+https://www.ux4g.gov.in/aboutus/privacy-policy.php
+https://www.ux4g.gov.in/aboutus/compliance-matrix.php
+https://www.ux4g.gov.in/aboutus/capacity-building.php
+https://www.ux4g.gov.in/aboutus/accessibility/tools.php
+https://www.ux4g.gov.in/aboutus/case-studies/case-studies.php
+
+Legacy PDFs:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Handbook.pdf
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Design-Guidelines-1.0.pdf
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Workshop-Compendium-May-28-24.pdf
+
+======================================================================
+44. LEGACY DEVELOPER PAGE INDEX
+======================================================================
+
+Categories:
+https://doc.ux4g.gov.in/category/getting-started.php
+https://doc.ux4g.gov.in/category/components.php
+https://doc.ux4g.gov.in/category/forms.php
+https://doc.ux4g.gov.in/category/content.php
+https://doc.ux4g.gov.in/category/layout.php
+
+Getting started:
+https://doc.ux4g.gov.in/getting-started/content.php
+
+Layout:
+https://doc.ux4g.gov.in/layout/grid.php
+https://doc.ux4g.gov.in/layout/containers.php
+https://doc.ux4g.gov.in/layout/css-grid.php
+https://doc.ux4g.gov.in/helpers/stacks.php
+
+Content:
+https://doc.ux4g.gov.in/content/tables.php
+https://doc.ux4g.gov.in/content/typography.php
+
+Forms:
+https://doc.ux4g.gov.in/forms/overview.php
+https://doc.ux4g.gov.in/forms/layout.php
+https://doc.ux4g.gov.in/forms/validation.php
+
+Components:
+https://doc.ux4g.gov.in/components/accordion.php
+https://doc.ux4g.gov.in/components/alerts.php
+https://doc.ux4g.gov.in/components/badge.php
+https://doc.ux4g.gov.in/components/breadcrumb.php
+https://doc.ux4g.gov.in/components/button-group.php
+https://doc.ux4g.gov.in/components/buttons.php
+https://doc.ux4g.gov.in/components/card.php
+https://doc.ux4g.gov.in/components/carousel.php
+https://doc.ux4g.gov.in/components/close-button.php
+https://doc.ux4g.gov.in/components/collapse.php
+https://doc.ux4g.gov.in/components/dropdowns.php
+https://doc.ux4g.gov.in/components/list-group.php
+https://doc.ux4g.gov.in/components/modal.php
+https://doc.ux4g.gov.in/components/navbar.php
+https://doc.ux4g.gov.in/components/navs-and-tabs.php
+https://doc.ux4g.gov.in/components/offcanvas.php
+https://doc.ux4g.gov.in/components/pagination.php
+https://doc.ux4g.gov.in/components/placeholders.php
+https://doc.ux4g.gov.in/components/popovers.php
+https://doc.ux4g.gov.in/components/progress.php
+https://doc.ux4g.gov.in/components/scrollspy.php
+https://doc.ux4g.gov.in/components/spinners.php
+https://doc.ux4g.gov.in/components/toasts.php
+https://doc.ux4g.gov.in/components/tooltips.php
+https://doc.ux4g.gov.in/components/chips.php
+https://doc.ux4g.gov.in/components/stepper.php
+https://doc.ux4g.gov.in/components/search.php
+https://doc.ux4g.gov.in/components/date-time.php
+
+Accessibility:
+https://doc.ux4g.gov.in/ux4g-accessibility/accessibility-widgets.php
+
+======================================================================
+45. RESEARCH FINDINGS / ASSESSMENT
+======================================================================
+
+UX4G is best understood as five systems joined together:
+
+1. A design language:
+   tokens + typography + colour + spacing + icons + layout.
+
+2. A component library:
+   standardized UI building blocks with states and accessibility guidance.
+
+3. A service-pattern library:
+   recurring government journey solutions.
+
+4. A delivery/governance framework:
+   handbook + audit + compliance + training + community.
+
+5. An implementation ecosystem:
+   Figma + CSS/runtime + Web Components + React + Angular + mobile + Storybook + npm.
+
+Its strongest differentiator is the government workflow layer.
+
+A generic design system might tell a team how a button looks.
+UX4G additionally tells the team how recurring government service flows should behave:
+- authentication
+- consent
+- evidence/document submission
+- application state
+- SLA/status
+- payment
+- grievance/escalation
+- notification
+- feedback
+
+That reduces both design inconsistency and repeated decision-making.
+
+======================================================================
+46. IMPORTANT NUMBERS / CLAIMS TO CHECK AGAINST CURRENT SITE
+======================================================================
+
+Current v3 claims:
+- 50+ components and patterns
+- 5 UX Handbook chapters
+- 24+ handbook topics
+- 18 Form Elements pages/cards
+- 13 Feedback pages/cards
+- 17 Data Display pages/cards
+- 9 Navigation pages/cards
+- 2 Other pages/cards
+- 9 pattern families
+- 49 pattern entries by family counts
+- WCAG 2.1 AA
+- 4.5:1 minimum contrast displayed in the component overview
+- 4 implementation ecosystems / platforms described on the developer landing
+- free for government departments, according to the current FAQ
+
+Older/current About page counters differ:
+- 52+ case studies (current About)
+- 394+ projects
+- 102+ workshops
+- legacy page: 7858+ members
+
+Accessibility landing page current claim:
+- 4000+ government websites using accessibility tools
+
+These are website claims and should be treated as time-sensitive programme statistics.
+
+======================================================================
+47. LIMITATIONS OF THIS DOSSIER
+======================================================================
+
+1. The exact Figma project contents could not be crawled because Figma blocks automated access.
+2. The site’s sitemap/robots URLs could not be directly retrieved in the browser tool, so the page map was reconstructed from indexed navigation and targeted searches.
+3. Some legacy component filenames may differ because the legacy site’s category pages are more reliable than search-generated filename guesses.
+4. Dynamic Storybook contents are not all expanded into this file.
+5. External third-party pages are not copied wholesale.
+6. The PDFs are linked and summarized, not reproduced in full.
+7. The current disclaimer itself says the design system can change, so this dossier is a dated snapshot.
+
+======================================================================
+48. RECOMMENDED SOURCE-OF-TRUTH ORDER
+======================================================================
+
+When implementing UX4G today, use this order:
+
+1. Current v3:
+https://www.ux4g.gov.in/
+
+2. Current developer docs:
+https://doc.ux4g.gov.in/
+
+3. Current Figma community/design resources:
+https://www.figma.com/community/
+
+4. User-supplied Figma project:
+https://www.figma.com/design/PdnWVvhINlKRjbjDpXc5LX
+
+5. Current UX4G disclaimer:
+https://www.ux4g.gov.in/disclaimer
+
+6. Legacy docs when a v3 page has not yet exposed a sufficiently detailed implementation:
+https://doc.ux4g.gov.in/category/
+
+7. Legacy PDFs for historical/extended handbook and compliance material:
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Handbook.pdf
+https://www.ux4g.gov.in/assets/img/pdf/UX4G-Design-Guidelines-1.0.pdf
+
+======================================================================
+49. QUICK START — DESIGNER
+======================================================================
+
+1. Open Figma Community.
+2. Find the latest UX4G Design System.
+3. Duplicate the library.
+4. Move/copy it into the team project.
+5. Publish it as a team library.
+6. Use foundations/tokens first.
+7. Prefer existing UX4G components.
+8. Use patterns for full service journeys.
+9. Check accessibility states.
+10. Validate the complete journey, not just individual screens.
+11. Apply department theming through the approved theming mechanism.
+12. Hand off using shared component/token semantics.
+
+======================================================================
+50. QUICK START — DEVELOPER
+======================================================================
+
+Production-oriented path:
+npm install ux4g-web-components
+
+Then:
+- import the UX4G stylesheet/runtime
+- use ux4g-* classes/components
+- follow the framework-specific guide
+- use shared tokens
+- verify accessibility
+- test responsive behavior
+- pin the version
+- perform performance and security checks
+- conduct final accessibility review
+- use the support escalation route when needed
+
+Legacy prototypes can use CDN references documented by UX4G, but the current installation guide recommends NPM for production.
+
+======================================================================
+51. QUICK START — GOVERNMENT TEAM / PRODUCT OWNER
+======================================================================
+
+Use UX4G as a lifecycle rather than a UI-only dependency:
+
+Research
+-> UX Design Process
+-> Foundations
+-> Components
+-> Patterns
+-> Prototype/Figma
+-> Development
+-> Accessibility Review
+-> UX Audit / Self-Check
+-> Compliance Matrix
+-> User Testing
+-> Security/Privacy validation
+-> Production
+-> Monitoring/feedback
+-> Governance/community contribution
+
+======================================================================
+52. FINAL TAKEAWAY
+======================================================================
+
+UX4G 3.0 is an Indian government design-system ecosystem intended to standardize not just how government interfaces look, but how common government digital services behave.
+
+Its architecture can be summarized as:
+
+FOUNDATIONS
++ COMPONENTS
++ PATTERNS
++ ACCESSIBILITY
++ CONTENT
++ IMPLEMENTATION
++ AUDIT
++ COMPLIANCE
++ TRAINING
++ GOVERNANCE
++ CASE STUDIES
+= UX4G ECOSYSTEM
+
+The most important resources to open first are:
+
+https://www.ux4g.gov.in/
+https://www.ux4g.gov.in/get-started
+https://www.ux4g.gov.in/foundations
+https://www.ux4g.gov.in/components
+https://www.ux4g.gov.in/patterns
+https://www.ux4g.gov.in/get-started/installation
+https://doc.ux4g.gov.in/
+https://www.ux4g.gov.in/resources/ux-handbook
+https://www.ux4g.gov.in/foundations/accessibility
+https://www.ux4g.gov.in/resources/accessibility-widget
+https://audit360.ux4g.gov.in/
+https://www.ux4g.gov.in/aboutus/compliance-matrix.php
+https://www.ux4g.gov.in/community/case-studies
+https://www.ux4g.gov.in/community/events/workshops
+https://github.com/ux4g
+https://github.com/ux4g/ux4g-design-system-v1
+https://www.figma.com/design/PdnWVvhINlKRjbjDpXc5LX
+
+END OF DOSSIER

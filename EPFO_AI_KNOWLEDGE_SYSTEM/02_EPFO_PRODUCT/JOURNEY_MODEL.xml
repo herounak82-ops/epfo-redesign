@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<journeys registry="EPFO-JOURNEYS">
+  <journey id="EPFO-JRN-ACCESS" name="access" status="active">
+    <userGoal>recover access to member account</userGoal>
+    <entryState>/</entryState>
+    <mainRoute>/account</mainRoute>
+    <mainSteps>Sign in or recover UAN</mainSteps>
+    <blockers>identity mismatch, inactive UAN, OTP/session failure</blockers>
+    <responsibleActor>member plus authentication service</responsibleActor>
+    <completionState>account shell available</completionState>
+    <failureStates>blocked, expired, unavailable</failureStates>
+    <recoveryStates>preserve context, explain owner and next action</recoveryStates>
+    <relevantMockData>member and notifications</relevantMockData>
+    <relevantRoutes>/account,/profile</relevantRoutes>
+    <futureScope>Batch 1 shallow; deeper recovery in Batch 5</futureScope>
+  </journey>
+  <journey id="EPFO-JRN-KYC" name="kyc" status="active">
+    <userGoal>fix personal details</userGoal>
+    <entryState>/account/health</entryState>
+    <mainRoute>/services/kyc</mainRoute>
+    <mainSteps>Review KYC health; choose item; submit correction; await employer/authority action</mainSteps>
+    <blockers>pending employer approval, rejected proof, mismatch</blockers>
+    <responsibleActor>member, employer, EPFO process</responsibleActor>
+    <completionState>KYC item verified</completionState>
+    <failureStates>pending, rejected, blocked</failureStates>
+    <recoveryStates>retain form state and show reason/owner/next step</recoveryStates>
+    <relevantMockData>kyc records</relevantMockData>
+    <relevantRoutes>/services/kyc,/account/health</relevantRoutes>
+    <futureScope>Batch 3</futureScope>
+  </journey>
+  <journey id="EPFO-JRN-CLAIM" name="claim" status="active">
+    <userGoal>get PF money</userGoal>
+    <entryState>/services</entryState>
+    <mainRoute>/services/claim</mainRoute>
+    <mainSteps>Review claim context; select purpose; confirm; track request</mainSteps>
+    <blockers>ineligible/unclear reason, missing KYC, bank mismatch, pending processing</blockers>
+    <responsibleActor>member, employer, EPFO process</responsibleActor>
+    <completionState>request submitted/trackable</completionState>
+    <failureStates>draft, blocked, submitted, rejected, settled</failureStates>
+    <recoveryStates>diagnostic status and recovery path</recoveryStates>
+    <relevantMockData>claims and request fixtures</relevantMockData>
+    <relevantRoutes>/services/claim,/requests/:id</relevantRoutes>
+    <futureScope>Batch 2</futureScope>
+  </journey>
+  <journey id="EPFO-JRN-TRANSFER" name="transfer" status="active">
+    <userGoal>move PF after job change</userGoal>
+    <entryState>/account</entryState>
+    <mainRoute>/services/transfer</mainRoute>
+    <mainSteps>Choose source and destination employment; review prerequisites; initiate; track</mainSteps>
+    <blockers>old member ID mismatch, destination not ready, pending employer action</blockers>
+    <responsibleActor>member, current/previous employers, EPFO process</responsibleActor>
+    <completionState>transfer request trackable</completionState>
+    <failureStates>not started, blocked, pending, completed</failureStates>
+    <recoveryStates>show source/destination and responsibility</recoveryStates>
+    <relevantMockData>employment and transfer fixtures</relevantMockData>
+    <relevantRoutes>/services/transfer,/requests/:id</relevantRoutes>
+    <futureScope>Batch 4</futureScope>
+  </journey>
+  <journey id="EPFO-JRN-FAILURE_RECOVERY" name="failure_recovery" status="active">
+    <userGoal>fix a failed request</userGoal>
+    <entryState>/requests</entryState>
+    <mainRoute>/recovery</mainRoute>
+    <mainSteps>Open failed request; understand what happened; choose recovery or grievance</mainSteps>
+    <blockers>opaque error, repeated retry, unclear escalation</blockers>
+    <responsibleActor>member plus owning authority</responsibleActor>
+    <completionState>recovery action recorded</completionState>
+    <failureStates>failed, retryable, escalated, resolved</failureStates>
+    <recoveryStates>answer what/why/who/now/next/when</recoveryStates>
+    <relevantMockData>requests and notifications</relevantMockData>
+    <relevantRoutes>/recovery,/help</relevantRoutes>
+    <futureScope>Batch 5</futureScope>
+  </journey>
+</journeys>

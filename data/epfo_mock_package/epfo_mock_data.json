@@ -1,0 +1,5374 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_type": "synthetic_epfo_service_demo",
+  "as_of": "2026-08-27",
+  "privacy_notice": "All people, identifiers, employers, account references, transactions, claims, and contact details are fictional and invalid. No Aadhaar, PAN, UAN, bank account, OTP, or government credential is real.",
+  "policy_config": {
+    "policy_config_id": "synthetic-epfo-demo-2026-08-27",
+    "effective_as_of": "2026-08-27",
+    "is_official": false,
+    "note": "This configuration is for a mock application. EPFO policy, form availability, thresholds, rates, and withdrawal rules must be fetched from current official circulars before production use.",
+    "commonly_modeled_services": {
+      "balance": true,
+      "passbook": true,
+      "claim_tracking": true,
+      "kyc": true,
+      "uan_lookup": true,
+      "member_accounts": true,
+      "grievance": true,
+      "pension_status": true
+    },
+    "illustrative_checks": {
+      "eps_minimum_service_months": 120,
+      "epf_final_settlement_unemployment_days": 60,
+      "claim_service_sla_days": 20,
+      "epf_contribution_rate_assumption": 0.12,
+      "eps_rate_assumption": 0.0833,
+      "eps_pension_formula_example": "(pensionable_salary_average_last_60_months * pensionable_service_years) / 70"
+    }
+  },
+  "employers": [
+    {
+      "establishment_code": "0012780",
+      "name": "Asterline Digital Services Pvt. Ltd. (synthetic)",
+      "sector": "IT services",
+      "region_code": "DL",
+      "office_code": "CPM",
+      "pf_office": "Delhi Central"
+    },
+    {
+      "establishment_code": "0026419",
+      "name": "Kaveri Auto Components Pvt. Ltd. (synthetic)",
+      "sector": "Manufacturing",
+      "region_code": "KA",
+      "office_code": "BLR",
+      "pf_office": "Bengaluru Central"
+    },
+    {
+      "establishment_code": "0035097",
+      "name": "Sahyadri Health Network Ltd. (synthetic)",
+      "sector": "Healthcare",
+      "region_code": "MH",
+      "office_code": "MUM",
+      "pf_office": "Mumbai Central"
+    },
+    {
+      "establishment_code": "0041842",
+      "name": "Narmada Retail Logistics Pvt. Ltd. (synthetic)",
+      "sector": "Logistics and retail",
+      "region_code": "MP",
+      "office_code": "IND",
+      "pf_office": "Indore"
+    },
+    {
+      "establishment_code": "0057321",
+      "name": "Eastern Harbor Financial Services Ltd. (synthetic)",
+      "sector": "Financial services",
+      "region_code": "WB",
+      "office_code": "KRP",
+      "pf_office": "Kolkata Regional"
+    },
+    {
+      "establishment_code": "0069135",
+      "name": "Coromandel Renewable Energy Pvt. Ltd. (synthetic)",
+      "sector": "Renewable energy",
+      "region_code": "TN",
+      "office_code": "CHE",
+      "pf_office": "Chennai Central"
+    },
+    {
+      "establishment_code": "0074206",
+      "name": "Himalayan Hospitality Services LLP (synthetic)",
+      "sector": "Hospitality",
+      "region_code": "UK",
+      "office_code": "DDN",
+      "pf_office": "Dehradun"
+    },
+    {
+      "establishment_code": "0083054",
+      "name": "Konkan Public Infrastructure Ltd. (synthetic)",
+      "sector": "Infrastructure",
+      "region_code": "GA",
+      "office_code": "PNA",
+      "pf_office": "Pune"
+    }
+  ],
+  "citizens": [
+    {
+      "synthetic_citizen_id": "CIT-001",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Aarav Mehta",
+      "date_of_birth": "1992-02-14",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 01",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX4412",
+        "email": "citizen001@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5501",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6001",
+      "pan_masked": "XXXXX21XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6001",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX11XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7001",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00011",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "DL/CPM/0012780/001/0100001",
+          "member_id_components": {
+            "region_code": "DL",
+            "office_code": "CPM",
+            "establishment_code": "0012780",
+            "extension_code": "001",
+            "member_number": "0100001"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0012780",
+            "name": "Asterline Digital Services Pvt. Ltd. (synthetic)",
+            "sector": "IT services",
+            "region_code": "DL",
+            "office_code": "CPM",
+            "pf_office": "Delhi Central"
+          },
+          "date_of_joining": "2019-02-02",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 9875,
+          "epf_wages_monthly": 9875,
+          "eps_wages_monthly": 9875,
+          "edli_wages_monthly": 9875,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 59350,
+          "eps_service_months": 79,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_applicable",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 12875,
+              "epf_wages": 9875,
+              "eps_wages": 9875,
+              "edli_wages": 9875,
+              "employee_share": 1185,
+              "employer_epf_share": 362,
+              "eps_share": 823,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 12875,
+              "epf_wages": 9875,
+              "eps_wages": 9875,
+              "edli_wages": 9875,
+              "employee_share": 1185,
+              "employer_epf_share": 362,
+              "eps_share": 823,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 12875,
+              "epf_wages": 9875,
+              "eps_wages": 9875,
+              "edli_wages": 9875,
+              "employee_share": 1185,
+              "employer_epf_share": 362,
+              "eps_share": 823,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 12875,
+              "epf_wages": 9875,
+              "eps_wages": 9875,
+              "edli_wages": 9875,
+              "employee_share": 1185,
+              "employer_epf_share": 362,
+              "eps_share": 823,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 12875,
+              "epf_wages": 9875,
+              "eps_wages": 9875,
+              "edli_wages": 9875,
+              "employee_share": 1185,
+              "employer_epf_share": 362,
+              "eps_share": 823,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 403,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 79,
+        "eps_service_years_approx": 6.6,
+        "pensionable_salary_average_last_60_months": 9875,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_balance",
+        "required_information": [
+          "synthetic citizen ID or masked UAN",
+          "optional member ID selector"
+        ],
+        "action": "Aggregate posted credits, transfers, debits, and interest for each linked member account.",
+        "result": "Return current balance with employee share, employer EPF share, interest, EPS service-only contribution, and ledger freshness.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Aarav wants to see the total EPF balance after his latest monthly contribution.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-002",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Isha Nair",
+      "date_of_birth": "1988-07-09",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 02",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX1738",
+        "email": "citizen002@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5502",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6002",
+      "pan_masked": "XXXXX22XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6002",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX12XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7002",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00021",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "KA/BLR/0026419/002/0100002",
+          "member_id_components": {
+            "region_code": "KA",
+            "office_code": "BLR",
+            "establishment_code": "0026419",
+            "extension_code": "002",
+            "member_number": "0100002"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0026419",
+            "name": "Kaveri Auto Components Pvt. Ltd. (synthetic)",
+            "sector": "Manufacturing",
+            "region_code": "KA",
+            "office_code": "BLR",
+            "pf_office": "Bengaluru Central"
+          },
+          "date_of_joining": "2020-03-03",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 10750,
+          "epf_wages_monthly": 10750,
+          "eps_wages_monthly": 10750,
+          "edli_wages_monthly": 10750,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 76700,
+          "eps_service_months": 86,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_applicable",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 13750,
+              "epf_wages": 10750,
+              "eps_wages": 10750,
+              "edli_wages": 10750,
+              "employee_share": 1290,
+              "employer_epf_share": 395,
+              "eps_share": 895,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 13750,
+              "epf_wages": 10750,
+              "eps_wages": 10750,
+              "edli_wages": 10750,
+              "employee_share": 1290,
+              "employer_epf_share": 395,
+              "eps_share": 895,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 13750,
+              "epf_wages": 10750,
+              "eps_wages": 10750,
+              "edli_wages": 10750,
+              "employee_share": 1290,
+              "employer_epf_share": 395,
+              "eps_share": 895,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 13750,
+              "epf_wages": 10750,
+              "eps_wages": 10750,
+              "edli_wages": 10750,
+              "employee_share": 1290,
+              "employer_epf_share": 395,
+              "eps_share": 895,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 13750,
+              "epf_wages": 10750,
+              "eps_wages": 10750,
+              "edli_wages": 10750,
+              "employee_share": 1290,
+              "employer_epf_share": 395,
+              "eps_share": 895,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 521,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id_masked": "CLM-26-000002",
+          "form_type": "Form 31",
+          "claim_reason": "illness",
+          "filed_on": "2026-08-12",
+          "amount_requested": 26500,
+          "amount_approved": null,
+          "status": "under_process",
+          "status_history": [
+            {
+              "status": "submitted",
+              "at": "2026-08-12"
+            },
+            {
+              "status": "acknowledged",
+              "at": "2026-08-13"
+            },
+            {
+              "status": "under_process",
+              "at": "2026-08-15"
+            }
+          ],
+          "rejection_code": null,
+          "payment_reference_suffix": null
+        }
+      ],
+      "pension": {
+        "eps_service_months": 86,
+        "eps_service_years_approx": 7.2,
+        "pensionable_salary_average_last_60_months": 10750,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "track_claim",
+        "required_information": [
+          "claim ID or masked UAN",
+          "optional member ID"
+        ],
+        "action": "Read claim status history and current processing stage.",
+        "result": "Return current status, last updated timestamp, form type, amount requested/approved, rejection reason if any, and next safe step.",
+        "demo_outcome": "under_process_at_regional_office"
+      },
+      "narrative": "Isha wants to know whether her Form 31 medical advance has been approved.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-003",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Rohan Kulkarni",
+      "date_of_birth": "1971-11-23",
+      "gender": "M",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 03",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX9056",
+        "email": "citizen003@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5503",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6003",
+      "pan_masked": "XXXXX23XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6003",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX13XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7003",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00031",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "GA/PNA/0083054/000/0100003",
+          "member_id_components": {
+            "region_code": "GA",
+            "office_code": "PNA",
+            "establishment_code": "0083054",
+            "extension_code": "000",
+            "member_number": "0100003"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0083054",
+            "name": "Konkan Public Infrastructure Ltd. (synthetic)",
+            "sector": "Infrastructure",
+            "region_code": "GA",
+            "office_code": "PNA",
+            "pf_office": "Pune"
+          },
+          "date_of_joining": "2021-04-04",
+          "date_of_exit": "2024-12-31",
+          "exit_reason": "superannuation",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 11625,
+          "epf_wages_monthly": 11625,
+          "eps_wages_monthly": 11625,
+          "edli_wages_monthly": 11625,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 94050,
+          "eps_service_months": 142,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_applicable",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 14625,
+              "epf_wages": 11625,
+              "eps_wages": 11625,
+              "edli_wages": 11625,
+              "employee_share": 1395,
+              "employer_epf_share": 427,
+              "eps_share": 968,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 14625,
+              "epf_wages": 11625,
+              "eps_wages": 11625,
+              "edli_wages": 11625,
+              "employee_share": 1395,
+              "employer_epf_share": 427,
+              "eps_share": 968,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 14625,
+              "epf_wages": 11625,
+              "eps_wages": 11625,
+              "edli_wages": 11625,
+              "employee_share": 1395,
+              "employer_epf_share": 427,
+              "eps_share": 968,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 14625,
+              "epf_wages": 11625,
+              "eps_wages": 11625,
+              "edli_wages": 11625,
+              "employee_share": 1395,
+              "employer_epf_share": 427,
+              "eps_share": 968,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 14625,
+              "epf_wages": 11625,
+              "eps_wages": 11625,
+              "edli_wages": 11625,
+              "employee_share": 1395,
+              "employer_epf_share": 427,
+              "eps_share": 968,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 639,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 142,
+        "eps_service_years_approx": 11.8,
+        "pensionable_salary_average_last_60_months": 11625,
+        "ppo_masked": "PPOXXXX003003",
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "check_pension_eligibility",
+        "required_information": [
+          "masked UAN or citizen ID",
+          "date of birth",
+          "service history",
+          "EPS membership state"
+        ],
+        "action": "Calculate eligible EPS service months and compare with the configured pension threshold.",
+        "result": "Return eligible/not eligible/needs-verification, service months, age gate, and documents or profile corrections needed.",
+        "demo_outcome": "eligible_subject_to_service_and_age_verification"
+      },
+      "narrative": "Rohan wants to check whether his service history meets the EPS pension threshold.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-004",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Sana Parveen",
+      "date_of_birth": "1996-05-30",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 04",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX6241",
+        "email": "citizen004@example.test",
+        "mobile_verified": false
+      },
+      "address": {
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5504",
+      "uan_status": "not_activated",
+      "uan_source": "synthetic_basic-detail-match",
+      "aadhaar_last4": "6004",
+      "pan_masked": "XXXXX24XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6004",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX14XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7004",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00041",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 2,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "MP/IND/0041842/001/0100004",
+          "member_id_components": {
+            "region_code": "MP",
+            "office_code": "IND",
+            "establishment_code": "0041842",
+            "extension_code": "001",
+            "member_number": "0100004"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0041842",
+            "name": "Narmada Retail Logistics Pvt. Ltd. (synthetic)",
+            "sector": "Logistics and retail",
+            "region_code": "MP",
+            "office_code": "IND",
+            "pf_office": "Indore"
+          },
+          "date_of_joining": "2022-05-05",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 12500,
+          "epf_wages_monthly": 12500,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 12500,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 111400,
+          "eps_service_months": 100,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_applicable",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15500,
+              "epf_wages": 12500,
+              "eps_wages": 0,
+              "edli_wages": 12500,
+              "employee_share": 1500,
+              "employer_epf_share": 1500,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15500,
+              "epf_wages": 12500,
+              "eps_wages": 0,
+              "edli_wages": 12500,
+              "employee_share": 1500,
+              "employer_epf_share": 1500,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15500,
+              "epf_wages": 12500,
+              "eps_wages": 0,
+              "edli_wages": 12500,
+              "employee_share": 1500,
+              "employer_epf_share": 1500,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15500,
+              "epf_wages": 12500,
+              "eps_wages": 0,
+              "edli_wages": 12500,
+              "employee_share": 1500,
+              "employer_epf_share": 1500,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15500,
+              "epf_wages": 12500,
+              "eps_wages": 0,
+              "edli_wages": 12500,
+              "employee_share": 1500,
+              "employer_epf_share": 1500,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 757,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 100,
+        "eps_service_years_approx": 8.3,
+        "pensionable_salary_average_last_60_months": 12500,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "find_uan",
+        "required_information": [
+          "name as recorded",
+          "date of birth",
+          "registered mobile last four digits",
+          "optional Aadhaar last four digits"
+        ],
+        "action": "Perform an exact synthetic match against member master data; never expose an unmasked identifier in logs.",
+        "result": "Return masked UAN, match confidence, linked member count, and verification instruction.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Sana knows her basic details but does not remember her UAN.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-005",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Vikram Singh",
+      "date_of_birth": "1985-01-18",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 05",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX3397",
+        "email": "citizen005@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5505",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6005",
+      "pan_masked": "XXXXX25XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-9012",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-01-15",
+          "approved_on": "2024-01-15"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX45AB",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-01-16",
+          "approved_on": "2024-01-17"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7784",
+          "bank_name": "State Bank of India (synthetic account)",
+          "ifsc": "SBIN0XXXX12",
+          "status": "pending_employer_approval",
+          "submitted_on": "2026-08-18",
+          "approved_on": null,
+          "rejection_reason": null
+        }
+      ],
+      "nomination": {
+        "status": "not_filed",
+        "last_updated": null,
+        "nominee_count": 1,
+        "allocation_sum_percent": 0
+      },
+      "employments": [
+        {
+          "member_id_masked": "WB/KRP/0057321/002/0100005",
+          "member_id_components": {
+            "region_code": "WB",
+            "office_code": "KRP",
+            "establishment_code": "0057321",
+            "extension_code": "002",
+            "member_number": "0100005"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0057321",
+            "name": "Eastern Harbor Financial Services Ltd. (synthetic)",
+            "sector": "Financial services",
+            "region_code": "WB",
+            "office_code": "KRP",
+            "pf_office": "Kolkata Regional"
+          },
+          "date_of_joining": "2023-06-06",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 13375,
+          "epf_wages_monthly": 13375,
+          "eps_wages_monthly": 13375,
+          "edli_wages_monthly": 13375,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 128750,
+          "eps_service_months": 107,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_applicable",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 16375,
+              "epf_wages": 13375,
+              "eps_wages": 13375,
+              "edli_wages": 13375,
+              "employee_share": 1605,
+              "employer_epf_share": 491,
+              "eps_share": 1114,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 16375,
+              "epf_wages": 13375,
+              "eps_wages": 13375,
+              "edli_wages": 13375,
+              "employee_share": 1605,
+              "employer_epf_share": 491,
+              "eps_share": 1114,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 16375,
+              "epf_wages": 13375,
+              "eps_wages": 13375,
+              "edli_wages": 13375,
+              "employee_share": 1605,
+              "employer_epf_share": 491,
+              "eps_share": 1114,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 16375,
+              "epf_wages": 13375,
+              "eps_wages": 13375,
+              "edli_wages": 13375,
+              "employee_share": 1605,
+              "employer_epf_share": 491,
+              "eps_share": 1114,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 16375,
+              "epf_wages": 13375,
+              "eps_wages": 13375,
+              "edli_wages": 13375,
+              "employee_share": 1605,
+              "employer_epf_share": 491,
+              "eps_share": 1114,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 874,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 107,
+        "eps_service_years_approx": 8.9,
+        "pensionable_salary_average_last_60_months": 13375,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_kyc",
+        "required_information": [
+          "masked UAN or citizen ID"
+        ],
+        "action": "Read KYC entries and their verification workflow states.",
+        "result": "Return Aadhaar, PAN, and bank status, pending approver, submitted date, and non-sensitive remediation guidance.",
+        "demo_outcome": "blocked_until_bank_kyc_approval"
+      },
+      "narrative": "Vikram wants to know why his bank KYC is still pending for employer approval.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-006",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Priya Iyer",
+      "date_of_birth": "1990-09-02",
+      "gender": "F",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 06",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX7810",
+        "email": "citizen006@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5506",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6006",
+      "pan_masked": "XXXXX26XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6006",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX16XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7006",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00061",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "MP/IND/0041842/001/0200006",
+          "member_id_components": {
+            "region_code": "MP",
+            "office_code": "IND",
+            "establishment_code": "0041842",
+            "extension_code": "001",
+            "member_number": "0200006"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0041842",
+            "name": "Narmada Retail Logistics Pvt. Ltd. (synthetic)",
+            "sector": "Logistics and retail",
+            "region_code": "MP",
+            "office_code": "IND",
+            "pf_office": "Indore"
+          },
+          "date_of_joining": "2021-09-12",
+          "date_of_exit": "2024-07-06",
+          "exit_reason": "change_in_employment",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 12450,
+          "epf_wages_monthly": 12450,
+          "eps_wages_monthly": 12450,
+          "edli_wages_monthly": 12450,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 55800,
+          "eps_service_months": 42,
+          "passbook_last_posted_wage_month": "2024-10",
+          "transfer_status": "transferred_to_current_member",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15450,
+              "epf_wages": 12450,
+              "eps_wages": 0,
+              "edli_wages": 12450,
+              "employee_share": 1494,
+              "employer_epf_share": 1494,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15450,
+              "epf_wages": 12450,
+              "eps_wages": 0,
+              "edli_wages": 12450,
+              "employee_share": 1494,
+              "employer_epf_share": 1494,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15450,
+              "epf_wages": 12450,
+              "eps_wages": 0,
+              "edli_wages": 12450,
+              "employee_share": 1494,
+              "employer_epf_share": 1494,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15450,
+              "epf_wages": 12450,
+              "eps_wages": 0,
+              "edli_wages": 12450,
+              "employee_share": 1494,
+              "employer_epf_share": 1494,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 15450,
+              "epf_wages": 12450,
+              "eps_wages": 0,
+              "edli_wages": 12450,
+              "employee_share": 1494,
+              "employer_epf_share": 1494,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 379,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        },
+        {
+          "member_id_masked": "MH/MUM/0035097/000/0100006",
+          "member_id_components": {
+            "region_code": "MH",
+            "office_code": "MUM",
+            "establishment_code": "0035097",
+            "extension_code": "000",
+            "member_number": "0100006"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0035097",
+            "name": "Sahyadri Health Network Ltd. (synthetic)",
+            "sector": "Healthcare",
+            "region_code": "MH",
+            "office_code": "MUM",
+            "pf_office": "Mumbai Central"
+          },
+          "date_of_joining": "2024-07-07",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 14250,
+          "epf_wages_monthly": 14250,
+          "eps_wages_monthly": 14250,
+          "edli_wages_monthly": 14250,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 146100,
+          "eps_service_months": 114,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "completed_annexure_k_pending",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 17250,
+              "epf_wages": 14250,
+              "eps_wages": 14250,
+              "edli_wages": 14250,
+              "employee_share": 1710,
+              "employer_epf_share": 523,
+              "eps_share": 1187,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 17250,
+              "epf_wages": 14250,
+              "eps_wages": 14250,
+              "edli_wages": 14250,
+              "employee_share": 1710,
+              "employer_epf_share": 523,
+              "eps_share": 1187,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 17250,
+              "epf_wages": 14250,
+              "eps_wages": 14250,
+              "edli_wages": 14250,
+              "employee_share": 1710,
+              "employer_epf_share": 523,
+              "eps_share": 1187,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 17250,
+              "epf_wages": 14250,
+              "eps_wages": 14250,
+              "edli_wages": 14250,
+              "employee_share": 1710,
+              "employer_epf_share": 523,
+              "eps_share": 1187,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 17250,
+              "epf_wages": 14250,
+              "eps_wages": 14250,
+              "edli_wages": 14250,
+              "employee_share": 1710,
+              "employer_epf_share": 523,
+              "eps_share": 1187,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 992,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 114,
+        "eps_service_years_approx": 9.5,
+        "pensionable_salary_average_last_60_months": 14250,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "track_transfer",
+        "required_information": [
+          "masked UAN",
+          "old and new member IDs if known"
+        ],
+        "action": "Compare source and destination member accounts and transfer certificate status.",
+        "result": "Return transfer state, transferred amount, Annexure-K reference state, and unresolved data mismatches.",
+        "demo_outcome": "completed_transfer_with_annexure_k_pending"
+      },
+      "narrative": "Priya changed jobs and wants to confirm whether the old member account was transferred.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-007",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Mohammed Faizan",
+      "date_of_birth": "1998-03-11",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 07",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX2904",
+        "email": "citizen007@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5507",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6007",
+      "pan_masked": "XXXXX27XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6007",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX17XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7007",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00071",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "TN/CHE/0069135/001/0100007",
+          "member_id_components": {
+            "region_code": "TN",
+            "office_code": "CHE",
+            "establishment_code": "0069135",
+            "extension_code": "001",
+            "member_number": "0100007"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0069135",
+            "name": "Coromandel Renewable Energy Pvt. Ltd. (synthetic)",
+            "sector": "Renewable energy",
+            "region_code": "TN",
+            "office_code": "CHE",
+            "pf_office": "Chennai Central"
+          },
+          "date_of_joining": "2018-08-08",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 15125,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 163450,
+          "eps_service_months": 121,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 18125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 18125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 18125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 18125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 18125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1110,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 121,
+        "eps_service_years_approx": 10.1,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "check_eligibility",
+        "required_information": [
+          "masked UAN",
+          "claim reason",
+          "requested amount",
+          "service history",
+          "KYC state"
+        ],
+        "action": "Run a configurable Form 31 pre-check without filing a real claim.",
+        "result": "Return eligible/not eligible/needs-verification, applicable balance ceiling, and missing prerequisites.",
+        "demo_outcome": "needs_document_and_reason_validation"
+      },
+      "narrative": "Faizan wants an eligibility check for a housing-related Form 31 advance.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-008",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Kavya Rao",
+      "date_of_birth": "1994-12-25",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 08",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX1183",
+        "email": "citizen008@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5508",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6008",
+      "pan_masked": "XXXXX28XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6008",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX18XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7008",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00081",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 2,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "UK/DDN/0074206/002/0100008",
+          "member_id_components": {
+            "region_code": "UK",
+            "office_code": "DDN",
+            "establishment_code": "0074206",
+            "extension_code": "002",
+            "member_number": "0100008"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0074206",
+            "name": "Himalayan Hospitality Services LLP (synthetic)",
+            "sector": "Hospitality",
+            "region_code": "UK",
+            "office_code": "DDN",
+            "pf_office": "Dehradun"
+          },
+          "date_of_joining": "2019-09-09",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 16000,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 180800,
+          "eps_service_months": 128,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1228,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 128,
+        "eps_service_years_approx": 10.7,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_nomination",
+        "required_information": [
+          "masked UAN",
+          "authentication state"
+        ],
+        "action": "Read e-nomination status and nominee allocation without exposing full nominee identity.",
+        "result": "Return filed/not filed, last update, nominee count, percentage sum, and whether a re-file is required.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Kavya wants to verify that her e-nomination has been filed.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-009",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Ankit Shah",
+      "date_of_birth": "1982-06-16",
+      "gender": "M",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 09",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX5528",
+        "email": "citizen009@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5509",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6009",
+      "pan_masked": "XXXXX29XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6009",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX19XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7009",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00091",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "DL/CPM/0012780/000/0100009",
+          "member_id_components": {
+            "region_code": "DL",
+            "office_code": "CPM",
+            "establishment_code": "0012780",
+            "extension_code": "000",
+            "member_number": "0100009"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0012780",
+            "name": "Asterline Digital Services Pvt. Ltd. (synthetic)",
+            "sector": "IT services",
+            "region_code": "DL",
+            "office_code": "CPM",
+            "pf_office": "Delhi Central"
+          },
+          "date_of_joining": "2020-01-10",
+          "date_of_exit": "2025-11-30",
+          "exit_reason": "resignation",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 16875,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 198150,
+          "eps_service_months": 135,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 19875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1346,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id_masked": "CLM-26-000009",
+          "form_type": "Form 19",
+          "claim_reason": "final_settlement_after_exit",
+          "filed_on": "2026-08-05",
+          "amount_requested": 156700,
+          "amount_approved": null,
+          "status": "eligibility_check",
+          "status_history": [
+            {
+              "status": "submitted",
+              "at": "2026-08-05"
+            },
+            {
+              "status": "eligibility_check",
+              "at": "2026-08-06"
+            }
+          ],
+          "rejection_code": null,
+          "payment_reference_suffix": null
+        }
+      ],
+      "pension": {
+        "eps_service_months": 135,
+        "eps_service_years_approx": 11.2,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "check_eligibility",
+        "required_information": [
+          "masked UAN",
+          "date of exit",
+          "exit reason",
+          "current employment signal",
+          "KYC state"
+        ],
+        "action": "Run a configurable Form 19 final-settlement pre-check.",
+        "result": "Return readiness, configured waiting-period check, final ledger posting check, and KYC blockers.",
+        "demo_outcome": "eligible_after_configured_unemployment_gate"
+      },
+      "narrative": "Ankit has been unemployed after resignation and wants to check Form 19 readiness.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-010",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Nandini Bose",
+      "date_of_birth": "1968-10-08",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 10",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX4670",
+        "email": "citizen010@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5510",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6010",
+      "pan_masked": "XXXXX30XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6010",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX20XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7010",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00101",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "not_filed",
+        "last_updated": null,
+        "nominee_count": 1,
+        "allocation_sum_percent": 0
+      },
+      "employments": [
+        {
+          "member_id_masked": "KA/BLR/0026419/001/0100010",
+          "member_id_components": {
+            "region_code": "KA",
+            "office_code": "BLR",
+            "establishment_code": "0026419",
+            "extension_code": "001",
+            "member_number": "0100010"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0026419",
+            "name": "Kaveri Auto Components Pvt. Ltd. (synthetic)",
+            "sector": "Manufacturing",
+            "region_code": "KA",
+            "office_code": "BLR",
+            "pf_office": "Bengaluru Central"
+          },
+          "date_of_joining": "2021-02-11",
+          "date_of_exit": "2024-12-31",
+          "exit_reason": "superannuation",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 17750,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 215500,
+          "eps_service_months": 142,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 20750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 20750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 20750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 20750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 20750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1464,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 142,
+        "eps_service_years_approx": 11.8,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "active_payment",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_pension_status",
+        "required_information": [
+          "masked PPO or pensioner ID",
+          "date of birth",
+          "regional office"
+        ],
+        "action": "Read the synthetic pension payment enquiry record.",
+        "result": "Return pension status, last credited month, disbursing bank masked, and life-certificate flag.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Nandini wants to look up her pension payment status using a synthetic PPO.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-011",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Arjun Deshpande",
+      "date_of_birth": "1993-04-27",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 11",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX2301",
+        "email": "citizen011@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5511",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6011",
+      "pan_masked": "XXXXX31XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6011",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX21XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7011",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00111",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "MH/MUM/0035097/002/0100011",
+          "member_id_components": {
+            "region_code": "MH",
+            "office_code": "MUM",
+            "establishment_code": "0035097",
+            "extension_code": "002",
+            "member_number": "0100011"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0035097",
+            "name": "Sahyadri Health Network Ltd. (synthetic)",
+            "sector": "Healthcare",
+            "region_code": "MH",
+            "office_code": "MUM",
+            "pf_office": "Mumbai Central"
+          },
+          "date_of_joining": "2022-03-12",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 18625,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 232850,
+          "eps_service_months": 149,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 21625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 21625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 21625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 21625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 21625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1581,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 149,
+        "eps_service_years_approx": 12.4,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [
+        {
+          "workflow": "date_of_birth_correction",
+          "status": "pending_employer_approval",
+          "submitted_on": "2026-08-14",
+          "requested_value": "1993-04-17",
+          "supporting_document": "birth_certificate_or_school_leaving_certificate"
+        }
+      ],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_profile_correction_status",
+        "required_information": [
+          "masked UAN",
+          "field to correct",
+          "supporting-document status"
+        ],
+        "action": "Read pending member-profile correction workflow.",
+        "result": "Return current value masked, requested value masked where appropriate, approval state, and required action.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Arjun wants to correct a mismatch in his recorded date of birth.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-012",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Meera Thomas",
+      "date_of_birth": "1987-08-19",
+      "gender": "F",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 12",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX8462",
+        "email": "citizen012@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5512",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6012",
+      "pan_masked": "XXXXX32XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6012",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX22XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7012",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00121",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 2,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "MP/IND/0041842/000/0100012",
+          "member_id_components": {
+            "region_code": "MP",
+            "office_code": "IND",
+            "establishment_code": "0041842",
+            "extension_code": "000",
+            "member_number": "0100012"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0041842",
+            "name": "Narmada Retail Logistics Pvt. Ltd. (synthetic)",
+            "sector": "Logistics and retail",
+            "region_code": "MP",
+            "office_code": "IND",
+            "pf_office": "Indore"
+          },
+          "date_of_joining": "2023-04-13",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 19500,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 250200,
+          "eps_service_months": 156,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 22500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 22500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 22500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 22500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 22500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1699,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 156,
+        "eps_service_years_approx": 13.0,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [
+        {
+          "registration_no_masked": "GRV-26-000012",
+          "category": "contribution_not_reflected",
+          "status": "registered",
+          "routed_office": "Indore",
+          "created_on": "2026-08-20",
+          "reminder_available_after": "2026-09-03",
+          "document_count": 1
+        }
+      ],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "track_grievance",
+        "required_information": [
+          "grievance registration number or masked UAN",
+          "category"
+        ],
+        "action": "Read EPFiGMS-style grievance status and reminders.",
+        "result": "Return registration number masked, routed office, status, age in days, reminder eligibility, and document count.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Meera wants to raise a grievance about a missing monthly contribution.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-013",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Devendra Yadav",
+      "date_of_birth": "1978-02-03",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 13",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX5174",
+        "email": "citizen013@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5513",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6013",
+      "pan_masked": "XXXXX33XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6013",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX23XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7013",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00131",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "WB/KRP/0057321/001/0100013",
+          "member_id_components": {
+            "region_code": "WB",
+            "office_code": "KRP",
+            "establishment_code": "0057321",
+            "extension_code": "001",
+            "member_number": "0100013"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0057321",
+            "name": "Eastern Harbor Financial Services Ltd. (synthetic)",
+            "sector": "Financial services",
+            "region_code": "WB",
+            "office_code": "KRP",
+            "pf_office": "Kolkata Regional"
+          },
+          "date_of_joining": "2024-05-14",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 20375,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 267550,
+          "eps_service_months": 163,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 23375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 23375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 23375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 23375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 23375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1817,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 163,
+        "eps_service_years_approx": 13.6,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_service_history",
+        "required_information": [
+          "masked UAN"
+        ],
+        "action": "List employment spells, member IDs, dates of joining/exit, and EPS service months.",
+        "result": "Return chronological service history and gaps requiring correction or transfer review.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Devendra wants a consolidated employment and service-history view.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-014",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Ananya Ghosh",
+      "date_of_birth": "2001-06-21",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 14",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX6027",
+        "email": "citizen014@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5514",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6014",
+      "pan_masked": "XXXXX34XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6014",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX24XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7014",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00141",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "TN/CHE/0069135/002/0100014",
+          "member_id_components": {
+            "region_code": "TN",
+            "office_code": "CHE",
+            "establishment_code": "0069135",
+            "extension_code": "002",
+            "member_number": "0100014"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0069135",
+            "name": "Coromandel Renewable Energy Pvt. Ltd. (synthetic)",
+            "sector": "Renewable energy",
+            "region_code": "TN",
+            "office_code": "CHE",
+            "pf_office": "Chennai Central"
+          },
+          "date_of_joining": "2018-06-15",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 21250,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 284900,
+          "eps_service_months": 170,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 1935,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id_masked": "CLM-26-000014",
+          "form_type": "Form 31",
+          "claim_reason": "education",
+          "filed_on": "2026-07-29",
+          "amount_requested": 38000,
+          "amount_approved": 0,
+          "status": "rejected",
+          "status_history": [
+            {
+              "status": "submitted",
+              "at": "2026-07-29"
+            },
+            {
+              "status": "rejected",
+              "at": "2026-08-03"
+            }
+          ],
+          "rejection_code": "BANK_ACCOUNT_MISMATCH",
+          "rejection_reason": "bank_account_name_or_number_mismatch_with_verified_KYC",
+          "payment_reference_suffix": null
+        }
+      ],
+      "pension": {
+        "eps_service_months": 170,
+        "eps_service_years_approx": 14.2,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "track_claim",
+        "required_information": [
+          "claim ID or masked UAN"
+        ],
+        "action": "Read rejection code and map it to a remediation category.",
+        "result": "Return rejection reason, failed validation, whether re-filing is possible, and safe next step.",
+        "demo_outcome": "rejected_bank_account_mismatch"
+      },
+      "narrative": "Ananya wants to understand why her Form 31 claim was rejected.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-015",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Harish Menon",
+      "date_of_birth": "1959-09-14",
+      "gender": "M",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 15",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX7308",
+        "email": "citizen015@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Thiruvananthapuram",
+        "state": "Kerala",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5515",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6015",
+      "pan_masked": "XXXXX35XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6015",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX25XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7015",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00151",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "not_filed",
+        "last_updated": null,
+        "nominee_count": 1,
+        "allocation_sum_percent": 0
+      },
+      "employments": [
+        {
+          "member_id_masked": "UK/DDN/0074206/000/0100015",
+          "member_id_components": {
+            "region_code": "UK",
+            "office_code": "DDN",
+            "establishment_code": "0074206",
+            "extension_code": "000",
+            "member_number": "0100015"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0074206",
+            "name": "Himalayan Hospitality Services LLP (synthetic)",
+            "sector": "Hospitality",
+            "region_code": "UK",
+            "office_code": "DDN",
+            "pf_office": "Dehradun"
+          },
+          "date_of_joining": "2019-07-16",
+          "date_of_exit": "2024-12-31",
+          "exit_reason": "superannuation",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 22125,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 302250,
+          "eps_service_months": 177,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 25125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 25125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 25125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 25125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 25125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2053,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 177,
+        "eps_service_years_approx": 14.8,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "active_payment",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": {
+        "status": "valid",
+        "valid_through": "2027-11-30",
+        "channel": "digital_life_certificate"
+      },
+      "intent_journey": {
+        "intent": "get_life_certificate_status",
+        "required_information": [
+          "masked PPO or pensioner ID",
+          "certificate reference if known"
+        ],
+        "action": "Read digital life-certificate validity and source channel.",
+        "result": "Return valid/expired/not-found, valid-through date, and non-sensitive submission channel.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Harish wants to know whether his digital life certificate is current.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-016",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Lata Kumari",
+      "date_of_birth": "1991-01-12",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 16",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX1649",
+        "email": "citizen016@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Patna",
+        "state": "Bihar",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5516",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6016",
+      "pan_masked": "XXXXX36XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6016",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX26XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7016",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00161",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 2,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "DL/CPM/0012780/002/0200016",
+          "member_id_components": {
+            "region_code": "DL",
+            "office_code": "CPM",
+            "establishment_code": "0012780",
+            "extension_code": "002",
+            "member_number": "0200016"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0012780",
+            "name": "Asterline Digital Services Pvt. Ltd. (synthetic)",
+            "sector": "IT services",
+            "region_code": "DL",
+            "office_code": "CPM",
+            "pf_office": "Delhi Central"
+          },
+          "date_of_joining": "2017-01-22",
+          "date_of_exit": "2020-08-16",
+          "exit_reason": "change_in_employment",
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 21200,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 118800,
+          "eps_service_months": 52,
+          "passbook_last_posted_wage_month": "2024-10",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24200,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24200,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24200,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24200,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 24200,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 807,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        },
+        {
+          "member_id_masked": "GA/PNA/0083054/001/0100016",
+          "member_id_components": {
+            "region_code": "GA",
+            "office_code": "PNA",
+            "establishment_code": "0083054",
+            "extension_code": "001",
+            "member_number": "0100016"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0083054",
+            "name": "Konkan Public Infrastructure Ltd. (synthetic)",
+            "sector": "Infrastructure",
+            "region_code": "GA",
+            "office_code": "PNA",
+            "pf_office": "Pune"
+          },
+          "date_of_joining": "2020-08-17",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 23000,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 319600,
+          "eps_service_months": 184,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2171,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 184,
+        "eps_service_years_approx": 15.3,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "list_member_accounts",
+        "required_information": [
+          "masked UAN"
+        ],
+        "action": "List every linked member account, employer, office, and transfer state.",
+        "result": "Return linked member IDs masked and flag duplicates, overlapping employment, or untransferred balances.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Lata wants to list all member IDs linked to her UAN after two job changes.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-017",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Yash Patel",
+      "date_of_birth": "1999-11-05",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 17",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX3781",
+        "email": "citizen017@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Surat",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5517",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6017",
+      "pan_masked": "XXXXX37XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-1199",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2023-06-03",
+          "approved_on": "2023-06-03"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX77QZ",
+          "status": "rejected",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2026-08-11",
+          "approved_on": null,
+          "rejection_reason": "name_mismatch_with_member_profile"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX4106",
+          "bank_name": "HDFC Bank (synthetic account)",
+          "ifsc": "HDFC0XXXX45",
+          "status": "approved",
+          "submitted_on": "2024-02-19",
+          "approved_on": "2024-02-20"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "DL/CPM/0012780/002/0100017",
+          "member_id_components": {
+            "region_code": "DL",
+            "office_code": "CPM",
+            "establishment_code": "0012780",
+            "extension_code": "002",
+            "member_number": "0100017"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0012780",
+            "name": "Asterline Digital Services Pvt. Ltd. (synthetic)",
+            "sector": "IT services",
+            "region_code": "DL",
+            "office_code": "CPM",
+            "pf_office": "Delhi Central"
+          },
+          "date_of_joining": "2021-09-18",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 23875,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 336950,
+          "eps_service_months": 191,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 26875,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2288,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 191,
+        "eps_service_years_approx": 15.9,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_kyc",
+        "required_information": [
+          "masked UAN",
+          "KYC type"
+        ],
+        "action": "Read rejection reason and validation metadata.",
+        "result": "Return rejected field, reason category, submitted date, and correction path.",
+        "demo_outcome": "rejected_name_mismatch"
+      },
+      "narrative": "Yash wants to see the precise reason that his PAN KYC was rejected.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-018",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Shreya Sethi",
+      "date_of_birth": "1989-03-28",
+      "gender": "F",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 18",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX9155",
+        "email": "citizen018@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5518",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6018",
+      "pan_masked": "XXXXX38XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6018",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX28XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7018",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00181",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "KA/BLR/0026419/000/0100018",
+          "member_id_components": {
+            "region_code": "KA",
+            "office_code": "BLR",
+            "establishment_code": "0026419",
+            "extension_code": "000",
+            "member_number": "0100018"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0026419",
+            "name": "Kaveri Auto Components Pvt. Ltd. (synthetic)",
+            "sector": "Manufacturing",
+            "region_code": "KA",
+            "office_code": "BLR",
+            "pf_office": "Bengaluru Central"
+          },
+          "date_of_joining": "2022-01-19",
+          "date_of_exit": "2025-11-30",
+          "exit_reason": null,
+          "employment_status": "closed",
+          "basic_plus_da_monthly": 24750,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 354300,
+          "eps_service_months": 58,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 27750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 27750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 27750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 27750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 27750,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2406,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id_masked": "SC-26-000018",
+          "form_type": "Form 10C",
+          "claim_reason": "short_service",
+          "filed_on": "2026-08-02",
+          "amount_requested": null,
+          "amount_approved": null,
+          "status": "scheme_certificate_available",
+          "status_history": [
+            {
+              "status": "submitted",
+              "at": "2026-08-02"
+            },
+            {
+              "status": "scheme_certificate_available",
+              "at": "2026-08-08"
+            }
+          ],
+          "rejection_code": null,
+          "payment_reference_suffix": null
+        }
+      ],
+      "pension": {
+        "eps_service_months": 58,
+        "eps_service_years_approx": 4.8,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "not_yet_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "check_scheme_certificate",
+        "required_information": [
+          "masked UAN",
+          "EPS service months",
+          "exit date"
+        ],
+        "action": "Check whether short-service pension withdrawal benefit or scheme-certificate path is available under configured rules.",
+        "result": "Return outcome, service months, and the next application path.",
+        "demo_outcome": "scheme_certificate_path_available"
+      },
+      "narrative": "Shreya left after short service and wants to know whether a scheme certificate is available.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-019",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Gopal Krishnan",
+      "date_of_birth": "1965-05-17",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 19",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX2486",
+        "email": "citizen019@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5519",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6019",
+      "pan_masked": "XXXXX39XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6019",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX29XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7019",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00191",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "MH/MUM/0035097/001/0100019",
+          "member_id_components": {
+            "region_code": "MH",
+            "office_code": "MUM",
+            "establishment_code": "0035097",
+            "extension_code": "001",
+            "member_number": "0100019"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0035097",
+            "name": "Sahyadri Health Network Ltd. (synthetic)",
+            "sector": "Healthcare",
+            "region_code": "MH",
+            "office_code": "MUM",
+            "pf_office": "Mumbai Central"
+          },
+          "date_of_joining": "2023-02-20",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 25625,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 371650,
+          "eps_service_months": 205,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 28625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 28625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 28625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 28625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 28625,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2524,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 205,
+        "eps_service_years_approx": 17.1,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "estimate_pension",
+        "required_information": [
+          "masked UAN",
+          "pensionable salary average",
+          "eligible service",
+          "age"
+        ],
+        "action": "Calculate an illustrative estimate using the configured formula; do not present it as an official sanction.",
+        "result": "Return estimated monthly pension, formula inputs, assumptions, and official-verification warning.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Gopal wants an illustrative EPS pension estimate from his service record.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-020",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Farah Khan",
+      "date_of_birth": "1995-07-07",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 20",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX6913",
+        "email": "citizen020@example.test",
+        "mobile_verified": false
+      },
+      "address": {
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5520",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6020",
+      "pan_masked": "XXXXX40XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6230",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2025-01-04",
+          "approved_on": "2025-01-04"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX31LM",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2025-01-05",
+          "approved_on": "2025-01-05"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX2207",
+          "bank_name": "Canara Bank (synthetic account)",
+          "ifsc": "CNRB0XXXX72",
+          "status": "approved",
+          "submitted_on": "2025-01-09",
+          "approved_on": "2025-01-09"
+        }
+      ],
+      "nomination": {
+        "status": "not_filed",
+        "last_updated": null,
+        "nominee_count": 2,
+        "allocation_sum_percent": 0
+      },
+      "employments": [
+        {
+          "member_id_masked": "MP/IND/0041842/002/0100020",
+          "member_id_components": {
+            "region_code": "MP",
+            "office_code": "IND",
+            "establishment_code": "0041842",
+            "extension_code": "002",
+            "member_number": "0100020"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0041842",
+            "name": "Narmada Retail Logistics Pvt. Ltd. (synthetic)",
+            "sector": "Logistics and retail",
+            "region_code": "MP",
+            "office_code": "IND",
+            "pf_office": "Indore"
+          },
+          "date_of_joining": "2024-03-21",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 26500,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 389000,
+          "eps_service_months": 212,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 29500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 29500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 29500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 29500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 29500,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2642,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 212,
+        "eps_service_years_approx": 17.7,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [
+        {
+          "workflow": "registered_mobile_change",
+          "status": "otp_pending",
+          "submitted_on": "2026-08-26",
+          "new_mobile_last4": "4488"
+        }
+      ],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_profile_change_status",
+        "required_information": [
+          "masked UAN",
+          "old/new mobile last four digits",
+          "OTP verification state"
+        ],
+        "action": "Read the mobile-change request workflow.",
+        "result": "Return pending/verified/rejected state without revealing full numbers.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Farah wants to know the process state for her registered-mobile update.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-021",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Siddharth Jain",
+      "date_of_birth": "1980-12-01",
+      "gender": "M",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 21",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX4035",
+        "email": "citizen021@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5521",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6021",
+      "pan_masked": "XXXXX41XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6021",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX31XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7021",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00211",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "WB/KRP/0057321/000/0100021",
+          "member_id_components": {
+            "region_code": "WB",
+            "office_code": "KRP",
+            "establishment_code": "0057321",
+            "extension_code": "000",
+            "member_number": "0100021"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0057321",
+            "name": "Eastern Harbor Financial Services Ltd. (synthetic)",
+            "sector": "Financial services",
+            "region_code": "WB",
+            "office_code": "KRP",
+            "pf_office": "Kolkata Regional"
+          },
+          "date_of_joining": "2018-04-22",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 27375,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 402150,
+          "eps_service_months": 219,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 30375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 30375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 30375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 30375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "reported_but_remittance_gap"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 30375,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2731,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 219,
+        "eps_service_years_approx": 18.2,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_contribution_gaps",
+        "required_information": [
+          "masked UAN",
+          "member ID",
+          "wage-month range"
+        ],
+        "action": "Compare wage declarations, employee deductions, employer remittances, and ledger postings.",
+        "result": "Return affected months, amounts, employer-default indicator, and grievance option.",
+        "demo_outcome": "one_month_remittance_gap_detected"
+      },
+      "narrative": "Siddharth wants to identify months where wages were reported but the employer remittance is missing.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-022",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Pooja Bansal",
+      "date_of_birth": "1997-10-31",
+      "gender": "F",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 22",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX5572",
+        "email": "citizen022@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5522",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6022",
+      "pan_masked": "XXXXX42XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6022",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX32XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7022",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00221",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "TN/CHE/0069135/001/0100022",
+          "member_id_components": {
+            "region_code": "TN",
+            "office_code": "CHE",
+            "establishment_code": "0069135",
+            "extension_code": "001",
+            "member_number": "0100022"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0069135",
+            "name": "Coromandel Renewable Energy Pvt. Ltd. (synthetic)",
+            "sector": "Renewable energy",
+            "region_code": "TN",
+            "office_code": "CHE",
+            "pf_office": "Chennai Central"
+          },
+          "date_of_joining": "2019-05-23",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 28250,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 18000,
+          "eps_service_months": 226,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 31250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 31250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 31250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 31250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 31250,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 122,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id_masked": "CLM-26-000022",
+          "form_type": "Form 31",
+          "claim_reason": "housing",
+          "filed_on": "2026-07-12",
+          "amount_requested": 15000,
+          "amount_approved": 15000,
+          "status": "settled",
+          "status_history": [
+            {
+              "status": "submitted",
+              "at": "2026-07-12"
+            },
+            {
+              "status": "approved",
+              "at": "2026-07-16"
+            },
+            {
+              "status": "settled",
+              "at": "2026-07-18"
+            }
+          ],
+          "rejection_code": null,
+          "payment_reference_suffix": "8421"
+        }
+      ],
+      "pension": {
+        "eps_service_months": 226,
+        "eps_service_years_approx": 18.8,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "get_claim_payment",
+        "required_information": [
+          "claim ID or masked UAN",
+          "bank account last four digits"
+        ],
+        "action": "Read settlement and payment-reference fields.",
+        "result": "Return settled amount, settlement date, masked bank account, payment status, and reference suffix.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Pooja wants to verify the bank payment reference for a settled claim.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-023",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Nikhil Joseph",
+      "date_of_birth": "1986-04-06",
+      "gender": "M",
+      "marital_status": "single",
+      "father_or_spouse_name": "Synthetic Guardian 23",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX8124",
+        "email": "citizen023@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5523",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6023",
+      "pan_masked": "XXXXX43XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-6023",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2024-02-10",
+          "approved_on": "2024-02-10"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX33XX",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2024-02-11",
+          "approved_on": "2024-02-11"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX7023",
+          "bank_name": "Bank of India (synthetic account)",
+          "ifsc": "BKID0X00231",
+          "status": "approved",
+          "submitted_on": "2024-02-12",
+          "approved_on": "2024-02-12"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 1,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "UK/DDN/0074206/002/0100023",
+          "member_id_components": {
+            "region_code": "UK",
+            "office_code": "DDN",
+            "establishment_code": "0074206",
+            "extension_code": "002",
+            "member_number": "0100023"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0074206",
+            "name": "Himalayan Hospitality Services LLP (synthetic)",
+            "sector": "Hospitality",
+            "region_code": "UK",
+            "office_code": "DDN",
+            "pf_office": "Dehradun"
+          },
+          "date_of_joining": "2020-06-24",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 29125,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 15000,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0.0833,
+          "current_epf_balance": 441050,
+          "eps_service_months": 233,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 32125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 32125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 32125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 32125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 32125,
+              "epf_wages": 15000,
+              "eps_wages": 15000,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 550,
+              "eps_share": 1250,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 2995,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 233,
+        "eps_service_years_approx": 19.4,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "check_death_claim_requirements",
+        "required_information": [
+          "deceased member UAN/member ID",
+          "nominee relationship",
+          "death date",
+          "nominee KYC and bank details"
+        ],
+        "action": "Return a document checklist and route; do not make a final entitlement decision.",
+        "result": "Return required documents, nominee-validation state, and claim forms likely applicable.",
+        "demo_outcome": "checklist_only_no_entitlement_decision"
+      },
+      "narrative": "Nikhil is a nominee and wants to understand what information is needed for a deceased member claim.",
+      "generated_at": "2026-08-27"
+    },
+    {
+      "synthetic_citizen_id": "CIT-024",
+      "record_status": "synthetic_demo_record",
+      "full_name": "Tanvi Bhat",
+      "date_of_birth": "1992-08-26",
+      "gender": "F",
+      "marital_status": "married",
+      "father_or_spouse_name": "Synthetic Guardian 24",
+      "contact": {
+        "mobile_masked": "+91-98XX-XX3369",
+        "email": "citizen024@example.test",
+        "mobile_verified": true
+      },
+      "address": {
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "uan_masked": "1000XXXX5524",
+      "uan_status": "active",
+      "uan_source": "employer_allotment",
+      "aadhaar_last4": "6024",
+      "pan_masked": "XXXXX44XX",
+      "kyc": [
+        {
+          "type": "aadhaar",
+          "value_masked": "XXXX-XXXX-7301",
+          "status": "approved",
+          "verification_source": "Aadhaar e-KYC",
+          "submitted_on": "2023-03-06",
+          "approved_on": "2023-03-06"
+        },
+        {
+          "type": "pan",
+          "value_masked": "XXXXX40TB",
+          "status": "approved",
+          "verification_source": "Income-tax validation",
+          "submitted_on": "2023-03-07",
+          "approved_on": "2023-03-07"
+        },
+        {
+          "type": "bank",
+          "value_masked": "XXXXXX6643",
+          "bank_name": "Axis Bank (synthetic account)",
+          "ifsc": "UTIB0XXXX81",
+          "status": "approved",
+          "submitted_on": "2023-03-08",
+          "approved_on": "2023-03-08"
+        }
+      ],
+      "nomination": {
+        "status": "filed",
+        "last_updated": "2025-11-18",
+        "nominee_count": 2,
+        "allocation_sum_percent": 100
+      },
+      "employments": [
+        {
+          "member_id_masked": "GA/PNA/0083054/000/0100024",
+          "member_id_components": {
+            "region_code": "GA",
+            "office_code": "PNA",
+            "establishment_code": "0083054",
+            "extension_code": "000",
+            "member_number": "0100024"
+          },
+          "member_id_note": "Synthetic formatted example; do not treat as a validation rule for EPFO production identifiers.",
+          "establishment": {
+            "establishment_code": "0083054",
+            "name": "Konkan Public Infrastructure Ltd. (synthetic)",
+            "sector": "Infrastructure",
+            "region_code": "GA",
+            "office_code": "PNA",
+            "pf_office": "Pune"
+          },
+          "date_of_joining": "2021-07-01",
+          "date_of_exit": null,
+          "exit_reason": null,
+          "employment_status": "current",
+          "basic_plus_da_monthly": 30000,
+          "epf_wages_monthly": 15000,
+          "eps_wages_monthly": 0,
+          "edli_wages_monthly": 15000,
+          "employee_rate_assumption": 0.12,
+          "employer_total_rate_assumption": 0.12,
+          "eps_rate_assumption": 0,
+          "current_epf_balance": 458400,
+          "eps_service_months": 240,
+          "passbook_last_posted_wage_month": "2026-07",
+          "transfer_status": "not_started",
+          "ledger": [
+            {
+              "wage_month": "2026-03",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 33000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-04",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 33000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-05",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 33000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-06",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 33000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "monthly_contribution",
+              "gross_wages": 33000,
+              "epf_wages": 15000,
+              "eps_wages": 0,
+              "edli_wages": 15000,
+              "employee_share": 1800,
+              "employer_epf_share": 1800,
+              "eps_share": 0,
+              "interest_credited": 0,
+              "source": "synthetic ECR monthly posting",
+              "posting_status": "posted"
+            },
+            {
+              "wage_month": "2026-07",
+              "transaction_type": "annual_interest",
+              "gross_wages": null,
+              "epf_wages": null,
+              "eps_wages": null,
+              "edli_wages": null,
+              "employee_share": 0,
+              "employer_epf_share": 0,
+              "eps_share": 0,
+              "interest_credited": 3113,
+              "source": "synthetic annual interest credit",
+              "posting_status": "posted"
+            }
+          ]
+        }
+      ],
+      "claims": [],
+      "pension": {
+        "eps_service_months": 240,
+        "eps_service_years_approx": 20.0,
+        "pensionable_salary_average_last_60_months": 15000,
+        "ppo_masked": null,
+        "pension_status": "potentially_eligible",
+        "formula_note": "Illustrative only; official pension sanction depends on applicable rules and verified records."
+      },
+      "grievances": [],
+      "profile_workflows": [],
+      "life_certificate": null,
+      "intent_journey": {
+        "intent": "find_establishment",
+        "required_information": [
+          "establishment name fragment or 7-digit establishment code"
+        ],
+        "action": "Search the synthetic establishment registry.",
+        "result": "Return establishment name, code, sector, region, office, and active-status flag.",
+        "demo_outcome": "synthetic_record_available"
+      },
+      "narrative": "Tanvi wants to search an employer by establishment name and code.",
+      "generated_at": "2026-08-27"
+    }
+  ]
+}

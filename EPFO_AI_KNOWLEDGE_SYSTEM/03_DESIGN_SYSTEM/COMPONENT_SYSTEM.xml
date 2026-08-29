@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentSystem>
+  <component id="DESIGN-TYPO-001" name="typography" rule="Noto Sans with Noto Sans Devanagari fallback" source="SRC-DESIGN-001" />
+  <component id="DESIGN-COLOR-001" name="semantic-color" rule="status never depends on color alone" source="SRC-DESIGN-001" />
+  <component id="DESIGN-SPACING-001" name="spacing" rule="4px base scale" source="SRC-DESIGN-001" />
+  <component id="DESIGN-SHELL-001" name="government-shell" rule="identity, navigation, language, help, status, demo disclosure" source="SRC-DESIGN-001" />
+  <component id="DESIGN-FORM-001" name="forms" rule="labels, hints, validation, preserved state, recovery" source="SRC-UX4G-001" />
+  <component id="DESIGN-FEEDBACK-001" name="feedback" rule="loading, success, error, blocked, next action" source="SRC-RESEARCH-001" />
+  <component id="DESIGN-DATA-001" name="data" rule="member-readable summaries before administrative detail" source="SRC-CONTEXT-001" />
+  <component id="DESIGN-ACCESS-001" name="accessibility" rule="keyboard, focus, screen-reader semantics, zoom, language" source="SRC-UX4G-001" />
+</componentSystem>

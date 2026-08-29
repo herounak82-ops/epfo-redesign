@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceModel id="EPFO-SERVICE-001">
+  <service id="member-account" goal="view_account" routes="/account,/account/health" />
+  <service id="kyc-correction" goal="fix_personal_details" routes="/services/kyc" />
+  <service id="claim" goal="get_pf_money" routes="/services/claim,/requests" />
+  <service id="transfer" goal="move_pf_after_job_change" routes="/services/transfer,/requests" />
+  <service id="recovery" goal="fix_failed_request" routes="/recovery,/help" />
+  <service id="assistant" status="future" boundary="additive-only" />
+</serviceModel>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userGoals>
+  <goal id="get_pf_money" journey="claim" />
+  <goal id="fix_personal_details" journey="kyc" />
+  <goal id="move_pf_after_job_change" journey="transfer" />
+  <goal id="view_account" journey="access" />
+  <goal id="fix_failed_request" journey="failure_recovery" />
+</userGoals>

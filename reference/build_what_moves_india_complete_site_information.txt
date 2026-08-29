@@ -1,0 +1,474 @@
+BUILD WHAT MOVES INDIA — COMPLETE SITE INFORMATION CAPTURE
+Source website: https://buildwhatmovesindia.com/
+Captured: 26 August 2026
+
+IMPORTANT SCOPE NOTE
+This file consolidates the substantive information visibly listed on the public pages that were accessible:
+1) Homepage: https://buildwhatmovesindia.com/
+2) Builder Brief: https://buildwhatmovesindia.com/brief
+3) FAQ: https://buildwhatmovesindia.com/faq
+
+The homepage's "Apply Now" link points to Google Forms. The form itself could not be retrieved through the available web access in this session, so application-form fields or instructions that are not repeated on the public website are not included here. This document is an exhaustive factual capture/paraphrase of the accessible website content; it does not reproduce long passages of site copy verbatim.
+
+============================================================
+HOMEPAGE
+============================================================
+
+Organizer/presenter:
+- Varun Mayya presents the initiative.
+
+Name:
+- Build What Moves India.
+
+Description:
+- A hackathon to rethink public service websites.
+
+Submission deadline:
+- August 28, 2026 at 8:00 PM IST.
+
+Homepage navigation/actions:
+- Apply Now — links to a Google Forms application.
+- Builder Brief — links to the Builder Brief page.
+- FAQ — links to the Frequently Asked Questions page.
+
+============================================================
+BUILDER BRIEF
+https://buildwhatmovesindia.com/brief
+============================================================
+
+Page title:
+- Builder brief.
+
+On-page navigation/sections:
+- The challenge
+- What to build
+- A strong build
+- What not to do
+- What to submit
+- How builds are judged
+- What happens next
+- Prizes
+- Frequently asked questions
+
+THE CHALLENGE
+- Pick one real problem that you have faced on an Indian public-service website or digital service.
+- Build a simpler, clearer and more useful way to solve that problem.
+- Possible areas include:
+  - travel
+  - taxes
+  - pensions
+  - certificates
+  - payments
+  - grievances
+  - other public needs
+- IRCTC, EPFO and the Income Tax portal are examples only; they are not a fixed list.
+
+WHAT THE ORGANIZERS WANT YOU TO BUILD
+- The prototype for this hackathon should be built with Codex or powered by an OpenAI model.
+- Codex should be a meaningful part of the build process; it should not be added only for the submission.
+- If a build is selected among the 10 finalists, OpenAI will provide support.
+- The prototype should solve the real problem through a complete citizen journey.
+- Use mock data, mock accounts and mock backend behavior where production access would be unsafe or unavailable.
+- Reviewers will test the citizen experience rather than an admin panel.
+
+Prototype requirements:
+- Solve one clearly defined user problem.
+- Allow the main journey to be completed from start to finish.
+- Be easier to understand or use than the current experience.
+- Be designed for real Indian users, including:
+  - people using mobile devices
+  - people on slower connections
+  - people with limited digital experience
+- Use mock or synthetic data wherever personal information, payments, OTPs or government systems would normally be involved.
+
+WHAT A STRONG BUILD LOOKS LIKE
+A strong submission makes the following points obvious:
+- Who is facing the problem?
+- What is difficult about the current experience?
+- What did you change?
+- Why is your version better?
+- What works today, and what is still mocked?
+- How could the idea work safely at a larger scale?
+
+Experience/build expectation:
+- Show the complete citizen journey.
+- A static design by itself is not enough.
+- The interface and interactions should work from start to finish.
+- Mocked data and dependencies should be clearly identified.
+
+WHAT NOT TO DO
+The site says not to:
+- Try to access, test or interfere with a live government system.
+- Reverse-engineer private systems or use undocumented private APIs.
+- Scrape personal or restricted information.
+- Use real Aadhaar numbers.
+- Use real PAN details.
+- Use real passwords.
+- Use real OTPs.
+- Use real payment details.
+- Use real health information.
+- Use other sensitive data.
+- Present the prototype as an official government product.
+- Use government logos in a way that suggests approval or partnership.
+- Submit an old project with only small changes.
+- Include code, assets or data that you do not have permission to use.
+
+WHAT TO SUBMIT
+Submission deadline:
+- August 28, 2026 at 8:00 PM IST.
+- There is no grace period after the form closes.
+
+Required submission items:
+1. Live public link
+   - Must open in a browser without requesting access.
+   - Reviewers will not download a mobile app.
+   - Include mock consumer login credentials if the project requires them.
+
+2. One video
+   - Maximum length: two minutes.
+   - First minute: demo the project as a citizen.
+   - Second minute: explain how you built it and why you made those choices.
+   - Both teammates may present.
+
+3. Project summary
+   - Under 250 words.
+   - Explain what the project is.
+   - Explain why it is better than the current solution.
+
+4. Partner's registered email
+   - Required if the entrant is a team of two.
+   - Leave blank when participating solo.
+   - Both teammates must register.
+   - Each teammate must submit the other teammate's registered email.
+
+General link requirement:
+- Every submitted link must work without requesting access.
+
+HOW BUILDS ARE JUDGED
+Judging dimensions and questions:
+
+Problem
+- Is this a real and important user problem?
+
+Working build
+- Does the main journey actually work?
+
+Usability
+- Is the experience simpler, clearer and more accessible?
+
+Product thinking
+- Are the choices thoughtful and well explained?
+
+End-to-end thinking
+- Does the solution address backend, infrastructure and processes, rather than only the interface?
+
+Honesty
+- Are limitations, mock data and dependencies clearly disclosed?
+
+WHAT HAPPENS NEXT
+- Selection takes place in two stages after the form closes.
+- The same email address must be used at every step.
+- The email is how the organizers track an entry.
+- An entry cannot be moved to another email address.
+
+STAGE 1 — SHORTLIST OF 250
+- Every submission received by August 28, 2026 at 8:00 PM IST is reviewed by the team together with OpenAI.
+- Review period: August 28 through September 1.
+- The top 250 builds are shortlisted.
+- Everyone who submitted receives an email with the result.
+- Not being in the 250 does not mean the build was bad; the site says the field is large and competition is strong.
+
+STAGE 2 — 250 TO 10
+- The 250 shortlisted participants get one week of mentorship.
+- Mentorship is provided through a WhatsApp group.
+- The group has five mentors from engineering, tech and the OpenAI team.
+- The goal of mentorship is to tighten/improve the project.
+- After mentorship, participants resubmit the improved build.
+- Resubmission uses the same format.
+- Resubmission deadline: September 7, 2026.
+- Resubmission uses the same email addresses as before.
+- The 10 finalists are announced between September 8 and September 12, 2026.
+- The top 250 are honoured on a public page.
+- Finalists present live in Bengaluru on September 12, 2026.
+- The live presentation is to:
+  - founders
+  - creators
+  - the mentors
+  - invited government officials
+- Winners are announced the same day.
+- Selection does not guarantee that a government body will adopt or implement a build.
+- The stated purpose of the initiative is to start a useful conversation about better public digital experiences.
+
+PRIZES
+- Top 10:
+  - one year of Codex Pro
+  - a Codex Micro
+- Top 3:
+  - a MacBook
+  - in addition to the Top 10 prizes
+- Winner:
+  - a trip to San Francisco, subject to visa
+  - plus all of the prizes above
+
+Builder Brief closing line/theme:
+- Choose the problem.
+- Build the solution.
+- Show what better looks like.
+
+============================================================
+FAQ
+https://buildwhatmovesindia.com/faq
+============================================================
+
+Page title:
+- Frequently asked questions.
+
+On-page navigation/sections:
+- Registering
+- Scope of the build
+- Tools and rules
+- Submitting and judging
+- The event
+- Your data and rights
+- Builder brief
+
+REGISTERING
+
+Does filling out the registration form confirm my place?
+- No.
+- The registration form is an expression of interest.
+- Updates will be shared by email and WhatsApp.
+
+Do I need to be a developer?
+- No.
+- Developers, designers, product thinkers, students and independent builders can apply.
+- Applicants should be able to frame the problem and build the prototype themselves.
+
+Can I participate alone or as a team?
+- Participation can be solo or in a team of two.
+- Both teammates must register separately.
+- Each teammate must use their own email address.
+- Each teammate must enter the other person's registered email in the Project Submission form.
+- Participants must be 18 or older.
+
+SCOPE OF THE BUILD
+
+What exactly should I build?
+- Choose one specific problem within a public-service website or digital journey, OR rethink the entire experience.
+- Build a better solution.
+
+Is a Figma design enough?
+- No.
+- Designs may be part of the submission.
+- The main journey must be a working prototype.
+
+Does every feature need to work?
+- Every feature that is demoed must work.
+- If presenting on stage, show the feature working rather than relying on an explanation.
+
+TOOLS AND RULES
+
+Is Codex mandatory?
+- Yes, for the prototype submitted to the hackathon.
+- Codex should be meaningfully involved in the build.
+- Other development tools and libraries are allowed.
+- The submission should explain how Codex contributed.
+- If a public-service body later chooses to develop the solution further, there are no restrictions from this hackathon on the technology used for that later implementation.
+- The builder and the public-service body can decide what technology best fits the project.
+- If a build is selected among the 10 finalists, OpenAI will provide support.
+
+Can I use other tools or libraries?
+- Yes.
+- You must have the right to use them.
+- You must disclose them in the submission.
+
+Can I use an existing government website as a starting point?
+- You can study an existing government site to understand the problem.
+- You cannot copy its code.
+- You cannot build on its infrastructure.
+- You cannot reverse-engineer its private systems.
+- The prototype should be an independent build.
+
+Can I connect to a live government system?
+- No, unless the organizers provide a specifically approved public sandbox.
+- Use mock data and simulated integrations.
+
+Can I use real user data?
+- No.
+- Use fictional or synthetic data.
+- Never enter:
+  - real IDs
+  - passwords
+  - OTPs
+  - payment details
+  - sensitive personal information
+
+Can I use official logos?
+- Do not use a logo in a way that makes the prototype appear official or endorsed.
+- Clearly label the build as an independent hackathon prototype.
+
+Can I submit something I already built?
+- The submission should be made for this hackathon.
+- Normal starter templates or open-source components may be used if their licences allow it.
+- Such components should be clearly disclosed.
+
+SUBMITTING AND JUDGING
+
+When is the submission deadline?
+- August 28, 2026 at 8:00 PM IST.
+- The form closes at that time.
+- There is no grace period.
+
+What should the demo video show?
+- Maximum two minutes.
+- Minute one: demo the project as a citizen.
+- Minute two: explain how it was built and why the builder made those choices.
+- Loom, OBS or another public video link is acceptable.
+- Both teammates may present.
+
+What else does the submission form require?
+- A live public browser link.
+- A project summary under 250 words.
+- The partner's registered email when the entrant has a teammate.
+- Mock consumer credentials when the project requires a login.
+- Never submit a real password or sensitive personal data.
+
+Will visual design alone win?
+- Good design matters, but design alone is not enough.
+- Judges also examine:
+  - whether the problem is real
+  - whether the core journey works
+  - whether the solution is practical
+
+THE EVENT
+
+Will the winning builds be adopted by the government?
+- There is no promise of adoption.
+- The goal is to surface strong ideas.
+- The goal is also to start a constructive conversation about better public digital experiences.
+
+Is this an official government hackathon?
+- No.
+- It is an independent builder initiative presented by Varun Mayya in partnership with OpenAI.
+- Government or public-service representatives may be invited.
+- Their participation or endorsement should not be assumed.
+
+What happens if I am selected as a finalist?
+- Finalists will be asked to prepare a short demo.
+- Finalists take part in a filmed finale in Bengaluru on September 12.
+- The finale is recorded.
+- It is not live-streamed.
+- Winners are announced the same day.
+- The team will contact selected builders regarding:
+  - technical checks
+  - rehearsal
+  - travel
+  - accommodation
+  - filming consent
+
+When is the finale?
+- Planned date: September 12, 2026.
+- Location: Bengaluru.
+- Exact timing is not specified on the public site.
+- Exact venue is not specified on the public site.
+- Preparation details will be shared directly with selected builders.
+
+Are there prizes or Codex credits?
+- All 10 finalists get:
+  - one year of Codex Pro
+  - a Codex Micro
+- The top 3 also get:
+  - a MacBook
+- The top build wins:
+  - a trip to San Francisco, subject to visa
+
+YOUR DATA AND RIGHTS
+
+Who can see my registration information?
+- Registration and submission data will be managed by Varun Mayya's team.
+- The OpenAI team will not have access to this data.
+- The final privacy notice is expected to explain:
+  - who can access the data
+  - why the data is collected
+  - when the data will be deleted
+
+Who owns my build?
+- Submit only work that you own or have permission to use.
+- You retain full rights to the build.
+
+Where will updates be shared?
+- Through the email address used during registration.
+- Through the WhatsApp number used during registration.
+- Important dates and rule changes should also appear on the official website.
+
+============================================================
+CROSS-PAGE CONSOLIDATED FACTS / POTENTIAL DIFFERENCES
+============================================================
+
+Organizer/identity:
+- Varun Mayya presents the initiative.
+- The FAQ describes it as an independent builder initiative presented by Varun Mayya in partnership with OpenAI.
+- It is not an official government hackathon.
+
+Participation:
+- Solo or team of two.
+- Participants must be 18 or older.
+- Both teammates register separately with separate email addresses.
+- Both teammates enter each other's registered email in the Project Submission form.
+
+Technology:
+- Codex is mandatory for the submitted prototype.
+- Codex must be meaningfully involved.
+- Other tools and libraries are allowed when properly licensed/authorized and disclosed.
+- Later implementation by a public-service body has no technology restriction from this initiative.
+
+Core build philosophy:
+- Address a real public-service problem.
+- Make the experience simpler, clearer, more useful and accessible.
+- Complete the citizen journey end-to-end.
+- Working interactions matter; a static design alone is insufficient.
+- Mock/synthetic data and simulated systems should be used where real systems or sensitive data would be involved.
+- Disclose limitations, mock data and dependencies.
+
+Safety/rules:
+- Do not touch or interfere with live government systems.
+- Do not reverse-engineer private systems.
+- Do not use undocumented private APIs.
+- Do not scrape restricted/personal data.
+- Do not use real Aadhaar, PAN, passwords, OTPs, payment details, health data or other sensitive personal information.
+- Do not falsely present a prototype as official.
+- Do not imply government endorsement through logos/branding.
+- Do not submit an old project with only minor changes.
+- Do not use unauthorized code, assets or data.
+
+Key deadlines:
+- Submission closes August 28, 2026 at 8:00 PM IST, with no grace period.
+- Review/shortlisting window: August 28–September 1, 2026.
+- Resubmission after mentorship: September 7, 2026.
+- Finalist announcement window: September 8–12, 2026.
+- Finale/presentations/winners: September 12, 2026 in Bengaluru.
+- Finale exact time and venue: to be shared with selected builders.
+
+Selection:
+- Stage 1 reduces all submissions to 250.
+- Stage 2 provides the 250 with one week of mentorship and then selects 10 finalists.
+- Top 250 are honoured on a public page.
+- Everyone who submits receives the Stage 1 result by email.
+- Not being shortlisted is explicitly not described as proof of a bad build; the competition is large/strong.
+- Selection is not a promise of government adoption.
+
+Prizes:
+- Top 10: one year of Codex Pro + Codex Micro.
+- Top 3: MacBook in addition.
+- Winner: San Francisco trip, subject to visa, plus all other prizes.
+
+Public-facing links stated on the site:
+- Homepage: https://buildwhatmovesindia.com/
+- Builder Brief: https://buildwhatmovesindia.com/brief
+- FAQ: https://buildwhatmovesindia.com/faq
+- Apply Now: Google Forms link from the homepage and other pages.
+- The retrieved public pages label the application destination simply as "Apply Now"; the actual form contents were not available through the web retrieval used for this capture.
+
+============================================================
+END OF ACCESSIBLE PUBLIC-SITE INFORMATION
+============================================================

@@ -1,0 +1,16 @@
+{
+  "registry": "EPFO-MASTER-VALIDATION",
+  "checks": [
+    {"id":"V01","area":"structure","check":"Required routes exist and route mapping matches current implementation."},
+    {"id":"V02","area":"design","check":"Typography, colors, spacing and radii match the locked system."},
+    {"id":"V03","area":"ux4g","check":"Relevant UX4G foundations/components/patterns are used or consciously reproduced with provenance."},
+    {"id":"V04","area":"gigw","check":"Relevant GIGW Quality/Accessibility requirements are represented and tested where applicable."},
+    {"id":"V05","area":"service","check":"User goal, next action, state, ownership and recovery are clear."},
+    {"id":"V06","area":"accessibility","check":"Visible focus, keyboard interaction, semantic labels and non-color-only status."},
+    {"id":"V07","area":"responsive","check":"Primary pages work at mobile, tablet and desktop widths."},
+    {"id":"V08","area":"data","check":"Deterministic mock data remains the single synthetic source."},
+    {"id":"V09","area":"trust","check":"No real EPFO transaction/backend claim is implied."},
+    {"id":"V10","area":"browser","check":"Running UI is inspected when browser tooling is available."}
+  ],
+  "release_gate": "No task is complete if a critical check fails or if a skipped check is reported as passed."
+}

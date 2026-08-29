@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sourceHierarchy id="EPFO-AUTH-001">
+  <authority rank="P0" name="current-task" />
+  <authority rank="P1" name="canonical-project" sources="SRC-DESIGN-001,SRC-CONTEXT-001,SRC-SKILL-001,SRC-APP-001" />
+  <authority rank="P2" name="verified-derived-UX4G-GIGW-and-research" />
+  <authority rank="P3" name="selected-supporting-reference" />
+  <authority rank="P4" name="historical-or-benchmark" />
+  <authority rank="P9" name="raw-provenance" />
+  <conflictPolicy>Do not silently reconcile a serious conflict. Record source scope, freshness, quality, and the adopted decision.</conflictPolicy>
+</sourceHierarchy>

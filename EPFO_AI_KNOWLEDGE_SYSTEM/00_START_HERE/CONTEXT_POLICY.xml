@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextPolicy id="EPFO-CONTEXT-001" default="selective-retrieval">
+  <layer id="P0" priority="critical" load="always">Current user task and explicit constraints.</layer>
+  <layer id="P1" priority="critical" load="route-mandatory">Canonical project decisions, active requirements, and current state.</layer>
+  <layer id="P2" priority="high" load="route-selected">Task-relevant product, design, UX4G, GIGW, research, mock, and implementation records.</layer>
+  <layer id="P3" priority="medium" load="optional">Selected supporting references and governed reference websites.</layer>
+  <layer id="P4" priority="low" load="on-demand">Historical, legacy, benchmark, or superseded material.</layer>
+  <layer id="P9" priority="archival" load="never-by-default">Raw source and original archives used only for provenance, disputes, missing detail, or full-system audit.</layer>
+  <rule id="EPFO-CTX-R1">Never load the whole corpus for a narrow task.</rule>
+  <rule id="EPFO-CTX-R2">Derived corrections are promoted into records; raw files are not repeatedly reopened as working context.</rule>
+</contextPolicy>

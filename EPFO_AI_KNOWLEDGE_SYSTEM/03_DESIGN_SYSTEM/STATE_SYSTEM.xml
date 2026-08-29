@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stateSystem>
+  <state id="STATE-LOADING" purpose="communicate work in progress" />
+  <state id="STATE-READY" purpose="show usable content and primary action" />
+  <state id="STATE-ACTION_NEEDED" purpose="show member-owned next action" />
+  <state id="STATE-PENDING" purpose="show owner and expected next update" />
+  <state id="STATE-ERROR" purpose="explain what happened, why, owner, next action, timing" />
+  <state id="STATE-BLOCKED" purpose="show prerequisite and recovery without losing context" />
+  <state id="STATE-SUCCESS" purpose="confirm result and provide tracking/reference" />
+</stateSystem>

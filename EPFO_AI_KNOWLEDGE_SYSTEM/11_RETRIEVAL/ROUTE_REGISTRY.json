@@ -1,0 +1,938 @@
+{
+  "registry": "EPFO-ROUTES",
+  "version": "1.0",
+  "routes": [
+    {
+      "task": "design",
+      "triggers": [
+        "design",
+        "visual"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "03_DESIGN_SYSTEM/VISUAL_PRINCIPLES.md",
+        "03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md",
+        "03_DESIGN_SYSTEM/COLOR_SYSTEM.md",
+        "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md",
+        "05_GIGW/ACCESSIBILITY.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml",
+        "09_INTERACTION/RESPONSIVE.md"
+      ],
+      "blocked_paths": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use design gate; advanced effects require member-goal benefit."
+    },
+    {
+      "task": "redesign",
+      "triggers": [
+        "redesign"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "02_EPFO_PRODUCT/PRODUCT_MODEL.md",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/PROBLEM_MODEL.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md"
+      ],
+      "optional_loads": [
+        "08_REFERENCE_WEB/REFERENCE_SELECTION_RULES.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Keep batch boundary explicit."
+    },
+    {
+      "task": "frontend",
+      "triggers": [
+        "frontend",
+        "react"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "10_IMPLEMENTATION/ARCHITECTURE.md",
+        "10_IMPLEMENTATION/COMPONENT_MAPPING.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml",
+        "10_IMPLEMENTATION/DATA_FLOW.xml",
+        "10_IMPLEMENTATION/BATCH_STRATEGY.md",
+        "07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml",
+        "10_IMPLEMENTATION/TESTING_MODEL.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Inspect current code before edits."
+    },
+    {
+      "task": "ui",
+      "triggers": [
+        "ui"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml",
+        "04_UX4G/COMPONENTS/COMPONENTS.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "09_INTERACTION/FEEDBACK_MODEL.md"
+      ],
+      "optional_loads": [
+        "05_GIGW/ACCESSIBILITY.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Prioritize clarity over decoration."
+    },
+    {
+      "task": "ux",
+      "triggers": [
+        "ux"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/PRODUCT_MODEL.md",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "06_EPFO_RESEARCH/PROBLEM_MODEL.md",
+        "05_GIGW/QUALITY.md"
+      ],
+      "optional_loads": [
+        "08_REFERENCE_WEB/REFERENCE_SELECTION_RULES.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "ux4g-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use goal and failure-state models."
+    },
+    {
+      "task": "design-system",
+      "triggers": [
+        "design-system",
+        "tokens"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml",
+        "03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md",
+        "03_DESIGN_SYSTEM/COLOR_SYSTEM.md",
+        "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/STATE_SYSTEM.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Keep values synchronized with docs/tokens.json."
+    },
+    {
+      "task": "government-service-design",
+      "triggers": [
+        "government service"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "01_CANONICAL/AUTHORITY_MODEL.md",
+        "02_EPFO_PRODUCT/PRODUCT_MODEL.md",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "05_GIGW/GIGW_MASTER.md",
+        "04_UX4G/UX4G_MASTER.md"
+      ],
+      "optional_loads": [
+        "08_REFERENCE_WEB/GOVERNMENT/"
+      ],
+      "blocked_paths": [
+        "portfolio",
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "gigw-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Government credibility is a design objective."
+    },
+    {
+      "task": "gigw",
+      "triggers": [
+        "gigw"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "05_GIGW/GIGW_MASTER.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "05_GIGW/CYBERSECURITY.md",
+        "05_GIGW/LIFECYCLE.md",
+        "05_GIGW/GIGW_RULE_REGISTRY.json",
+        "05_GIGW/GIGW_SOURCE_MAP.json",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "12_VALIDATION/GIGW_AUDIT.md"
+      ],
+      "blocked_paths": [
+        "08_REFERENCE_WEB/",
+        "90_RAW_SOURCE/UX4G/"
+      ],
+      "validation_route": "gigw-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use derived rules; raw source only for disputes."
+    },
+    {
+      "task": "ux4g",
+      "triggers": [
+        "ux4g"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "04_UX4G/UX4G_MASTER.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md",
+        "04_UX4G/COMPONENTS/COMPONENTS.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md",
+        "04_UX4G/IMPLEMENTATION/IMPLEMENTATION.md"
+      ],
+      "optional_loads": [
+        "04_UX4G/PROVENANCE.md"
+      ],
+      "blocked_paths": [
+        "05_GIGW/CYBERSECURITY.md",
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "ux4g-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Current guidance wins over legacy material; record conflicts."
+    },
+    {
+      "task": "accessibility",
+      "triggers": [
+        "accessibility",
+        "a11y",
+        "wcag"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "03_DESIGN_SYSTEM/STATE_SYSTEM.xml",
+        "04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "09_INTERACTION/RESPONSIVE.md",
+        "12_VALIDATION/ACCESSIBILITY_AUDIT.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md",
+        "03_DESIGN_SYSTEM/COLOR_SYSTEM.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "05_GIGW/CYBERSECURITY.md"
+      ],
+      "validation_route": "accessibility-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Do not claim formal certification."
+    },
+    {
+      "task": "content",
+      "triggers": [
+        "content",
+        "copy"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/CONTENT_SYSTEM.md",
+        "02_EPFO_PRODUCT/PRODUCT_MODEL.md",
+        "05_GIGW/QUALITY.md",
+        "06_EPFO_RESEARCH/PROBLEM_MODEL.md"
+      ],
+      "optional_loads": [
+        "04_UX4G/PATTERNS/PATTERNS.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "No invented policy or official wording."
+    },
+    {
+      "task": "typography",
+      "triggers": [
+        "typography",
+        "font"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/CONTENT_SYSTEM.md"
+      ],
+      "blocked_paths": [
+        "05_GIGW/CYBERSECURITY.md",
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use Noto Sans and Hindi fallback."
+    },
+    {
+      "task": "color",
+      "triggers": [
+        "color",
+        "colour"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/COLOR_SYSTEM.md",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md",
+        "05_GIGW/ACCESSIBILITY.md"
+      ],
+      "optional_loads": [
+        "03_DESIGN_SYSTEM/STATE_SYSTEM.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Semantic status and contrast."
+    },
+    {
+      "task": "responsive",
+      "triggers": [
+        "responsive",
+        "mobile",
+        "zoom"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+        "09_INTERACTION/RESPONSIVE.md",
+        "04_UX4G/FOUNDATIONS/FOUNDATIONS.md",
+        "05_GIGW/ACCESSIBILITY.md"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "blocked_paths": [
+        "05_GIGW/CYBERSECURITY.md",
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "accessibility-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Test 200% zoom and language expansion."
+    },
+    {
+      "task": "interaction",
+      "triggers": [
+        "interaction",
+        "microinteraction"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "09_INTERACTION/MICROINTERACTIONS.md",
+        "09_INTERACTION/FEEDBACK_MODEL.md",
+        "09_INTERACTION/MOTION.md",
+        "03_DESIGN_SYSTEM/STATE_SYSTEM.xml"
+      ],
+      "optional_loads": [
+        "04_UX4G/PATTERNS/PATTERNS.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Respect reduced motion."
+    },
+    {
+      "task": "motion",
+      "triggers": [
+        "motion",
+        "animation"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "09_INTERACTION/MOTION.md",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md",
+        "09_INTERACTION/MICROINTERACTIONS.md"
+      ],
+      "optional_loads": [
+        "09_INTERACTION/RESPONSIVE.md"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/"
+      ],
+      "validation_route": "design-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Motion must improve a member goal."
+    },
+    {
+      "task": "claim",
+      "triggers": [
+        "claim",
+        "improve the claim page."
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-CLAIM; keep the task within its batch."
+    },
+    {
+      "task": "kyc",
+      "triggers": [
+        "kyc",
+        "kyc"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/KYC.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-KYC; keep the task within its batch."
+    },
+    {
+      "task": "transfer",
+      "triggers": [
+        "transfer",
+        "transfer"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/TRANSFER.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-TRANSFER; keep the task within its batch."
+    },
+    {
+      "task": "failure-recovery",
+      "triggers": [
+        "failure-recovery",
+        "failure recovery"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-RECOVERY; keep the task within its batch."
+    },
+    {
+      "task": "account-health",
+      "triggers": [
+        "account-health",
+        "account health"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/ACCESS.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml",
+        "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+        "09_INTERACTION/RESPONSIVE.md"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-KYC; keep the task within its batch."
+    },
+    {
+      "task": "request-status",
+      "triggers": [
+        "request-status",
+        "request status"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml"
+      ],
+      "optional_loads": [
+        "10_IMPLEMENTATION/DATA_FLOW.xml"
+      ],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "journey-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Use MOCK-FIXTURE-RECOVERY; keep the task within its batch."
+    },
+    {
+      "task": "backend",
+      "triggers": [
+        "backend"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "10_IMPLEMENTATION/ARCHITECTURE.md",
+        "10_IMPLEMENTATION/DATA_FLOW.xml",
+        "07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "mock-data",
+      "triggers": [
+        "mock",
+        "synthetic"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md",
+        "07_MOCK_SERVICE/MOCK_DATA_SCHEMA.xml",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml",
+        "07_MOCK_SERVICE/SOURCE_MAP.json"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "testing",
+      "triggers": [
+        "testing",
+        "test"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "10_IMPLEMENTATION/TESTING_MODEL.md",
+        "12_VALIDATION/VALIDATION_RULES.md",
+        "12_VALIDATION/RELEASE_GATE.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "audit",
+      "triggers": [
+        "audit"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "12_VALIDATION/VALIDATION_RULES.md",
+        "12_VALIDATION/DESIGN_AUDIT.md",
+        "12_VALIDATION/UX4G_AUDIT.md",
+        "12_VALIDATION/GIGW_AUDIT.md",
+        "12_VALIDATION/ACCESSIBILITY_AUDIT.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "provenance",
+      "triggers": [
+        "provenance",
+        "source"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "11_RETRIEVAL/SOURCE_REGISTER.json",
+        "11_RETRIEVAL/SOURCE_INVENTORY.json",
+        "11_RETRIEVAL/PROVENANCE_MAP.json",
+        "11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "conflict",
+      "triggers": [
+        "conflict",
+        "older reference"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "11_RETRIEVAL/CONFLICT_RESOLUTION.md",
+        "11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md",
+        "04_UX4G/PROVENANCE.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "deployment",
+      "triggers": [
+        "deployment",
+        "release"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "10_IMPLEMENTATION/TESTING_MODEL.md",
+        "12_VALIDATION/RELEASE_GATE.md",
+        "01_CANONICAL/CURRENT_STATE.xml"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    },
+    {
+      "task": "codex-assistant",
+      "triggers": [
+        "codex",
+        "assistant"
+      ],
+      "mandatory_loads": [
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "01_CANONICAL/ACTIVE_REQUIREMENTS.xml",
+        "01_CANONICAL/CURRENT_STATE.xml",
+        "01_CANONICAL/ACTIVE_DECISIONS.xml",
+        "02_EPFO_PRODUCT/SERVICE_MODEL.xml",
+        "10_IMPLEMENTATION/BATCH_STRATEGY.md"
+      ],
+      "optional_loads": [],
+      "blocked_paths": [
+        "90_RAW_SOURCE/",
+        "unrelated portfolio material",
+        "unrelated journey data",
+        "complete UX4G archive",
+        "complete GIGW raw text"
+      ],
+      "validation_route": "structure-and-implementation-audit",
+      "likely_source_ids": [
+        "SRC-DESIGN-001",
+        "SRC-CONTEXT-001"
+      ],
+      "notes": "Load only future-capability boundaries; do not rewrite the product model."
+    }
+  ]
+}

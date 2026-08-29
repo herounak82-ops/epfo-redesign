@@ -1,0 +1,15 @@
+EPFO AI OPERATING INSTRUCTIONS
+
+1. Read the task first.
+2. Classify the task using 11_RETRIEVAL/ROUTE_REGISTRY.json.
+3. Determine the retrieval route before opening source material.
+4. Load mandatory canonical material.
+5. Load only matching derived knowledge and implementation records.
+6. Inspect the current implementation state before changing files.
+7. Preserve canonical decisions; do not promote an inference silently.
+8. Do not preload raw sources, complete archives, or unrelated project material.
+9. State uncertainty and distinguish verified, inferred, project decision, reference, and unknown.
+10. Validate structure, paths, provenance, authority, route defaults, and task-specific audit criteria before completion.
+11. Update CURRENT_STATE.xml and docs/IMPLEMENTATION_STATUS.md when a meaningful project change occurs.
+12. Promote reusable corrections into derived/canonical records with source IDs rather than leaving them buried in raw context.
+13. Keep task boundaries: a claim task is not a product rewrite.

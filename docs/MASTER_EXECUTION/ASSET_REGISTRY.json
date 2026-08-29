@@ -1,0 +1,63 @@
+{
+  "registry": "EPFO-ASSETS",
+  "version": "1.0",
+  "policy": {
+    "default": "Use lightweight functional/institutional assets; no decoration without purpose.",
+    "source_priority": [
+      "verified government asset",
+      "approved project asset",
+      "accessible SVG/icon",
+      "purpose-built generated asset"
+    ],
+    "forbidden_without_explicit_justification": [
+      "stock-photo hero",
+      "decorative 3D",
+      "random AI art",
+      "large background image",
+      "unlicensed external asset"
+    ]
+  },
+  "existing_project_assets": [
+    {
+      "path": "src/public/favicon.svg",
+      "status": "existing",
+      "note": "Retain only if it fits final identity."
+    },
+    {
+      "path": "src/public/icons.svg",
+      "status": "existing",
+      "note": "Inspect before adding another icon system."
+    }
+  ],
+  "starter_assets_to_review": [
+    {
+      "path": "src/src/assets/vite.svg",
+      "status": "remove-or-replace",
+      "note": "Starter artifact; not part of EPFO product."
+    },
+    {
+      "path": "src/src/assets/react.svg",
+      "status": "remove-or-replace",
+      "note": "Starter artifact; not part of EPFO product."
+    },
+    {
+      "path": "src/src/assets/hero.png",
+      "status": "review",
+      "note": "Do not retain unless it has a defined product purpose and fits the locked visual system."
+    }
+  ],
+  "required_future_asset_classes": [
+    {
+      "class": "government_identity",
+      "rule": "Use only verified/current assets where appropriate; do not imply official affiliation beyond the prototype context."
+    },
+    {
+      "class": "icons",
+      "rule": "Accessible SVG/icon set with consistent size and stroke/fill behavior."
+    },
+    {
+      "class": "journey_graphics",
+      "rule": "Only when a graphic materially improves explanation of a process or state."
+    }
+  ]
+}

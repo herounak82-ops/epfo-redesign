@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageRegistry id="EPFO-PAGES" version="1.0">
+  <page route="/" id="HOME" family="foundation">
+    <goal>Orient the member and surface readiness plus primary goals.</goal>
+    <requiredSections>service-context,account-health,goal-services,active-requests,recent-activity,help</requiredSections>
+    <primaryAction>Start the selected member goal</primaryAction>
+  </page>
+  <page route="/account" id="ACCOUNT" family="account">
+    <goal>Understand account, contributions, employment and service history.</goal>
+  </page>
+  <page route="/account/health" id="ACCOUNT_HEALTH" family="foundation">
+    <goal>Diagnose account readiness and blockers.</goal>
+    <requiredData>UAN,Aadhaar,PAN,Bank,DateOfExit,ServiceHistory,EPS,Nomination</requiredData>
+  </page>
+  <page route="/services" id="SERVICES" family="foundation">
+    <goal>Start from a citizen goal instead of an administrative form.</goal>
+  </page>
+  <page route="/services/claim" id="CLAIM" family="journey">
+    <goal>Get PF money.</goal>
+    <scaffold>readiness,eligibility,claim-goal,details,review,verification,acknowledgement,status</scaffold>
+  </page>
+  <page route="/services/kyc" id="KYC" family="journey">
+    <goal>Fix personal or bank details.</goal>
+    <scaffold>diagnose,select-correction,edit,verification,review,submit,tracking</scaffold>
+  </page>
+  <page route="/services/transfer" id="TRANSFER" family="journey">
+    <goal>Move PF after changing jobs.</goal>
+    <scaffold>find-employment,matched-account,history,readiness,blocker,review,submit,timeline</scaffold>
+  </page>
+  <page route="/requests" id="REQUESTS" family="tracking">
+    <goal>See active and completed service requests.</goal>
+  </page>
+  <page route="/requests/:id" id="REQUEST_DETAIL" family="tracking">
+    <goal>Understand one request's current state and next action.</goal>
+  </page>
+  <page route="/recovery" id="RECOVERY" family="recovery">
+    <goal>Recover from a failed or rejected service without losing context.</goal>
+  </page>
+  <page route="/help" id="HELP" family="support">
+    <goal>Find help, support and service guidance.</goal>
+  </page>
+  <page route="/profile" id="PROFILE" family="identity">
+    <goal>View member identity and KYC information.</goal>
+  </page>
+</pageRegistry>

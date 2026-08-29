@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataFlow>
+  <source path="data/epfo_mock_package/epfo_mock_data.json" syntheticOnly="true" />
+  <adapter path="src/src/services/mockData.ts" responsibilities="select citizen; derive account health, requests, notifications, totals" />
+  <types path="src/src/services/types.ts" />
+  <consumers path="src/src/pages/" />
+  <state>Primarily local React/component state and deterministic derived service reads; no production API or persistent backend is established.</state>
+</dataFlow>

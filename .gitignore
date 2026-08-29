@@ -1,0 +1,10 @@
+
+node_modules/
+**/node_modules/
+.next/
+dist/
+build/
+.env
+.env.*
+!.env.example
+EPFO_AI_KNOWLEDGE_SYSTEM/90_RAW_SOURCE/SOURCE_ARCHIVES/AI_Knowledge_System_v4_FINAL_reference.zip

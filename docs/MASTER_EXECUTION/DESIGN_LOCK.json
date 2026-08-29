@@ -1,0 +1,39 @@
+{
+  "system": "EPFO-MASTER-DESIGN-LOCK",
+  "version": "1.0",
+  "authority": "docs/EPFO_DESIGN_SYSTEM.md",
+  "tokens": "docs/tokens.json",
+  "typography": {
+    "primary": "Noto Sans",
+    "hindi": "Noto Sans Devanagari",
+    "technical": "Roboto Mono",
+    "type_scale_source": "docs/EPFO_DESIGN_SYSTEM.md#08---type-scale"
+  },
+  "layout": {
+    "spacing_base_px": 4,
+    "desktop_content_width_px": [1200, 1280],
+    "mobile_page_padding_px": [16, 24]
+  },
+  "radii_px": [0, 12, 16],
+  "colors": {
+    "ux4g_primary_strong": "#4A2BC2",
+    "ux4g_primary_stronger": "#301C7D",
+    "ux4g_primary_surface": "#F2EFFF",
+    "text_primary": "#171717",
+    "text_secondary": "#404040",
+    "background": "#FAFAFA",
+    "white": "#FFFFFF",
+    "black": "#000000",
+    "border_default": "#D9D9D9",
+    "border_subtle": "#E5E5E5",
+    "primary_border": "#A391FF",
+    "epfo_blue": "#0B5AA7",
+    "epfo_red": "#D65A3A",
+    "saffron": "#F4B63E",
+    "india_green": "#138808"
+  },
+  "state_rule": "icon + text + semantic color; never color alone",
+  "visual_character": ["institutional", "calm", "information-oriented", "Indian-government", "accessible", "modern-but-not-trendy"],
+  "forbidden_defaults": ["generic SaaS", "glassmorphism", "decorative 3D", "random gradients", "AI visual noise", "marketing hero", "stock-photo hero"],
+  "advanced_effect_rule": "Only use advanced effects when they materially improve comprehension, identity, feedback or task confidence."
+}

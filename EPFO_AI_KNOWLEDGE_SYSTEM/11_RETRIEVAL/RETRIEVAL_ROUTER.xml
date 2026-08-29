@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<retrievalRouter registry="EPFO-ROUTES" default="selective">
+  <route task="design" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="03_DESIGN_SYSTEM/VISUAL_PRINCIPLES.md" />
+    <mandatory path="03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/COLOR_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <optional path="03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml" />
+    <optional path="09_INTERACTION/RESPONSIVE.md" />
+    <blocked path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md" />
+    <notes>Use design gate; advanced effects require member-goal benefit.</notes>
+  </route>
+  <route task="redesign" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="02_EPFO_PRODUCT/PRODUCT_MODEL.md" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/PROBLEM_MODEL.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <optional path="08_REFERENCE_WEB/REFERENCE_SELECTION_RULES.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Keep batch boundary explicit.</notes>
+  </route>
+  <route task="frontend" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="10_IMPLEMENTATION/ARCHITECTURE.md" />
+    <mandatory path="10_IMPLEMENTATION/COMPONENT_MAPPING.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <mandatory path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <mandatory path="10_IMPLEMENTATION/BATCH_STRATEGY.md" />
+    <mandatory path="07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md" />
+    <optional path="03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml" />
+    <optional path="10_IMPLEMENTATION/TESTING_MODEL.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Inspect current code before edits.</notes>
+  </route>
+  <route task="ui" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml" />
+    <mandatory path="04_UX4G/COMPONENTS/COMPONENTS.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="09_INTERACTION/FEEDBACK_MODEL.md" />
+    <optional path="05_GIGW/ACCESSIBILITY.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Prioritize clarity over decoration.</notes>
+  </route>
+  <route task="ux" validation="ux4g-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/PRODUCT_MODEL.md" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="06_EPFO_RESEARCH/PROBLEM_MODEL.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <optional path="08_REFERENCE_WEB/REFERENCE_SELECTION_RULES.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use goal and failure-state models.</notes>
+  </route>
+  <route task="design-system" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="03_DESIGN_SYSTEM/COMPONENT_SYSTEM.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/COLOR_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <optional path="03_DESIGN_SYSTEM/STATE_SYSTEM.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Keep values synchronized with docs/tokens.json.</notes>
+  </route>
+  <route task="government-service-design" validation="gigw-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="01_CANONICAL/AUTHORITY_MODEL.md" />
+    <mandatory path="02_EPFO_PRODUCT/PRODUCT_MODEL.md" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="05_GIGW/GIGW_MASTER.md" />
+    <mandatory path="04_UX4G/UX4G_MASTER.md" />
+    <optional path="08_REFERENCE_WEB/GOVERNMENT/" />
+    <blocked path="portfolio" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Government credibility is a design objective.</notes>
+  </route>
+  <route task="gigw" validation="gigw-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="05_GIGW/GIGW_MASTER.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="05_GIGW/CYBERSECURITY.md" />
+    <mandatory path="05_GIGW/LIFECYCLE.md" />
+    <mandatory path="05_GIGW/GIGW_RULE_REGISTRY.json" />
+    <mandatory path="05_GIGW/GIGW_SOURCE_MAP.json" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="12_VALIDATION/GIGW_AUDIT.md" />
+    <blocked path="08_REFERENCE_WEB/" />
+    <blocked path="90_RAW_SOURCE/UX4G/" />
+    <notes>Use derived rules; raw source only for disputes.</notes>
+  </route>
+  <route task="ux4g" validation="ux4g-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="04_UX4G/UX4G_MASTER.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <mandatory path="04_UX4G/COMPONENTS/COMPONENTS.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md" />
+    <mandatory path="04_UX4G/IMPLEMENTATION/IMPLEMENTATION.md" />
+    <optional path="04_UX4G/PROVENANCE.md" />
+    <blocked path="05_GIGW/CYBERSECURITY.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Current guidance wins over legacy material; record conflicts.</notes>
+  </route>
+  <route task="accessibility" validation="accessibility-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="03_DESIGN_SYSTEM/STATE_SYSTEM.xml" />
+    <mandatory path="04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="09_INTERACTION/RESPONSIVE.md" />
+    <mandatory path="12_VALIDATION/ACCESSIBILITY_AUDIT.md" />
+    <optional path="03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md" />
+    <optional path="03_DESIGN_SYSTEM/COLOR_SYSTEM.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="05_GIGW/CYBERSECURITY.md" />
+    <notes>Do not claim formal certification.</notes>
+  </route>
+  <route task="content" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/CONTENT_SYSTEM.md" />
+    <mandatory path="02_EPFO_PRODUCT/PRODUCT_MODEL.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="06_EPFO_RESEARCH/PROBLEM_MODEL.md" />
+    <optional path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>No invented policy or official wording.</notes>
+  </route>
+  <route task="typography" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/TYPOGRAPHY_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <optional path="03_DESIGN_SYSTEM/CONTENT_SYSTEM.md" />
+    <blocked path="05_GIGW/CYBERSECURITY.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Use Noto Sans and Hindi fallback.</notes>
+  </route>
+  <route task="color" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/COLOR_SYSTEM.md" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <optional path="03_DESIGN_SYSTEM/STATE_SYSTEM.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Semantic status and contrast.</notes>
+  </route>
+  <route task="responsive" validation="accessibility-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md" />
+    <mandatory path="09_INTERACTION/RESPONSIVE.md" />
+    <mandatory path="04_UX4G/FOUNDATIONS/FOUNDATIONS.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <optional path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <blocked path="05_GIGW/CYBERSECURITY.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Test 200% zoom and language expansion.</notes>
+  </route>
+  <route task="interaction" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="09_INTERACTION/MICROINTERACTIONS.md" />
+    <mandatory path="09_INTERACTION/FEEDBACK_MODEL.md" />
+    <mandatory path="09_INTERACTION/MOTION.md" />
+    <mandatory path="03_DESIGN_SYSTEM/STATE_SYSTEM.xml" />
+    <optional path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Respect reduced motion.</notes>
+  </route>
+  <route task="motion" validation="design-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="09_INTERACTION/MOTION.md" />
+    <mandatory path="03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md" />
+    <mandatory path="09_INTERACTION/MICROINTERACTIONS.md" />
+    <optional path="09_INTERACTION/RESPONSIVE.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <notes>Motion must improve a member goal.</notes>
+  </route>
+  <route task="claim" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/CLAIM.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-CLAIM; keep the task within its batch.</notes>
+  </route>
+  <route task="kyc" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/KYC.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-KYC; keep the task within its batch.</notes>
+  </route>
+  <route task="transfer" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/TRANSFER.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-TRANSFER; keep the task within its batch.</notes>
+  </route>
+  <route task="failure-recovery" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-RECOVERY; keep the task within its batch.</notes>
+  </route>
+  <route task="account-health" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/ACCESS.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <mandatory path="03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md" />
+    <mandatory path="09_INTERACTION/RESPONSIVE.md" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-KYC; keep the task within its batch.</notes>
+  </route>
+  <route task="request-status" validation="journey-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="02_EPFO_PRODUCT/JOURNEY_MODEL.xml" />
+    <mandatory path="06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md" />
+    <mandatory path="04_UX4G/PATTERNS/PATTERNS.md" />
+    <mandatory path="05_GIGW/QUALITY.md" />
+    <mandatory path="05_GIGW/ACCESSIBILITY.md" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="10_IMPLEMENTATION/ROUTE_MAP.xml" />
+    <optional path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Use MOCK-FIXTURE-RECOVERY; keep the task within its batch.</notes>
+  </route>
+  <route task="backend" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="10_IMPLEMENTATION/ARCHITECTURE.md" />
+    <mandatory path="10_IMPLEMENTATION/DATA_FLOW.xml" />
+    <mandatory path="07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="mock-data" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="07_MOCK_SERVICE/MOCK_SERVICE_MODEL.md" />
+    <mandatory path="07_MOCK_SERVICE/MOCK_DATA_SCHEMA.xml" />
+    <mandatory path="07_MOCK_SERVICE/JOURNEY_FIXTURES.xml" />
+    <mandatory path="07_MOCK_SERVICE/SOURCE_MAP.json" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="testing" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="10_IMPLEMENTATION/TESTING_MODEL.md" />
+    <mandatory path="12_VALIDATION/VALIDATION_RULES.md" />
+    <mandatory path="12_VALIDATION/RELEASE_GATE.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="audit" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="12_VALIDATION/VALIDATION_RULES.md" />
+    <mandatory path="12_VALIDATION/DESIGN_AUDIT.md" />
+    <mandatory path="12_VALIDATION/UX4G_AUDIT.md" />
+    <mandatory path="12_VALIDATION/GIGW_AUDIT.md" />
+    <mandatory path="12_VALIDATION/ACCESSIBILITY_AUDIT.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="provenance" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="11_RETRIEVAL/SOURCE_REGISTER.json" />
+    <mandatory path="11_RETRIEVAL/SOURCE_INVENTORY.json" />
+    <mandatory path="11_RETRIEVAL/PROVENANCE_MAP.json" />
+    <mandatory path="11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="conflict" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="11_RETRIEVAL/CONFLICT_RESOLUTION.md" />
+    <mandatory path="11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md" />
+    <mandatory path="04_UX4G/PROVENANCE.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="deployment" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="10_IMPLEMENTATION/TESTING_MODEL.md" />
+    <mandatory path="12_VALIDATION/RELEASE_GATE.md" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+  <route task="codex-assistant" validation="structure-and-implementation-audit">
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_REQUIREMENTS.xml" />
+    <mandatory path="01_CANONICAL/CURRENT_STATE.xml" />
+    <mandatory path="01_CANONICAL/ACTIVE_DECISIONS.xml" />
+    <mandatory path="02_EPFO_PRODUCT/SERVICE_MODEL.xml" />
+    <mandatory path="10_IMPLEMENTATION/BATCH_STRATEGY.md" />
+    <blocked path="90_RAW_SOURCE/" />
+    <blocked path="unrelated portfolio material" />
+    <blocked path="unrelated journey data" />
+    <blocked path="complete UX4G archive" />
+    <blocked path="complete GIGW raw text" />
+    <notes>Load only future-capability boundaries; do not rewrite the product model.</notes>
+  </route>
+</retrievalRouter>

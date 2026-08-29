@@ -1,0 +1,40 @@
+{
+  "references": [
+    {
+      "id": "REF-EPFO-OFFICIAL-001",
+      "website": "EPFO official member portal",
+      "government": true,
+      "region": "India",
+      "page_type": "member service shell",
+      "lesson": "Use official trust and service context as a reference point.",
+      "do_not_copy": "Do not assume current portal friction or undocumented behavior is a requirement.",
+      "authority": "useful_reference",
+      "url": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+      "checked": "2026-08-27"
+    },
+    {
+      "id": "REF-EPFO-UMANG-001",
+      "website": "UMANG EPFO department",
+      "government": true,
+      "region": "India",
+      "page_type": "service discovery",
+      "lesson": "Observe how member services are grouped and described.",
+      "do_not_copy": "Do not copy labels without checking the EPFO goal model.",
+      "authority": "useful_reference",
+      "url": "https://web.umang.gov.in/landing/department/epfo.html",
+      "checked": "2026-08-27"
+    },
+    {
+      "id": "REF-EPFO-GIGW-001",
+      "website": "GIGW 3.0 source",
+      "government": true,
+      "region": "India",
+      "page_type": "standards/provenance",
+      "lesson": "Use synthesized quality/accessibility/security/lifecycle checks.",
+      "do_not_copy": "Do not preload or duplicate raw text.",
+      "authority": "verified_source",
+      "url": "",
+      "checked": "2026-08-28"
+    }
+  ]
+}

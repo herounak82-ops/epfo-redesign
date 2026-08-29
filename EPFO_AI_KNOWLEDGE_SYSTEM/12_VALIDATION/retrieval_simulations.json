@@ -1,0 +1,82 @@
+{
+  "simulations": [
+    {
+      "id": "SIM-001",
+      "task": "Improve the claim page.",
+      "route": "claim",
+      "expected": [
+        "02_EPFO_PRODUCT/JOURNEY_MODEL.xml",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "05_GIGW/QUALITY.md",
+        "05_GIGW/ACCESSIBILITY.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml"
+      ],
+      "must_not_preload": [
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/TRANSFER.md",
+        "portfolio",
+        "90_RAW_SOURCE/GIGW/",
+        "90_RAW_SOURCE/UX4G/"
+      ]
+    },
+    {
+      "id": "SIM-002",
+      "task": "Fix responsive behavior of Account Health.",
+      "route": "account-health",
+      "expected": [
+        "03_DESIGN_SYSTEM/LAYOUT_SYSTEM.md",
+        "09_INTERACTION/RESPONSIVE.md",
+        "04_UX4G/ACCESSIBILITY/ACCESSIBILITY.md"
+      ],
+      "must_not_preload": [
+        "claim backend",
+        "05_GIGW/CYBERSECURITY.md",
+        "90_RAW_SOURCE/"
+      ]
+    },
+    {
+      "id": "SIM-003",
+      "task": "Audit the EPFO site against GIGW.",
+      "route": "gigw",
+      "expected": [
+        "05_GIGW/GIGW_RULE_REGISTRY.json",
+        "05_GIGW/GIGW_AUDIT.md",
+        "10_IMPLEMENTATION/ROUTE_MAP.xml",
+        "03_DESIGN_SYSTEM/DESIGN_SYSTEM_GATE.md"
+      ],
+      "must_not_preload": [
+        "portfolio",
+        "90_RAW_SOURCE/UX4G/"
+      ]
+    },
+    {
+      "id": "SIM-004",
+      "task": "Implement failure recovery.",
+      "route": "failure-recovery",
+      "expected": [
+        "06_EPFO_RESEARCH/BAD_JOURNEYS/FAILURE_RECOVERY.md",
+        "09_INTERACTION/FEEDBACK_MODEL.md",
+        "05_GIGW/QUALITY.md",
+        "04_UX4G/PATTERNS/PATTERNS.md",
+        "07_MOCK_SERVICE/JOURNEY_FIXTURES.xml"
+      ],
+      "must_not_preload": [
+        "unrelated portfolio",
+        "90_RAW_SOURCE/"
+      ]
+    },
+    {
+      "id": "SIM-005",
+      "task": "Investigate why current UX4G guidance conflicts with an older reference.",
+      "route": "conflict",
+      "expected": [
+        "04_UX4G/PROVENANCE.md",
+        "11_RETRIEVAL/CONFLICT_RESOLUTION.md",
+        "11_RETRIEVAL/FRESHNESS_AND_VERSIONING.md"
+      ],
+      "must_not_preload": [
+        "historical source by default",
+        "90_RAW_SOURCE/"
+      ]
+    }
+  ]
+}

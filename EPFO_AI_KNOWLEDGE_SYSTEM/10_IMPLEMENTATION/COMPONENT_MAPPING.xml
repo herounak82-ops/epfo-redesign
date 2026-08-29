@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentMapping>
+  <mapping id="IMPL-MAP-001" concept="government-shell" code="src/src/components/shell/AppShell.tsx" depth="implemented" />
+  <mapping id="IMPL-MAP-002" concept="page-shell-and-routing" code="src/src/App.tsx" depth="implemented" />
+  <mapping id="IMPL-MAP-003" concept="account-health" code="src/src/pages/AccountHealthPage.tsx,src/src/services/mockData.ts" depth="shallow-mock-backed" />
+  <mapping id="IMPL-MAP-004" concept="claim-application-and-status" code="src/src/pages/ClaimPage.tsx,src/src/pages/RequestsPage.tsx,src/src/pages/RequestDetailPage.tsx" depth="shallow-mock-backed" />
+  <mapping id="IMPL-MAP-005" concept="kyc" code="src/src/pages/KYCPage.tsx" depth="shallow-mock-backed" />
+  <mapping id="IMPL-MAP-006" concept="transfer" code="src/src/pages/TransferPage.tsx" depth="shallow-mock-backed" />
+  <mapping id="IMPL-MAP-007" concept="failure-recovery" code="src/src/pages/RecoveryPage.tsx" depth="shallow-mock-backed" />
+  <mapping id="IMPL-MAP-008" concept="tokens-and-styling" code="docs/tokens.json,src/src/styles/global.css,src/src/styles/epfo-extensions.css" depth="implemented" />
+  <mapping id="IMPL-MAP-009" concept="future-assistant" code="not implemented" depth="future-boundary" />
+</componentMapping>

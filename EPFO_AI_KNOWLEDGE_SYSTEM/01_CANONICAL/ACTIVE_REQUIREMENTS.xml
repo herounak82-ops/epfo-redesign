@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requirements registry="EPFO-REQUIREMENTS" version="1.0">
+  <requirement id="EPFO-REQ-001" priority="critical" status="active">
+    <requirement>Use UX4G-first component semantics.</requirement>
+    <acceptance>New UI records component/pattern alignment or explicitly documents an exception.</acceptance>
+    <source>SRC-SKILL-001</source>
+    <taskClasses>design,frontend,ui</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-002" priority="high" status="active">
+    <requirement>Use Noto Sans and Noto Sans Devanagari for Hindi support.</requirement>
+    <acceptance>Typography audit confirms family and fallback behavior.</acceptance>
+    <source>SRC-DESIGN-001</source>
+    <taskClasses>design,typography,accessibility</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-003" priority="high" status="active">
+    <requirement>Use semantic color and combine status icon, label, and color.</requirement>
+    <acceptance>Every non-neutral status remains understandable without color alone.</acceptance>
+    <source>SRC-DESIGN-001</source>
+    <taskClasses>design,ui,accessibility</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-004" priority="critical" status="active">
+    <requirement>Provide visible focus and keyboard interaction.</requirement>
+    <acceptance>Keyboard audit reaches all interactive controls and focus is visible.</acceptance>
+    <source>SRC-UX4G-001</source>
+    <taskClasses>accessibility,frontend,testing</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-005" priority="high" status="active">
+    <requirement>Preserve form state after errors and explain what happened, why, who owns it, what the member can do, what happens next, and when.</requirement>
+    <acceptance>Failure states expose diagnostic recovery content.</acceptance>
+    <source>SRC-RESEARCH-001</source>
+    <taskClasses>claim,kyc,failure-recovery,content</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-006" priority="critical" status="active">
+    <requirement>Use goal-based navigation rather than making Form 19/Form 13 the primary mental model.</requirement>
+    <acceptance>Routes and labels lead with member goals.</acceptance>
+    <source>SRC-RESEARCH-001</source>
+    <taskClasses>ux,content,claim,transfer</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-007" priority="critical" status="active">
+    <requirement>Clearly disclose demo status and never claim real EPFO backend access.</requirement>
+    <acceptance>Prototype shell and mock data state include synthetic/non-production disclosure.</acceptance>
+    <source>SRC-MOCK-001</source>
+    <taskClasses>frontend,mock-data,deployment</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-008" priority="high" status="active">
+    <requirement>Maintain mobile-first behavior and validate at 200% zoom.</requirement>
+    <acceptance>Responsive and zoom checks are recorded before release.</acceptance>
+    <source>SRC-DESIGN-001</source>
+    <taskClasses>responsive,accessibility,testing</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-009" priority="high" status="active">
+    <requirement>Test loading, error, success, blocked, and recovery states.</requirement>
+    <acceptance>Each priority journey has an explicit state matrix.</acceptance>
+    <source>SRC-RESEARCH-001</source>
+    <taskClasses>testing,claim,kyc,transfer,failure-recovery</taskClasses>
+  </requirement>
+  <requirement id="EPFO-REQ-010" priority="high" status="active">
+    <requirement>Do not silently redirect on session expiry.</requirement>
+    <acceptance>Expiry preserves task context and explains the next action.</acceptance>
+    <source>SRC-RESEARCH-001</source>
+    <taskClasses>access,failure-recovery,security</taskClasses>
+  </requirement>
+</requirements>
